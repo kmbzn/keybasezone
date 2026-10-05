@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { sidebar } from '../data/sidebar';
+
+const sections = sidebar.filter((section) => section.label);
+---
+<Layout title="Contents | KeyBaseZone">
+  <Header />
+  <main class="contents-page">
+    <section class="contents-hero">
+      <p class="eyebrow">BROWSE THE ARCHIVE</p>
+      <h1>콘텐츠 둘러보기</h1>
+      <p>주제별로 정리한 글을 한곳에서 살펴볼 수 있습니다.</p>
+    </section>
+    <section class="contents-grid" aria-label="콘텐츠 카테고리">
+      {sections.map((section, index) => (
+        <article class="content-category">
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <h2>{section.label}</h2>
+          <ul>
+            {section.entries.map((entry) => <li><a href={entry.path}>{entry.title}<b>↗</b></a></li>)}
+          </ul>
+        </article>
+      ))}
+    </section>
+  </main>
+  <Footer />
+</Layout>
