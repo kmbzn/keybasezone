@@ -3,26 +3,45 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Sidebar from '../components/Sidebar.astro';
 import Footer from '../components/Footer.astro';
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
+import { getArticleCover } from '../lib/article-cover.mjs';
 
 export function getStaticPaths() {
   const documents = import.meta.glob('../content/blog-v2/**/*.md', { eager: true });
   return Object.entries(documents)
-    .filter(([path]) => !path.endsWith('/README.md'))
-    .map(([path, module]) => {
-      const slug = path.split('/content/blog-v2/')[1].replace(/\.md$/, '');
-      const title = module.frontmatter?.title || slug.split('/').at(-1)?.replaceAll('-', ' ') || 'KeyBaseZone';
-      return { params: { slug }, props: { Content: module.default, title, articleSlug: slug } };
+    .filter(([filePath]) => !filePath.endsWith('/README.md'))
+    .map(([filePath, module]) => {
+      const slug = filePath.split('/content/blog-v2/')[1].replace(/\.md$/, '');
+      const markdown = readFileSync(path.join(process.cwd(), 'src/content/blog-v2', slug + '.md'), 'utf8');
+      const title = module.frontmatter?.title || markdown.match(/^#\s+(.+?)\s*#*\s*$/m)?.[1] || slug.split('/').at(-1)?.replaceAll('-', ' ') || 'KeyBaseZone';
+      return { params: { slug }, props: { Content: module.default, title, ...getArticleCover(slug, markdown, module.frontmatter) } };
     });
 }
 
-const { Content, title, articleSlug } = Astro.props;
-const coverHue = [...articleSlug].reduce((hue, char) => (hue * 31 + char.charCodeAt(0)) % 360, 17);
+const { Content, title, category, coverHue, coverPattern, coverImage, deck } = Astro.props;
 ---
-<Layout title={`${title} — KeyBaseZone`}>
+<Layout title={title + ' — KeyBaseZone'}>
   <Header />
-  <div class="docs-layout">
-    <Sidebar />
-    <main class="markdown-content" style={`--cover-hue:${coverHue}`}><Content /></main>
-  </div>
+  <header class:list={['article-cover', 'article-pattern-' + coverPattern]} style={'--cover-hue:' + coverHue}>
+    <div class:list={['article-cover-visual', coverImage ? 'has-image' : 'pattern-only']}>
+      {coverImage && <img src={coverImage} alt="" fetchpriority="high" />}
+      <div class="article-cover-pattern" aria-hidden="true"></div>
+      <span class="article-cover-visual-mark">KEYBASEZONE JOURNAL</span>
+    </div>
+    <div class="article-cover-copy">
+      <p class="article-cover-kicker">{category} <span>·</span> FIELD NOTES</p>
+      <h1>{title}</h1>
+      {deck && <p class="article-cover-deck">{deck}</p>}
+      <p class="article-cover-byline">A PERSONAL KNOWLEDGE ARCHIVE</p>
+      <a class="article-cover-back" href="/contents/">ALL STORIES <span>↗</span></a>
+    </div>
+  </header>
+  <section class="article-reading">
+    <div class="docs-layout">
+      <Sidebar />
+      <main class="markdown-content"><Content /></main>
+    </div>
+  </section>
   <Footer />
 </Layout>

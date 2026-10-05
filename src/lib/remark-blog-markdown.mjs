@@ -1,22 +1,8 @@
 import path from 'node:path';
 
-const categoryKickers = {
-  a: 'STUDY NOTES',
-  ai: 'ARTIFICIAL INTELLIGENCE',
-  brands: 'BRANDS',
-  cs: 'COMPUTER SCIENCE',
-  db: 'DATABASES',
-  design: 'DESIGN',
-  ds: 'DATA SCIENCE',
-  finance: 'FINANCE',
-  humanities: 'HUMANITIES',
-  mp: 'MICROPROCESSORS',
-  os: 'TECH & SYSTEMS',
-  pl: 'PROGRAMMING LANGUAGES',
-  products: 'PRODUCTS',
-  rc: 'RESEARCH',
-  se: 'SOFTWARE ENGINEERING',
-  wellness: 'WELLNESS',
+const containerLabels = {
+  info: 'INFO', note: 'NOTE', tip: 'TIP', warning: 'WARNING', caution: 'CAUTION',
+  danger: 'DANGER', error: 'ERROR', important: 'IMPORTANT',
 };
 
 function textContent(node) {
@@ -57,15 +43,8 @@ export default function remarkBlogMarkdown() {
         } else if (node.type === 'heading' && node.depth === 1 && !hasArticleTitle) {
           hasArticleTitle = true;
           node.data ??= {};
-          node.data.hProperties ??= {};
-          const existingClasses = node.data.hProperties.className;
-          const classes = Array.isArray(existingClasses) ? existingClasses : existingClasses ? [existingClasses] : [];
-          node.data.hProperties.className = [...classes, 'article-cover-title'];
-          const marker = `${path.sep}src${path.sep}content${path.sep}blog-v2${path.sep}`;
-          const sourcePath = file.path ?? file.history?.[0] ?? '';
-          const markerIndex = sourcePath.lastIndexOf(marker);
-          const category = markerIndex < 0 ? '' : sourcePath.slice(markerIndex + marker.length).split(path.sep)[0];
-          if (category) node.data.hProperties['data-kicker'] = categoryKickers[category] ?? category.toUpperCase();
+          node.data.hName = 'div';
+          node.data.hProperties = { className: ['article-title-source'], 'aria-hidden': 'true' };
         } else if (node.type === 'containerDirective') {
           const openLine = lines[(node.position?.start.line ?? 1) - 1] ?? '';
           const match = openLine.match(/^:{3,}\s*[\w-]+\s*(.*?)\s*$/);
@@ -80,11 +59,11 @@ export default function remarkBlogMarkdown() {
               data: { hName: 'summary', hProperties: { className: ['custom-container-title'] } },
               children: [{ type: 'text', value: title || '자세히 보기' }],
             });
-          } else if (title && node.name !== 'code-tabs') {
+          } else if (node.name !== 'code-tabs') {
             node.children.unshift({
               type: 'paragraph',
               data: { hName: 'div', hProperties: { className: ['custom-container-title'] } },
-              children: [{ type: 'text', value: title }],
+              children: [{ type: 'text', value: title || containerLabels[node.name] || node.name.toUpperCase() }],
             });
           }
         } else if (node.type === 'paragraph' && textContent(node).trim().startsWith('@tab ')) {
