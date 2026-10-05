@@ -116,6 +116,8 @@ body{background:var(--paper);color:var(--ink)}
 .topic-grid{min-width:0}
 .topic{color:inherit;text-decoration:none}
 .topic:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.mindscape-copy h2{font-weight:400}
+.mindscape-copy h2 strong{font-weight:700}
 @media(max-width:760px){
   .site-header{width:100%;height:auto;min-height:0;padding:12px 20px 0;flex-wrap:wrap;row-gap:10px}
   .brand img{width:126px}
