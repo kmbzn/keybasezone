@@ -5,8 +5,10 @@ import Footer from '../components/Footer.astro';
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { sidebar } from '../data/sidebar';
+import { getContentLastModifiedDate, getContentLastModifiedDates } from '../lib/content-dates.mjs';
 const base = import.meta.env.BASE_URL;
 const articleSections = sidebar.filter((section) => section.label);
+const lastModifiedDates = getContentLastModifiedDates();
 function firstImage(entry) {
   const slug = entry.path.replace(/^\//, '');
   const markdownPath = path.join(process.cwd(), 'src/content/blog-v2', `${slug}.md`);
@@ -21,10 +23,15 @@ function firstImage(entry) {
   const publicPath = path.posix.normalize(path.posix.join('/', path.posix.dirname(slug), image));
   return existsSync(path.join(process.cwd(), 'public', publicPath.slice(1))) ? publicPath : '';
 }
-const featuredStories = articleSections.map((section) => {
-  const entry = section.entries[0];
-  return { category: section.label, entry, image: firstImage(entry) };
-}).filter((story) => story.entry);
+const featuredStories = articleSections.flatMap((section) => section.entries.map((entry) => {
+  const slug = entry.path.replace(/^\//, '');
+  return {
+    category: section.label,
+    entry,
+    image: firstImage(entry),
+    updatedAt: getContentLastModifiedDate(lastModifiedDates, slug),
+  };
+})).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 6);
 const topics = [
   { n: '01', title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
   { n: '02', title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
@@ -56,7 +63,7 @@ const topics = [
               <span class="journal-category">{story.category}</span>
               <span class="journal-image-arrow" aria-hidden="true">↗</span>
             </div>
-            <div class="journal-card-meta"><span>{String(index + 1).padStart(2, '0')} / FIELD NOTE</span><span>READ STORY</span></div>
+            <div class="journal-card-meta"><span>최종 수정 · {story.updatedAt.replaceAll('-', '.')}</span><span>READ STORY</span></div>
             <h3>{story.entry.title}</h3>
           </a>
         ))}

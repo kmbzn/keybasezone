@@ -1,7 +1,7 @@
 # Wine 카카오톡 이모지 깨짐 문제 해결
 
 <p align="center">
- <img src="@source/os/logo.webp" width="192" alt="Main Logo" />
+ <img src="/os/logo.webp" width="192" alt="Winemoji logo" />
 </p>
 
 GitHub 링크: [https://github.com/kmbzn/project-winemoji](https://github.com/kmbzn/project-winemoji)
