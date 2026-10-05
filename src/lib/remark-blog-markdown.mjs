@@ -39,10 +39,16 @@ export default function remarkBlogMarkdown() {
           const match = openLine.match(/^:{3,}\s*[\w-]+\s*(.*?)\s*$/);
           const title = match?.[1] ?? '';
           node.data ??= {};
-          node.data.hName = node.name === 'code-tabs' ? 'div' : 'aside';
+          node.data.hName = node.name === 'code-tabs' ? 'div' : node.name === 'details' ? 'details' : 'aside';
           node.data.hProperties = { className: ['custom-container', `custom-container-${node.name}`] };
 
-          if (title && node.name !== 'code-tabs') {
+          if (node.name === 'details') {
+            node.children.unshift({
+              type: 'paragraph',
+              data: { hName: 'summary', hProperties: { className: ['custom-container-title'] } },
+              children: [{ type: 'text', value: title || '자세히 보기' }],
+            });
+          } else if (title && node.name !== 'code-tabs') {
             node.children.unshift({
               type: 'paragraph',
               data: { hName: 'div', hProperties: { className: ['custom-container-title'] } },

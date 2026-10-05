@@ -54,6 +54,13 @@ a{color:inherit}
 .custom-container-tip{border-left-color:#42b983;background:#f3f9f6}
 .custom-container-info{border-left-color:#4c8bf5;background:#f4f7ff}
 .custom-container-danger{border-left-color:#e35d5b;background:#fff4f3}
+.custom-container-note{border-left-color:#4c8bf5;background:#f4f7ff}
+.custom-container-important{border-left-color:#8b5cf6;background:#f7f3ff}
+.custom-container-caution,.custom-container-warning{border-left-color:#e7a23b;background:#fff8e8}
+.custom-container-error{border-left-color:#e35d5b;background:#fff4f3}
+.custom-container-details{padding:.8rem 1rem;border:1px solid var(--border);border-left:4px solid #85837b;background:#f7f6f2}
+.custom-container-details>.custom-container-title{margin:0!important;cursor:pointer}
+.custom-container-details[open]>.custom-container-title{margin-bottom:.7rem!important}
 .code-tab-label{font-size:.82rem;font-weight:650;color:#555;margin:1rem 0 -.5rem!important}
 .site-footer{border-top:1px solid var(--border);padding:24px;text-align:center;color:#888;font-size:12px}
 .site-footer p{margin:0}
