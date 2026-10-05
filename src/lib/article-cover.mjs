@@ -8,12 +8,50 @@ const categoryLabels = {
   rc: 'RESEARCH', se: 'SOFTWARE ENGINEERING', wellness: 'WELLNESS',
 };
 
+const curatedCoverImages = {
+  'mindscape': null,
+  'musics': '/images/article-covers/musics.jpg',
+  'os/dunggeunmo': '/images/article-covers/os-dunggeunmo.png',
+  'os/ubuntu_thumbnails': '/images/article-covers/os-ubuntu-thumbnails.jpg',
+  'os/no_animation': '/images/article-covers/os-no-animation.png',
+  'wellness/concerta': '/images/article-covers/wellness-concerta.jpg',
+  'wellness/inderal': '/images/article-covers/wellness-inderal.png',
+  'wellness/sertraline': '/images/article-covers/wellness-sertraline.jpg',
+  'wellness/melatonin': '/images/article-covers/wellness-melatonin.jpg',
+  'wellness/cervical-abrasion': '/images/article-covers/wellness-cervical-abrasion.jpg',
+  'wellness/barbell-squat': '/images/article-covers/wellness-barbell-squat.jpg',
+  'humanities/baroque-music': '/images/article-covers/humanities-baroque-music.jpg',
+  'brands/frederique-constant': '/images/article-covers/brands-frederique-constant.jpg',
+  'brands/kz': '/images/article-covers/brands-kz.jpg',
+  'brands/aestrua': '/images/article-covers/brands-aestrua.png',
+  'brands/jinhao': '/images/article-covers/brands-jinhao.jpg',
+  'brands/desker': '/images/article-covers/brands-desker.jpg',
+  'brands/musinsa-standard': '/images/article-covers/brands-musinsa-standard.jpg',
+  'brands/nomos-glashutte': '/images/article-covers/brands-nomos-glashuette.jpg',
+  'finance/hyundai-card-zero': '/images/article-covers/finance-hyundai-card-zero.jpg',
+  'finance/shinhan-card-cheum': '/images/article-covers/finance-shinhan-card-cheum.jpg',
+  'finance/sp500-etf': '/images/article-covers/finance-sp500-etf.jpg',
+  'finance/parking-account-cma': '/images/article-covers/finance-parking-account-cma.jpg',
+  'finance/berkshire-hathaway': '/images/article-covers/finance-berkshire-hathaway.jpg',
+  'finance/bitcoin': '/images/article-covers/finance-bitcoin.jpg',
+  'products/audio-interface': '/images/article-covers/products-audio-interface.jpg',
+  'products/kurutoga': '/images/article-covers/products-kurutoga.jpg',
+  'products/cx31993-dac': '/images/article-covers/products-cx31993-dac.jpg',
+  'products/cleansing-milk': '/images/article-covers/products-cleansing-milk.jpg',
+  'products/fidget-toy': '/images/article-covers/products-fidget-toy.jpg',
+};
+
+export function getCuratedArticleImage(slug) {
+  return Object.hasOwn(curatedCoverImages, slug) ? curatedCoverImages[slug] ?? '' : '';
+}
+
 function withoutCode(markdown) {
   const fence = String.fromCharCode(96).repeat(3);
   return markdown.replace(new RegExp(fence + '[\\s\\S]*?' + fence, 'g'), '');
 }
 
 function getCoverImage(markdown, slug) {
+  if (Object.hasOwn(curatedCoverImages, slug)) return curatedCoverImages[slug] ?? '';
   const source = withoutCode(markdown);
   const markdownImage = source.match(/!\[[^\]]*\]\((<[^>]+>|[^)\s]+)[^)]*\)/);
   const htmlImage = source.match(/<img\b[^>]*?src=["']([^"']+)["']/i);
