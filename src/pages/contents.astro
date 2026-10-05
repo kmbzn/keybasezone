@@ -16,7 +16,7 @@ const sections = sidebar.filter((section) => section.label);
     </section>
     <section class="contents-grid" aria-label="콘텐츠 카테고리">
       {sections.map((section, index) => (
-        <article class="content-category">
+        <article class="content-category" id={section.label?.toLowerCase()}>
           <span>{String(index + 1).padStart(2, '0')}</span>
           <h2>{section.label}</h2>
           <ul>
