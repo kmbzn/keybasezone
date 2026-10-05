@@ -128,6 +128,10 @@ body{background:var(--paper);color:var(--ink)}
 .intro-visual img{border-radius:5px;box-shadow:0 14px 28px #20211f20;animation:profile-float 6s ease-in-out infinite}
 @keyframes profile-float{0%,100%{transform:translateY(0);box-shadow:0 14px 28px #20211f20}50%{transform:translateY(-8px);box-shadow:0 24px 38px #20211f2b}}
 @media(prefers-reduced-motion:reduce){.intro-visual img{animation:none}}
+
+.markdown-content h1.article-cover-title{position:relative;isolation:isolate;display:flex;align-items:flex-end;min-height:clamp(230px,30vw,340px);margin:0 0 2.2rem;padding:clamp(28px,4vw,52px);overflow:hidden;border:0;border-radius:4px;color:#fff;font-size:clamp(2.35rem,5.3vw,4.4rem);font-weight:760;line-height:1.04;letter-spacing:-.075em;text-wrap:balance;text-shadow:0 2px 18px #080a1680;background:radial-gradient(circle at 82% 22%,hsl(calc(var(--cover-hue) + 66) 82% 72% / .35),transparent 27%),radial-gradient(circle at 20% 120%,hsl(calc(var(--cover-hue) - 25) 80% 58% / .32),transparent 40%),linear-gradient(132deg,hsl(var(--cover-hue) 48% 24%),hsl(calc(var(--cover-hue) + 38) 56% 34%));box-shadow:0 16px 38px #20211f18}
+.markdown-content h1.article-cover-title::after{content:"";position:absolute;z-index:-1;inset:0;opacity:.24;background:repeating-radial-gradient(ellipse at 92% 38%,transparent 0 22px,#fff 23px 24px,transparent 25px 48px);mask-image:linear-gradient(90deg,transparent 18%,#000 100%);pointer-events:none}
+@media(max-width:680px){.markdown-content h1.article-cover-title{min-height:210px;margin-bottom:1.7rem;padding:25px;font-size:clamp(2rem,9vw,3.2rem);border-radius:3px}}
 @media(max-width:760px){
   .site-header{width:100%;height:auto;min-height:0;padding:12px 20px 0;flex-wrap:wrap;row-gap:10px}
   .brand img{width:126px}

@@ -29,11 +29,19 @@ function hProperties(node, className) {
 export default function remarkBlogMarkdown() {
   return (tree, file) => {
     const lines = String(file.value ?? '').split(/\r?\n/);
+    let hasArticleTitle = false;
 
     function visit(parent) {
       for (const node of parent.children ?? []) {
         if (node.type === 'image') {
           node.url = publicImageUrl(node.url, file);
+        } else if (node.type === 'heading' && node.depth === 1 && !hasArticleTitle) {
+          hasArticleTitle = true;
+          node.data ??= {};
+          node.data.hProperties ??= {};
+          const existingClasses = node.data.hProperties.className;
+          const classes = Array.isArray(existingClasses) ? existingClasses : existingClasses ? [existingClasses] : [];
+          node.data.hProperties.className = [...classes, 'article-cover-title'];
         } else if (node.type === 'containerDirective') {
           const openLine = lines[(node.position?.start.line ?? 1) - 1] ?? '';
           const match = openLine.match(/^:{3,}\s*[\w-]+\s*(.*?)\s*$/);

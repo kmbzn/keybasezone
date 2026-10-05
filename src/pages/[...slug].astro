@@ -11,17 +11,18 @@ export function getStaticPaths() {
     .map(([path, module]) => {
       const slug = path.split('/content/blog-v2/')[1].replace(/\.md$/, '');
       const title = module.frontmatter?.title || slug.split('/').at(-1)?.replaceAll('-', ' ') || 'KeyBaseZone';
-      return { params: { slug }, props: { Content: module.default, title } };
+      return { params: { slug }, props: { Content: module.default, title, articleSlug: slug } };
     });
 }
 
-const { Content, title } = Astro.props;
+const { Content, title, articleSlug } = Astro.props;
+const coverHue = [...articleSlug].reduce((hue, char) => (hue * 31 + char.charCodeAt(0)) % 360, 17);
 ---
 <Layout title={`${title} — KeyBaseZone`}>
   <Header />
   <div class="docs-layout">
     <Sidebar />
-    <main class="markdown-content"><Content /></main>
+    <main class="markdown-content" style={`--cover-hue:${coverHue}`}><Content /></main>
   </div>
   <Footer />
 </Layout>
