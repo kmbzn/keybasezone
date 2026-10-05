@@ -1,5 +1,8 @@
+---
+const base = import.meta.env.BASE_URL;
+---
 <header class="site-header">
-  <a class="site-logo" href="/" aria-label="KeyBaseZone 홈">
-    <img src="/images/kbz.png" alt="KeyBaseZone" />
-  </a>
+  <a class="brand" href={base} aria-label="KeyBaseZone 홈"><img src={`${base}images/kbz.png`} alt="KeyBaseZone" /></a>
+  <nav aria-label="주요 메뉴"><a href={`${base}#about`}>About</a><a href={`${base}#topics`}>Topics</a><a href={`${base}mindscape/`}>Mindscape</a></nav>
+  <a class="header-github" href="https://github.com/kmbzn" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
 </header>
