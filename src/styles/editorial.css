@@ -90,7 +90,7 @@ a{color:inherit}
 .topic-mark{position:absolute;right:20px;top:17px;color:var(--accent);font-size:16px}
 
 /* About the name and contact */
-.mindscape-preview{width:min(1440px,calc(100% - 72px));min-height:460px;margin:0 auto 100px;grid-template-columns:1fr 1fr;background:#22241f;color:#f8f7f1}
+.mindscape-preview{width:100%;min-height:460px;margin:0 0 100px;grid-template-columns:1fr 1fr;background:#22241f;color:#f8f7f1}
 .mindscape-art{position:relative;overflow:hidden;background:#e8e6df}
 .mindscape-art img{position:relative;z-index:1;width:min(68%,340px);filter:drop-shadow(0 18px 18px #26292320)}
 .mindscape-copy{padding:72px clamp(36px,7vw,100px)}
@@ -191,7 +191,7 @@ a{color:inherit}
   .journal-card h3{font-size:17px}
   .journal-card:first-child h3{font-size:25px}
   .intro{grid-template-columns:1fr;gap:32px;padding:72px 22px}
-  .intro-visual img{max-width:380px;aspect-ratio:4/3}
+  .intro-visual img{width:100%;max-width:none;height:auto;aspect-ratio:auto;object-fit:contain}
   .intro h2{font-size:clamp(40px,10vw,54px)}
   .topics{padding:72px 20px 78px}
   .section-heading{display:block}
@@ -200,7 +200,7 @@ a{color:inherit}
   .topic{min-height:220px;padding:17px}
   .topic:hover{padding:17px}
   .topic h3{font-size:19px}
-  .mindscape-preview{width:calc(100% - 40px);grid-template-columns:1fr;margin-bottom:65px}
+  .mindscape-preview{width:100%;grid-template-columns:1fr;margin-bottom:65px}
   .mindscape-art{min-height:240px;padding:28px}
   .mindscape-art img{width:min(58%,240px)}
   .mindscape-copy{padding:44px 26px 52px}
