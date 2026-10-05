@@ -33,3 +33,6 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `brands-aestrua.png` | AESTURA Atobarrier 365 Cream product photo | Sephora Australia | Product image from product listing | [Product page](https://www.sephora.com.au/products/aestura-atobarrier365-cream) |
 | `brands-musinsa-standard.jpg` | Musinsa Standard Hongdae store interior | MUSINSA | Image from brand article | [MUSINSA article](https://www.musinsa.com/content/cms/6798) |
 | `products-cleansing-milk.jpg` | DermaSense Cleansing Milk product photo | DermaSense | Image from product listing | [Product page](https://dermasense.pk/products/cleansing-milk-removes-makeup) |
+| `ai-gpt-6-sol-luna.png` | GPT-6 Sol and Luna art card | OpenAI | OpenAI article artwork | [OpenAI announcement](https://openai.com/index/introducing-gpt-6-sol-and-luna/) |
+| `ai-gpt-6-1-sol.jpg` | GPT-6.1 Sol launch presentation | Asia Today | Image from news article | [Asia Today article](https://en.asiatoday.co.kr/view.php?key=20260930001304543) |
+| `ai-claude-opus-5-5.jpg` | Claude Opus 5.5 launch artwork | Anthropic | Anthropic announcement artwork | [Anthropic announcement](https://www.anthropic.com/claude-opus-5-5) |
