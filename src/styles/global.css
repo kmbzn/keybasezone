@@ -118,6 +118,9 @@ body{background:var(--paper);color:var(--ink)}
 .topic:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 .mindscape-copy h2{font-weight:400}
 .mindscape-copy h2 strong{font-weight:700}
+.intro-visual img{border-radius:5px;box-shadow:0 14px 28px #20211f20;animation:profile-float 6s ease-in-out infinite}
+@keyframes profile-float{0%,100%{transform:translateY(0);box-shadow:0 14px 28px #20211f20}50%{transform:translateY(-8px);box-shadow:0 24px 38px #20211f2b}}
+@media(prefers-reduced-motion:reduce){.intro-visual img{animation:none}}
 @media(max-width:760px){
   .site-header{width:100%;height:auto;min-height:0;padding:12px 20px 0;flex-wrap:wrap;row-gap:10px}
   .brand img{width:126px}
