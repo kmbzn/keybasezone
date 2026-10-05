@@ -36,3 +36,4 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `ai-gpt-6-sol-luna.png` | GPT-6 Sol and Luna art card | OpenAI | OpenAI article artwork | [OpenAI announcement](https://openai.com/index/introducing-gpt-6-sol-and-luna/) |
 | `ai-gpt-6-1-sol.jpg` | GPT-6.1 Sol launch presentation | Asia Today | Image from news article | [Asia Today article](https://en.asiatoday.co.kr/view.php?key=20260930001304543) |
 | `ai-claude-opus-5-5.jpg` | Claude Opus 5.5 launch artwork | Anthropic | Anthropic announcement artwork | [Anthropic announcement](https://www.anthropic.com/claude-opus-5-5) |
+| `products-thinkpad.jpg` | IBM ThinkPad 760LD | IBM Japan | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:IBM_ThinkPad_760LD.jpg) |

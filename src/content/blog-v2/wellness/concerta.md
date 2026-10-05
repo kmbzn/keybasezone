@@ -67,6 +67,6 @@ cover: "/images/article-covers/wellness-concerta.jpg"
 | 효과 발현 | 복용 후 약 1–2시간 |
 | 효과 지속 | 약 10–12시간 |
 
-::: warning 전문의약품
+:::warning{title="전문의약품"}
 콘서타는 전문의약품이자 향정신성의약품(마약류)으로, 반드시 정신건강의학과 또는 신경과 전문의의 처방 하에 복용해야 한다.
 :::

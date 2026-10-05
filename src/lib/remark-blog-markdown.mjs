@@ -33,7 +33,6 @@ function hProperties(node, className) {
 
 export default function remarkBlogMarkdown() {
   return (tree, file) => {
-    const lines = String(file.value ?? '').split(/\r?\n/);
     let hasArticleTitle = false;
 
     function visit(parent) {
@@ -46,9 +45,7 @@ export default function remarkBlogMarkdown() {
           node.data.hName = 'div';
           node.data.hProperties = { className: ['article-title-source'], 'aria-hidden': 'true' };
         } else if (node.type === 'containerDirective') {
-          const openLine = lines[(node.position?.start.line ?? 1) - 1] ?? '';
-          const match = openLine.match(/^:{3,}\s*[\w-]+\s*(.*?)\s*$/);
-          const title = match?.[1] ?? '';
+          const title = node.attributes?.title || '';
           node.data ??= {};
           node.data.hName = node.name === 'code-tabs' ? 'div' : node.name === 'details' ? 'details' : 'aside';
           node.data.hProperties = { className: ['custom-container', `custom-container-${node.name}`] };

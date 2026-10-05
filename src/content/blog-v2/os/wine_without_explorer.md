@@ -4,7 +4,7 @@ cover: "/os/explorer.webp"
 
 # Wine 환경에서 카카오톡 실행 시 `explorer.exe` 뜨지 않게 하는 법
 
-:::info 버전 정보
+:::info{title="버전 정보"}
 Ubuntu 22.04 LTS 
 wine 11.0
 :::

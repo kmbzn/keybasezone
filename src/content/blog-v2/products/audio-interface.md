@@ -125,6 +125,6 @@ cover: "/images/article-covers/products-audio-interface.jpg"
 - [ ] USB-A / USB-C 중 어떤 단자를 사용하는가?
 - [ ] 번들 소프트웨어가 필요한가?
 
-::: tip 입문자 추천
+:::tip{title="입문자 추천"}
 예산 15만원 이하라면 Focusrite Scarlett 2i2 4세대가 가장 안전한 선택이다. 드라이버 안정성이 검증되어 있고, 문제 발생 시 커뮤니티 자료가 풍부하다.
 :::

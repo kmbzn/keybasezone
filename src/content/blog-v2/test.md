@@ -103,15 +103,15 @@ $$
 
 ## VuePress info, tip 블록 테스트
 
-::: info
+:::info
 알려드립니다 (Information): 이 블록은 중요한 정보를 담고 있습니다. 这里是重要信息。補足情報はこちらです。This block contains crucial information.
 :::
 
-::: tip
+:::tip
 팁 (Tip): 유용한 팁을 놓치지 마세요! ここに役立つヒントがあります。请不要错过有用的提示。Don't miss out on this helpful tip!
 :::
 
-::: warning
+:::warning
 경고 (Warning): 주의가 필요합니다! 警告！注意が必要です。请多加小心。Proceed with caution!
 :::
 

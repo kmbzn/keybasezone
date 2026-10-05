@@ -4,7 +4,7 @@ cover: "/os/paste.webp"
 
 # 우분투 Wine 카카오톡 사진 이미지 스크린샷 붙여넣기
 
-:::info 버전 정보
+:::info{title="버전 정보"}
 Ubuntu 24.04 LTS 
 Wine 11.0
 :::

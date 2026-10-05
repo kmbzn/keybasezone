@@ -1,5 +1,5 @@
 ---
-cover: "https://upload.wikimedia.org/wikipedia/commons/6/6e/IBM_ThinkPad_700C.jpg"
+cover: "/images/article-covers/products-thinkpad.jpg"
 ---
 
 # ThinkPad
@@ -10,7 +10,7 @@ ThinkPad는 1992년 IBM이 처음 선보인 이후 현재는 레노버(Lenovo)�
 
 ### 탄생
 
-![IBM ThinkPad 700C (1992)](https://upload.wikimedia.org/wikipedia/commons/6/6e/IBM_ThinkPad_700C.jpg)
+![IBM ThinkPad 760LD](/images/article-covers/products-thinkpad.jpg)
 
 ThinkPad는 1992년 IBM의 산업 디자이너 **리처드 사퍼**(Richard Sapper)와 **나이토 아리마사(内藤在正)** 팀이 설계해 출시했다. 이름은 IBM 직원들이 아이디어를 메모하던 "Think" 패드에서 유래했다.
 

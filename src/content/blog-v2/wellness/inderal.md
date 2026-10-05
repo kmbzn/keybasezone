@@ -79,6 +79,6 @@ cover: "/images/article-covers/wellness-inderal.png"
 | 효과 발현 | 경구 복용 후 약 1–2시간 |
 | 지속시간 | 6–12시간 (속방형) |
 
-::: warning 전문의약품
+:::warning{title="전문의약품"}
 인데놀은 전문의약품으로, 반드시 의사의 처방 하에 복용해야 한다. 자가 판단에 의한 복용 중단은 위험할 수 있다.
 :::

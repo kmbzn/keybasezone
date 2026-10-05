@@ -124,6 +124,6 @@ cover: "/images/article-covers/wellness-barbell-squat.jpg"
 | Texas Method | 볼륨·회복·강도 주별 분리 | 중급 |
 | Smolov | 고강도 스쿼트 특화 블록 | 중급~상급 |
 
-::: warning 부상 주의
+:::warning{title="부상 주의"}
 무릎 통증, 허리 통증이 지속된다면 중량을 낮추고 자세를 먼저 점검할 것. 통증이 있는 상태에서 고중량 진행은 부상을 심화시킬 수 있다. 지속되는 통증은 전문 의료 상담을 받아야 한다.
 :::
