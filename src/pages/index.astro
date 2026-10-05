@@ -15,32 +15,32 @@ const topics = [
   <main>
     <section class="hero" id="top">
       <div class="hero-atmosphere" aria-hidden="true"><span></span><span></span><span></span></div>
+      <i class="scroll-shape shape-angle hero-angle" data-parallax=".27" data-rotate="15" aria-hidden="true"></i>
       <div class="hero-copy">
         <p class="eyebrow">A PERSONAL KNOWLEDGE SPACE</p>
         <h1>배우고,<br /><em>더 멀리 봅니다.</em></h1>
         <p class="hero-description">기술과 디자인, 일상의 경험과 인문학을 살핍니다. 각 분야의 본질을 찾아 배운 것을 차분히 쌓아가는 공간입니다.</p>
         <div class="hero-actions"><a class="button button-dark" href={`${base}contents/`}>콘텐츠 둘러보기 <span>↗</span></a><a class="text-link" href={`${base}mindscape/`}>Mindscape 읽기 <span>↗</span></a></div>
       </div>
-      <div class="hero-image"><img src={`${base}images/profile.jpg`} alt="KeyBaseZone 프로필" /><div class="image-caption"><span>SEOUL, SOUTH KOREA</span></div></div>
+      <div class="hero-image"><img src={`${base}images/bg.png`} alt="황혼의 궤도 도시" /><div class="image-caption"><span>SEOUL, SOUTH KOREA</span></div></div>
       <span class="hero-index">KEYBASEZONE</span>
     </section>
 
     <section class="intro" id="about">
-      <i class="scroll-shape shape-ring intro-ring" data-parallax=".16" data-rotate="18" aria-hidden="true"></i>
-      <i class="scroll-shape shape-square intro-square" data-parallax="-.11" data-rotate="-14" aria-hidden="true"></i>
-      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <i class="scroll-shape shape-ring intro-ring" data-parallax=".38" data-rotate="28" aria-hidden="true"></i>
+      <div class="intro-visual"><p class="eyebrow">A LITTLE ABOUT ME</p><img src={`${base}images/profile.jpg`} alt="KeyBaseZone 프로필" /></div>
       <div><h2>한 가지를 오래<br />들여다봅니다.</h2><p>서울에서 컴퓨터 과학을 공부합니다. 기술적 분석에서 출발해 디자인과 생활, 인문학까지, 서로 다른 분야를 오가며 배운 내용을 정리합니다.</p><table class="profile-specs"><tbody><tr><th>Region</th><td>Seoul, South Korea</td></tr><tr><th>GitHub</th><td><a href="https://github.com/kmbzn" target="_blank" rel="noreferrer">github.com/kmbzn ↗</a></td></tr><tr><th>Instagram</th><td><a href="https://instagram.com/kmbzn" target="_blank" rel="noreferrer">@kmbzn ↗</a></td></tr><tr><th>University</th><td>Hanyang Univ. (Class of ’21)</td></tr><tr><th>Major</th><td>Dept. of Computer Science</td></tr><tr><th>High School</th><td>Joongdong High, 112th</td></tr></tbody></table></div>
     </section>
 
     <section class="topics" id="topics">
-      <i class="scroll-shape shape-orb topics-orb" data-parallax=".13" data-rotate="-22" aria-hidden="true"></i>
-      <i class="scroll-shape shape-frame topics-frame" data-parallax="-.09" data-rotate="12" aria-hidden="true"></i>
+      <i class="scroll-shape shape-orb topics-orb" data-parallax=".31" data-rotate="-32" aria-hidden="true"></i>
+      <i class="scroll-shape shape-frame topics-frame" data-parallax="-.24" data-rotate="20" aria-hidden="true"></i>
       <div class="section-heading"><div><p class="eyebrow">FIELDS OF EXPLORATION</p><h2>탐구하는 분야</h2></div><p>전공에서 생활까지, 궁금한 것을 배우고 정리합니다.</p></div>
       <div class="topic-grid">{topics.map((topic) => <article class="topic"><span class="topic-number">{topic.n}</span><div><h3>{topic.title}</h3><p>{topic.text}</p></div><span class="topic-mark">↗</span></article>)}</div>
     </section>
 
     <section class="mindscape-preview">
-      <i class="scroll-shape shape-ring mindscape-ring" data-parallax=".14" data-rotate="-18" aria-hidden="true"></i>
+      <i class="scroll-shape shape-ring mindscape-ring" data-parallax=".34" data-rotate="-25" aria-hidden="true"></i>
       <div class="mindscape-art"><img src={`${base}images/android-chrome-512x512.png`} alt="KeyBaseZone 불꽃 아이콘" /></div>
       <div class="mindscape-copy"><p class="eyebrow">THE IDEA BEHIND THE NAME</p><h2>KeyBaseZone</h2><p>본질을 여는 열쇠, 생각을 쌓는 기반, 사유와 창작이 펼쳐지는 영역. 이름에 담긴 세 가지 개념과 이 공간의 방향을 소개합니다.</p><a class="text-link" href={`${base}mindscape/`}>Mindscape 살펴보기 <span>↗</span></a></div>
     </section>
