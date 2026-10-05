@@ -10,8 +10,6 @@ ThinkPad는 1992년 IBM이 처음 선보인 이후 현재는 레노버(Lenovo)�
 
 ### 탄생
 
-![IBM ThinkPad 760LD](/images/article-covers/products-thinkpad.jpg)
-
 ThinkPad는 1992년 IBM의 산업 디자이너 **리처드 사퍼**(Richard Sapper)와 **나이토 아리마사(内藤在正)** 팀이 설계해 출시했다. 이름은 IBM 직원들이 아이디어를 메모하던 "Think" 패드에서 유래했다.
 
 초기 컨셉은 일본 가이세키 요리에 사용되는 **검은 도시락 상자**(黒べんとう)에서 영감을 받았다고 알려져 있다. 두껍지 않고 각진 검은 직사각형 바디, 빨간 점 포인팅 디바이스(TrackPoint). 이 두 요소는 이후 ThinkPad의 불변하는 아이덴티티가 되었다.

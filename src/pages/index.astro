@@ -24,10 +24,10 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
   };
 })).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 6);
 const topics = [
-  { n: '01', title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
-  { n: '02', title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
-  { n: '03', title: 'Technology & Life', text: '기기 활용과 수리, 금융과 소비, 건강과 운동처럼 일상에서 만나는 기술과 선택.', href: `${base}contents/#wellness` },
-  { n: '04', title: 'Humanities', text: '역사와 언어, 음악과 사회. 익숙한 경계를 넘어 생각의 맥락을 찾아갑니다.', href: `${base}contents/#humanities` },
+  { n: '01', icon: 'computer', title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
+  { n: '02', icon: 'design', title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
+  { n: '03', icon: 'life', title: 'Technology & Life', text: '기기 활용과 수리, 금융과 소비, 건강과 운동처럼 일상에서 만나는 기술과 선택.', href: `${base}contents/#wellness` },
+  { n: '04', icon: 'humanities', title: 'Humanities', text: '역사와 언어, 음악과 사회. 익숙한 경계를 넘어 생각의 맥락을 찾아갑니다.', href: `${base}contents/#humanities` },
 ];
 ---
 <Layout title="KeyBaseZone">
@@ -68,7 +68,38 @@ const topics = [
 
     <section class="topics" id="topics">
       <div class="section-heading"><div><p class="eyebrow">FIELDS OF EXPLORATION</p><h2>탐구하는 분야</h2></div><p>전공에서 생활까지, 궁금한 것을 배우고 정리합니다.</p></div>
-      <div class="topic-grid">{topics.map((topic) => <a class="topic" href={topic.href}><span class="topic-number">{topic.n}</span><div><h3>{topic.title}</h3><p>{topic.text}</p></div><span class="topic-mark" aria-hidden="true">↗</span></a>)}</div>
+      <div class="topic-grid">{topics.map((topic) => (
+        <a class:list={['topic', `topic-${topic.icon}`]} href={topic.href}>
+          <span class="topic-number">{topic.n}</span>
+          <span class="topic-icon" aria-hidden="true">
+            <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {topic.icon === 'computer' && <>
+                <rect x="27" y="27" width="42" height="42" rx="10" />
+                <path d="M39 42h8l6 6-6 6h-8m21-12h-3m3 12h-3M48 18v9m-14-6 5 8m-19 5 8 4m-10 11h9m-7 17 9-4m5 16 4-9m20 9-4-9m20-7-9-4m10-12h-9m7-17-9 4m-5-17-4 9" />
+                <circle cx="48" cy="48" r="3" fill="currentColor" stroke="none" />
+              </>}
+              {topic.icon === 'design' && <>
+                <circle cx="48" cy="48" r="24" />
+                <path d="m48 30 5.2 12.8L66 48l-12.8 5.2L48 66l-5.2-12.8L30 48l12.8-5.2L48 30Z" />
+                <circle cx="48" cy="48" r="4" fill="currentColor" stroke="none" />
+                <path d="M67 24h6m-3-3v6M23 67h6m-3-3v6" />
+              </>}
+              {topic.icon === 'life' && <>
+                <rect x="31" y="17" width="34" height="62" rx="13" />
+                <path d="M42 26h12m-10 40h8m-4-26c-1 8-8 10-8 17 0 5 4 8 8 8s8-3 8-8c0-7-7-9-8-17Z" />
+                <path d="M18 35c5 0 8 3 8 8m52 10c-5 0-8 3-8 8" />
+              </>}
+              {topic.icon === 'humanities' && <>
+                <path d="M48 31c-9-8-21-9-31-5v42c10-4 22-3 31 5m0-42c9-8 21-9 31-5v42c-10-4-22-3-31 5m0-42v42" />
+                <path d="M25 37c6-2 11-1 16 2m-16 8c6-2 11-1 16 2m14-10c5-3 10-4 16-2m-16 10c5-3 10-4 16-2" />
+                <path d="m48 15 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" />
+              </>}
+            </svg>
+          </span>
+          <div class="topic-copy"><h3>{topic.title}</h3><p>{topic.text}</p></div>
+          <span class="topic-mark" aria-hidden="true">↗</span>
+        </a>
+      ))}</div>
     </section>
 
     <section class="mindscape-preview">

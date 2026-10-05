@@ -1,6 +1,7 @@
 ---
 title: "GPT-6.1 Sol 출시, Astra급 성능을 더 낮은 비용으로"
 description: "OpenAI가 공개한 GPT-6.1 Sol의 주요 개선점과 가격, 이용 범위를 정리합니다."
+published: "2026-09-29"
 cover: "/images/article-covers/ai-gpt-6-1-sol.jpg"
 ---
 

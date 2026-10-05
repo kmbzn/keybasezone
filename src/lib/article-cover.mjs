@@ -23,11 +23,13 @@ function getCoverImage(cover) {
 }
 
 function getDeck(markdown) {
-  const source = withoutCode(markdown.replace(/^---\s*\n[\s\S]*?\n---\s*\n/, ''));
+  const source = withoutCode(markdown.replace(/^---\s*\n[\s\S]*?\n---\s*\n/, ''))
+    .replace(/<iframe\b[\s\S]*?<\/iframe\s*>/gi, '\n')
+    .replace(/<(?:script|style|video|audio|object)\b[\s\S]*?<\/(?:script|style|video|audio|object)\s*>/gi, '\n');
   const lines = source.split(/\r?\n/);
   const titleIndex = lines.findIndex((line) => /^#\s+/.test(line));
   const tick = String.fromCharCode(96);
-  const candidate = lines.slice(titleIndex + 1).map((line) => line.trim()).find((line) => line && !/^(?:#|!|<|>|\||:{3,}|[-*+]\s?)/.test(line) && !line.startsWith(tick));
+  const candidate = lines.slice(titleIndex + 1).map((line) => line.trim()).find((line) => line && !/^(?:#{1,6}\s|!|<|>|\||:{3,}|[-*+]\s+|(?:src|width|height|style|allow|allowfullscreen|loading|referrerpolicy|frameborder)=)/i.test(line) && !line.startsWith(tick));
   return candidate?.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_~]/g, '').slice(0, 170) ?? '';
 }
 

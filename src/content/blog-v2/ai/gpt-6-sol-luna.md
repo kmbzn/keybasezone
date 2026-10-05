@@ -1,6 +1,7 @@
 ---
 title: "GPT-6 Sol·Luna 출시, 더 넓어진 모델 선택지"
 description: "OpenAI가 공개한 GPT-6 Sol과 Luna의 특징, API 가격, 출시 당시 제공 범위를 간단히 정리합니다."
+published: "2026-09-22"
 cover: "/images/article-covers/ai-gpt-6-sol-luna.png"
 ---
 
