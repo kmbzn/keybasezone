@@ -4,10 +4,10 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const base = import.meta.env.BASE_URL;
 const topics = [
-  { n: '01', title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.' },
-  { n: '02', title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.' },
-  { n: '03', title: 'Technology & Life', text: '기기 활용과 수리, 금융과 소비, 건강과 운동처럼 일상에서 만나는 기술과 선택.' },
-  { n: '04', title: 'Humanities', text: '역사와 언어, 음악과 사회. 익숙한 경계를 넘어 생각의 맥락을 찾아갑니다.' },
+  { n: '01', title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
+  { n: '02', title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
+  { n: '03', title: 'Technology & Life', text: '기기 활용과 수리, 금융과 소비, 건강과 운동처럼 일상에서 만나는 기술과 선택.', href: `${base}contents/#wellness` },
+  { n: '04', title: 'Humanities', text: '역사와 언어, 음악과 사회. 익숙한 경계를 넘어 생각의 맥락을 찾아갑니다.', href: `${base}contents/#humanities` },
 ];
 ---
 <Layout title="KeyBaseZone">
@@ -34,7 +34,7 @@ const topics = [
 
     <section class="topics" id="topics">
       <div class="section-heading"><div><p class="eyebrow">FIELDS OF EXPLORATION</p><h2>탐구하는 분야</h2></div><p>전공에서 생활까지, 궁금한 것을 배우고 정리합니다.</p></div>
-      <div class="topic-grid">{topics.map((topic) => <article class="topic"><span class="topic-number">{topic.n}</span><div><h3>{topic.title}</h3><p>{topic.text}</p></div><span class="topic-mark">↗</span></article>)}</div>
+      <div class="topic-grid">{topics.map((topic) => <a class="topic" href={topic.href}><span class="topic-number">{topic.n}</span><div><h3>{topic.title}</h3><p>{topic.text}</p></div><span class="topic-mark" aria-hidden="true">↗</span></a>)}</div>
     </section>
 
     <section class="mindscape-preview">
