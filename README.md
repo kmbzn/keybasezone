@@ -1,6 +1,6 @@
 # KeyBaseZone
 
-기술과 디자인, 일상의 경험과 인문학을 기록하고 연결하는 개인 지식 공간입니다. Astro와 Tailwind CSS로 구성했습니다.
+`blog-v2/docs`의 Markdown 문서와 관련 정적 파일을 유지하며 Astro로 제공하는 웹사이트입니다.
 
 ## 로컬 실행
 
@@ -9,10 +9,12 @@ npm install
 npm run dev
 ```
 
-프로덕션 빌드는 `npm run build`로 생성합니다.
+## Cloudflare Workers 배포
 
-## GitHub Pages 배포
+Cloudflare Workers의 Git 연결을 `kmbzn/keybasezone` 저장소와 `main` 브랜치에 설정합니다.
 
-`main` 브랜치에 푸시하면 GitHub Actions가 사이트를 빌드하고 배포합니다. 저장소 설정의 **Settings → Pages → Build and deployment**에서 Source를 **GitHub Actions**로 선택하세요.
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
+- Root directory: `/`
 
 사이트 주소는 `https://kmbzn.com/`입니다.

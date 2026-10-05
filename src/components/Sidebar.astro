@@ -1,0 +1,39 @@
+---
+import { sidebar } from '../data/sidebar';
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+<aside class="sidebar" aria-label="문서 사이드바">
+  <nav class="sidebar-desktop">
+    {sidebar.map((section) => section.label && section.collapsible === false ? (
+      <section class="sidebar-section sidebar-fixed">
+        <h2>{section.label}</h2>
+        <ul>{section.entries.map((entry) => <li><a class:list={{ active: currentPath === entry.path }} href={entry.path}>{entry.title}</a></li>)}</ul>
+      </section>
+    ) : section.label ? (
+      <details class="sidebar-section" open={section.entries.some((entry) => entry.path === currentPath)}>
+        <summary>{section.label}</summary>
+        <ul>{section.entries.map((entry) => <li><a class:list={{ active: currentPath === entry.path }} href={entry.path}>{entry.title}</a></li>)}</ul>
+      </details>
+    ) : (
+      <ul class="sidebar-root">{section.entries.map((entry) => <li><a class:list={{ active: currentPath === entry.path }} href={entry.path}>{entry.title}</a></li>)}</ul>
+    ))}
+  </nav>
+  <details class="sidebar-mobile">
+    <summary>문서 목록</summary>
+    <nav>
+      {sidebar.map((section) => section.label && section.collapsible === false ? (
+        <section class="sidebar-section sidebar-fixed">
+          <h2>{section.label}</h2>
+          <ul>{section.entries.map((entry) => <li><a class:list={{ active: currentPath === entry.path }} href={entry.path}>{entry.title}</a></li>)}</ul>
+        </section>
+      ) : section.label ? (
+        <details class="sidebar-section" open={section.entries.some((entry) => entry.path === currentPath)}>
+          <summary>{section.label}</summary>
+          <ul>{section.entries.map((entry) => <li><a class:list={{ active: currentPath === entry.path }} href={entry.path}>{entry.title}</a></li>)}</ul>
+        </details>
+      ) : (
+        <ul class="sidebar-root">{section.entries.map((entry) => <li><a class:list={{ active: currentPath === entry.path }} href={entry.path}>{entry.title}</a></li>)}</ul>
+      ))}
+    </nav>
+  </details>
+</aside>
