@@ -10,13 +10,12 @@ const sections = sidebar.filter((section) => section.label);
   <Header />
   <main class="contents-page">
     <section class="contents-hero">
-      <p class="eyebrow">BROWSE THE ARCHIVE</p>
-      <h1>콘텐츠 둘러보기</h1>
-      <p>주제별로 정리한 글을 한곳에서 살펴볼 수 있습니다.</p>
+      <div class="contents-hero-copy"><p class="eyebrow">THE KEYBASEZONE ARCHIVE <span>·</span> 07 CATEGORIES</p><h1>관심사의 지도를<br /><em>펼쳐봅니다.</em></h1><p>전공의 기술부터 생활의 발견까지, 배우고 기록한 이야기들.</p></div>
+      <nav class="contents-jump" aria-label="카테고리 바로가기">{sections.map((section) => <a href={`#${section.label?.toLowerCase()}`}>{section.label}</a>)}</nav>
     </section>
     <section class="contents-grid" aria-label="콘텐츠 카테고리">
       {sections.map((section, index) => (
-        <article class="content-category" id={section.label?.toLowerCase()}>
+        <article class="content-category" id={section.label?.toLowerCase()} style={`--category-index:${index}`}>
           <span>{String(index + 1).padStart(2, '0')}</span>
           <h2>{section.label}</h2>
           <ul>
