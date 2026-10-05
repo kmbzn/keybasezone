@@ -1,5 +1,4 @@
 ---
-import { site } from '../data/site';
 const base = import.meta.env.BASE_URL;
 ---
-<footer id="news"><div class="footer-top"><a class="brand logo-brand footer-logo" href="#top" aria-label="MSGA 홈"><img src={`${base}/images/logo.png`} alt="MSGA" /></a><p>Make Systems Go Anywhere.</p></div><div class="footer-bottom"><div><p>{site.address}</p></div><div class="footer-links"><a href="#top">Technology</a><a href="#top">Intelligence</a><a href="#top">Infrastructure</a><a href="#top">Possibility</a></div><p>© MSGA. All systems moving forward.</p></div></footer>
+<footer class="site-footer"><a href={base} class="footer-brand">KeyBaseZone<span>®</span></a><p>관심을 모으고 생각을 연결하는 개인 지식 공간.</p><div class="footer-bottom"><span>© {new Date().getFullYear()} KeyBaseZone</span><a href="https://github.com/kmbzn" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:kmbzn24@gmail.com">Email ↗</a></div></footer>

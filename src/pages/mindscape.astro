@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Layout title="Mindscape — KeyBaseZone">
+  <Header />
+  <main class="mindscape-page">
+    <section class="mindscape-hero"><p class="eyebrow">A NAME, A WAY OF THINKING</p><h1>Mindscape<span>🔥</span></h1><p>KeyBaseZone이라는 이름에 담긴 생각과 이 공간이 향하는 방향.</p><img src={`${base}images/kbz.png`} alt="KeyBaseZone mark" /></section>
+    <section class="mindscape-body">
+      <p class="mindscape-lede"><strong>KeyBaseZone</strong>은 본질(Key), 기반(Base), 영역(Zone)이라는 세 개념이 만나는 지점에서 출발한 지식 공간입니다. 이름은 이곳에서 생각을 모으고 다듬으며, 서로 다른 분야를 연결하는 방식을 담고 있습니다.</p>
+      <article class="mindscape-section"><span>01 / KEY</span><div><h2>핵심으로 들어가는 열쇠</h2><p>Key는 문제를 여는 열쇠이자 복잡한 개념을 관통하는 본질을 뜻합니다. 기술적 주제와 철학적 질문, 디자인적 직관을 살펴보며 중요한 연결 고리와 새로운 진입점을 찾습니다. 단순히 정보를 모으는 데서 그치지 않고, 왜 중요한지 이해하려는 태도입니다.</p></div></article>
+      <article class="mindscape-section"><span>02 / BASE</span><div><h2>생각이 쌓이는 기반</h2><p>Base는 축적된 지식과 사유의 근원입니다. 정보는 이곳에 쌓이고, 정리되고, 해석되며 새로운 관점으로 이어집니다. 단단한 구조를 세우고 군더더기를 덜어내며, 다시 꺼내 쓸 수 있는 생각의 기반을 만듭니다. 코드 저장소처럼 지식을 보관하고 발전시키는 실천의 공간이기도 합니다.</p></div></article>
+      <article class="mindscape-section"><span>03 / ZONE</span><div><h2>경계 없이 탐색하는 영역</h2><p>Zone은 생각과 창작이 자유롭게 펼쳐지는 공간입니다. 특정한 주제에 갇히지 않고 기술, 디자인, 생활, 인문학이 서로 만나고 영향을 주는 곳입니다. 다양한 시선이 머물고 교차하면서 새로운 표현과 의미가 자라납니다.</p></div></article>
+      <div class="mindscape-conclusion"><p class="eyebrow">KEY · BASE · ZONE</p><p>KeyBaseZone은 본질을 찾고, 지식을 구조화하며, 다양한 사유가 교차하는 <strong>확장된 지성의 공간</strong>입니다. 탐색과 재구성을 거듭하며 생각이 기록되고 연결되고 자라나는 곳을 지향합니다.</p></div>
+    </section>
+    <a class="back-link" href={base}>← 메인으로 돌아가기</a>
+  </main>
+  <Footer />
+</Layout>
