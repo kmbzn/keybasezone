@@ -14,6 +14,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `wellness-cervical-abrasion.jpg` | Dent STS 1881.jpg | Didier Descouens | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Dent_STS_1881.jpg) |
 | `wellness-barbell-squat.jpg` | Woman doing squat workout in gym with barbell.jpg | Nenad Stojkovic | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Woman_doing_squat_workout_in_gym_with_barbell.jpg) |
 | `humanities-baroque-music.jpg` | Baroque orchestra Coin Du Roi.jpg | Андрей Романенко | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Baroque_orchestra_Coin_Du_Roi.jpg) |
+| `humanities-rongorongo.jpg` | Rano Raraku quarry.jpg | Rivi | CC BY-SA 3.0 / GFDL | [Commons](https://commons.wikimedia.org/wiki/File:Rano_Raraku_quarry.jpg) |
 | `musics.jpg` | Music enthusiast plays vinyl record at home.jpg | Shixart1985 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Music_enthusiast_plays_vinyl_record_at_home.jpg) |
 | `brands-frederique-constant.jpg` | Watchmaker.jpg | BfW | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Watchmaker.jpg) |
 | `brands-kz.jpg` | InEarMonitors.jpg | user:Julo | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:InEarMonitors.jpg) |
@@ -37,3 +38,5 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `ai-gpt-6-1-sol.jpg` | GPT-6.1 Sol launch presentation | Asia Today | Image from news article | [Asia Today article](https://en.asiatoday.co.kr/view.php?key=20260930001304543) |
 | `ai-claude-opus-5-5.jpg` | Claude Opus 5.5 launch artwork | Anthropic | Anthropic announcement artwork | [Anthropic announcement](https://www.anthropic.com/claude-opus-5-5) |
 | `products-thinkpad.jpg` | IBM ThinkPad 760LD | IBM Japan | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:IBM_ThinkPad_760LD.jpg) |
+
+The Rongorongo tablet image at `public/images/articles/rongorongo-tablet.png` was supplied locally by the site owner.
