@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 4 - Affine Space / Frame / Matrix
 
 ## Outline

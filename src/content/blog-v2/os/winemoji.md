@@ -1,3 +1,7 @@
+---
+cover: "/os/tofu.webp"
+---
+
 # Wine 카카오톡 이모지 깨짐 문제 해결
 
 <p align="center">

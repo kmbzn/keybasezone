@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 중급반 6주차 - 위상 정렬
 
 ## 위상 정렬 \<Topology Sort\>

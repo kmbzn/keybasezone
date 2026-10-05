@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # DGMRec
 
 ## MRS의 장점

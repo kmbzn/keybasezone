@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 ## Heading Level 2 - 한국어 제목
 
 # Heading Level 1

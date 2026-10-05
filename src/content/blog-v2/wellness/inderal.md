@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/wellness-inderal.png"
+---
+
 # 인데놀 (Inderal)
 
 ## 기본 정보

@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # C++ `std::vector` 사용법 정리
 
 <p align="center">

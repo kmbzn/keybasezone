@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 7 - Hierarchical Modeling, Mesh 
 
 ## Midterm Exam Announcement

@@ -1,3 +1,7 @@
+---
+cover: "https://health.ucdavis.edu/media-resources/contenthub/post/internet/good-food/2024/04/images-body/olive-oil-health-benefits.jpg"
+---
+
 # 엑스트라 버진 올리브유 (Extra Virgin Olive Oil)
 
 <p align="center">

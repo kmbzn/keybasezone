@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Data Science — Final Exam: Answer Sheet & Solutions
 
 ---

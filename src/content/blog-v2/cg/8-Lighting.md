@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 8 - Lighting
 
 ## 개요

@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/finance-berkshire-hathaway.jpg"
+---
+
 # 버크셔 해서웨이 (Berkshire Hathaway)
 
 버크셔 해서웨이(Berkshire Hathaway Inc.)는 워런 버핏(Warren Buffett)이 이끄는 미국의 다국적 지주회사(conglomerate)다. 뉴욕증권거래소(NYSE)에 **BRK-A**와 **BRK-B** 두 종류로 상장되어 있으며, 시가총액 기준 세계 최대 기업 중 하나로 꼽힌다.

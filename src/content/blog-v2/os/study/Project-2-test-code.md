@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Project 02: Test Code
 Implementing a simple kernel-level thread
 

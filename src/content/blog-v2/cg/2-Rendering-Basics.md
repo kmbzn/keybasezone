@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 2 - Rendering Basics
 
 ## Outline

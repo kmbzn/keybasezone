@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/wellness-sertraline.jpg"
+---
+
 # 설트랄린 (Sertraline)
 
 ## 기본 정보

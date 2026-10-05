@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Programming Languages — Final Exam
 
 **Name:** _____________ **Student ID:** _______________________ **Score:** ____________ / 100

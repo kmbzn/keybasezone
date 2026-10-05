@@ -1,3 +1,7 @@
+---
+cover: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Rongorongo_B-v_Aruku-Kurenga_%28color%29_edit1.jpg/500px-Rongorongo_B-v_Aruku-Kurenga_%28color%29_edit1.jpg"
+---
+
 # 롱고롱고(Rongorongo)
 
 ![Rongorongo 문자가 새겨진 목판](https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Rongorongo_B-v_Aruku-Kurenga_%28color%29_edit1.jpg/500px-Rongorongo_B-v_Aruku-Kurenga_%28color%29_edit1.jpg)

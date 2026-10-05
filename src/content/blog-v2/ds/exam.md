@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # HW3 Analysis Report
 Interpreter Implementation Using Functional Languages 
 2021024057 김병준

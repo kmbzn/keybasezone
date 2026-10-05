@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Python 시간 초과 방지를 위한 팁
 
 <p align="center">

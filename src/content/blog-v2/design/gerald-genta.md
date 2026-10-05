@@ -1,3 +1,7 @@
+---
+cover: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Patek-Philippe-Nautilus-3700-1A.jpg"
+---
+
 # 제럴드 젠타: 럭셔리 스포츠 워치의 창시자
 
 ![Patek Philippe Nautilus Ref. 3700 (1976)](https://upload.wikimedia.org/wikipedia/commons/6/6e/Patek-Philippe-Nautilus-3700-1A.jpg)

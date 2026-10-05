@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Computer Graphics Project 2: Obj viewer
 
 **Handed out**: April 24, 2025 

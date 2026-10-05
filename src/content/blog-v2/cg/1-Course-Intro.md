@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 1 - Course Intro
 
 ## Course Information

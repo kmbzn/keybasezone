@@ -1,3 +1,7 @@
+---
+cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/North-Sentinel-Island-Sentinel-2A.png/960px-North-Sentinel-Island-Sentinel-2A.png"
+---
+
 # North Sentinel Island
 
 ## 개요

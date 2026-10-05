@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 6 - Vertex Processing 2
 
 ## Outline

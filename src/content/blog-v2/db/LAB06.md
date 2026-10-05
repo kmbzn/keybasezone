@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Web Application Development
 
 ## 목차

@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Assignment 3. Implementing Augmented B+tree - wiki
 
 2021024057 김병준

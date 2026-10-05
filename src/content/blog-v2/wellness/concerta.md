@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/wellness-concerta.jpg"
+---
+
 # 콘서타 (Concerta)
 
 ## 기본 정보

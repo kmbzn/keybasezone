@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Implementing Augmented B+tree
 
 - 이번 과제의 목표: 다음 두 가지 B+ tree 구현

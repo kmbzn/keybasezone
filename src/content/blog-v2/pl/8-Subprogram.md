@@ -1,5 +1,6 @@
 ---
 sitemap: false
+cover: false
 ---
 # 8. Subprogram
 

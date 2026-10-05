@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/products-cleansing-milk.jpg"
+---
+
 # 클렌징 밀크 (Cleansing Milk)
 
 ## 왜 "밀크"인가

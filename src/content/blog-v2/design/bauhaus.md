@@ -1,3 +1,7 @@
+---
+cover: "https://upload.wikimedia.org/wikipedia/commons/9/98/Dessau_Bauhaus_neu.JPG"
+---
+
 # 바우하우스: 현대 디자인의 원점
 
 ![바우하우스 데사우 건물](https://upload.wikimedia.org/wikipedia/commons/9/98/Dessau_Bauhaus_neu.JPG)

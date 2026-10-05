@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 12 - More Lighting, Texture
 
 ## Revised Class Schedule

@@ -1,5 +1,6 @@
 ---
 sitemap: false
+cover: false
 ---
 # 10.1. Abstract Data Types and Encapsulation Constructs
 

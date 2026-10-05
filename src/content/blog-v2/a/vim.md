@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Vim 사용 매뉴얼
 
 ### 1. Vim 실행

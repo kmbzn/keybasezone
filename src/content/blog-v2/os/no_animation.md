@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/os-no-animation.png"
+---
+
 # Ubuntu 윈도우 애니메이션 끄기
 
 우분투를 설치한 후 시스템이 묘하게 무겁거나, 더 빠릿한 창 전환을 원하신다면 **애니메이션 효과**를 끄는 것을 시도해볼 수 있습니다.

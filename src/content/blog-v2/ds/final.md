@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 데이터사이언스 - Final
 
 ## 1. Data analysis and pre-processing

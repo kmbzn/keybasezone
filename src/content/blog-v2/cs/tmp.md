@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 ## Botnet 개요
 - Botmaster(봇 마스터)는 C&C(Command & Control) 서버를 통해 봇넷을 제어
 - 봇넷에 속한 좀비 PC들은 C&C 서버로부터 명령을 받아 피해자(Victims)를 공격

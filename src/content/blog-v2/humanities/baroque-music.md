@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/humanities-baroque-music.jpg"
+---
+
 # 바로크 음악 (Baroque Music)
 
 바로크(Baroque) 음악은 대략 1600년부터 1750년까지의 서양 예술 음악을 가리킨다. 르네상스(Renaissance) 음악에서 이어지고, 이후 고전주의(Classical) 시대로 넘어가는 음악 역사의 시기다. J.S. 바흐가 1750년 사망하면서 바로크 시대의 종언을 상징적으로 표시한다.

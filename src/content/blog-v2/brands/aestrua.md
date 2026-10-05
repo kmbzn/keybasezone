@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/brands-aestrua.png"
+---
+
 # 에스트라 (AESTURA)
 
 에스트라는 아모레퍼시픽 그룹 산하의 더마코스메틱(Dermacosmetic) 브랜드다. 단순한 화장품이 아닌 피부과학(dermatology) + 화장품(cosmetics)의 결합, 즉 코스메슈티컬(cosmeceutical)을 지향하며, 주로 민감성·건성·트러블성 피부를 타겟으로 한다.

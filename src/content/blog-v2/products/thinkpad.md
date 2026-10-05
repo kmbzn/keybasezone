@@ -1,3 +1,7 @@
+---
+cover: "https://upload.wikimedia.org/wikipedia/commons/6/6e/IBM_ThinkPad_700C.jpg"
+---
+
 # ThinkPad
 
 ThinkPad는 1992년 IBM이 처음 선보인 이후 현재는 레노버(Lenovo)가 제조·판매하는 노트북 컴퓨터 시리즈다. 30년 이상 이어져 온 디자인 언어와 키보드 품질, 그리고 뛰어난 Linux 호환성으로 개발자·엔지니어·파워 유저 집단에서 압도적인 지지를 받는 브랜드다.

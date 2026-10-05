@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # $\text{Homework \#1-2}$
 - Software Engineering (10780)
 - 학번: 2021024057

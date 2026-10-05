@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/os-dunggeunmo.png"
+---
+
 # 우분투 GRUB 폰트 변경
 
 우분투에서 **둥근모꼴 + Fixedsys** 폰트를 사용하여 GRUB 메뉴 폰트를 가독성 좋게 변경하는 방법을 소개하고자 합니다.

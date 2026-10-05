@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 암기 노트
 
 ## 무손실 조인(lossless join)의 조건

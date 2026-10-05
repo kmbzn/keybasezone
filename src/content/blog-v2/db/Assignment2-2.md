@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Assignment 2-2. Web Application Development
 
 ### 목표

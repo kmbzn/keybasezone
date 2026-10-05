@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/wellness-cervical-abrasion.jpg"
+---
+
 # 치경부 마모증
 
 치경부 마모증(Cervical Abrasion, Non-carious Cervical Lesion)은 치아의 치경부(잇몸과 치아가 만나는 경계선 부근)가 마모되어 패이는 현상이다. 보기에는 치아 뿌리 쪽이 V자 또는 U자 형태로 팬 것처럼 보인다.

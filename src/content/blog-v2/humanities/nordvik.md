@@ -1,3 +1,7 @@
+---
+cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nordvik_Ruins_2.jpg/960px-Nordvik_Ruins_2.jpg"
+---
+
 # Nordvik, Russia
 
 :::info

@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Project 3: Virtual Memory & File system - wiki
 
 ## 1. Design

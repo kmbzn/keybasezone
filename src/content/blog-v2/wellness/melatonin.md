@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/wellness-melatonin.jpg"
+---
+
 # 멜라토닌 (Melatonin)
 
 ## 기본 정보

@@ -1,5 +1,6 @@
 ---
 sitemap: false
+cover: false
 ---
 # 10.2. Support for Object Oriented Programming
 

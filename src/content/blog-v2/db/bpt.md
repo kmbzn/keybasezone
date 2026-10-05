@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 ```c
 // bptree1/src/bpt.c
 

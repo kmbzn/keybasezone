@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/brands-musinsa-standard.jpg"
+---
+
 # 무신사 스탠다드 (Musinsa Standard)
 
 무신사 스탠다드(Musinsa Standard)는 국내 최대 패션 이커머스 플랫폼 **무신사**(MUSINSA)의 자체 브랜드(PB, Private Brand)다. 2017년 론칭 이후 "가성비 넘버원" 포지셔닝으로 급성장했으며, 현재 무신사 플랫폼 내 단일 브랜드 기준 최상위 매출을 기록하는 브랜드다.

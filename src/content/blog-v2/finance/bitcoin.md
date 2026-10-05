@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/finance-bitcoin.jpg"
+---
+
 # 비트코인 (Bitcoin)
 
 ## 비트코인을 처음 마주하다

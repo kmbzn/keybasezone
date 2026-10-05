@@ -2,36 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { existsSync, readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { sidebar } from '../data/sidebar';
 import { getContentLastModifiedDate, getContentLastModifiedDates } from '../lib/content-dates.mjs';
-import { getCuratedArticleImage } from '../lib/article-cover.mjs';
+import { getArticleCover } from '../lib/article-cover.mjs';
 const base = import.meta.env.BASE_URL;
 const articleSections = sidebar.filter((section) => section.label);
 const lastModifiedDates = getContentLastModifiedDates();
-function firstImage(entry) {
-  const slug = entry.path.replace(/^\//, '');
-  const curated = getCuratedArticleImage(slug);
-  if (curated) return curated;
-  const markdownPath = path.join(process.cwd(), 'src/content/blog-v2', `${slug}.md`);
-  if (!existsSync(markdownPath)) return '';
-  const source = readFileSync(markdownPath, 'utf8');
-  const markdownImage = source.match(/!\[[^\]]*\]\(([^)\s]+)[^)]*\)/);
-  const htmlImage = source.match(/<img\b[^>]*?src=["']([^"']+)["']/i);
-  const image = markdownImage?.[1] ?? htmlImage?.[1] ?? '';
-  if (!image) return '';
-  if (/^(?:https?:|data:|\/)/i.test(image)) return image;
-  if (image.startsWith('@source/')) return `/${image.slice('@source/'.length)}`;
-  const publicPath = path.posix.normalize(path.posix.join('/', path.posix.dirname(slug), image));
-  return existsSync(path.join(process.cwd(), 'public', publicPath.slice(1))) ? publicPath : '';
-}
+const documents = import.meta.glob('../content/blog-v2/**/*.md', { eager: true });
 const featuredStories = articleSections.flatMap((section) => section.entries.map((entry) => {
   const slug = entry.path.replace(/^\//, '');
+  const markdownPath = path.join(process.cwd(), 'src/content/blog-v2', `${slug}.md`);
+  const markdown = readFileSync(markdownPath, 'utf8');
+  const module = documents[`../content/blog-v2/${slug}.md`];
   return {
     category: section.label,
     entry,
-    image: firstImage(entry),
+    image: getArticleCover(slug, markdown, module?.frontmatter).coverImage,
     updatedAt: getContentLastModifiedDate(lastModifiedDates, slug),
   };
 })).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 6);

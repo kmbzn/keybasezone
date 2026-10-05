@@ -21,6 +21,12 @@ export const sidebar: SidebarSection[] = [
     ],
   },
   {
+    label: "AI",
+    entries: [
+      { path: "/ai/gpt-6-sol-luna", title: "GPT-6 Sol·Luna 출시" },
+    ],
+  },
+  {
     label: "Wellness",
     entries: [
       { path: "/wellness/psyllium-husk", title: "차전자피 (Psyllium Husk)" },

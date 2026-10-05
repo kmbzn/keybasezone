@@ -1,5 +1,6 @@
 ---
 sitemap: false
+cover: false
 ---
 # 8.0. Statement Level Control Structures
 

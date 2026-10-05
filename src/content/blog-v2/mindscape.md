@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Mindscape 🔥
 
 <p align="center">

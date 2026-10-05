@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Final Note
 
 ## 1. 인덱싱 (Indexing) - B+ Tree

@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/musics.jpg"
+---
+
 # Playlist 🎧
 
 ::: info

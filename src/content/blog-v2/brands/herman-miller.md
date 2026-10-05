@@ -1,3 +1,7 @@
+---
+cover: "https://upload.wikimedia.org/wikipedia/commons/5/53/Aeron_Chair_by_Herman_Miller_%289446986497%29.jpg"
+---
+
 # Herman Miller
 
 Herman Miller는 1905년 미국 미시간주 제일랜드(Zeeland)에서 설립된 미국의 프리미엄 가구 브랜드다. 오피스 체어, 책상, 수납 시스템을 중심으로 한 작업 환경 가구에서 세계 최고 수준의 인지도를 보유하며, 특히 **에어론 체어**(Aeron Chair)는 세계에서 가장 많이 팔린 단일 오피스 체어 모델로 기록되어 있다.

@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # KeyBaseZone
 
 <p align="left">

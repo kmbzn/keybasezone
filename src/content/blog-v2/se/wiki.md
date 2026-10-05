@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # $\text{Homework \#1-1}$
 
 - Software Engineering (10780)

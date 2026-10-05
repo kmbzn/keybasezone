@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Project 03
 ## Virtual Memory & File system
 

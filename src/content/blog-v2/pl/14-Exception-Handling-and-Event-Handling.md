@@ -1,5 +1,6 @@
 ---
 sitemap: false
+cover: false
 ---
 # 14. Exception Handling and Event Handling
 

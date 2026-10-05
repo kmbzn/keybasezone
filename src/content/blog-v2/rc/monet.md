@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # MONET: Modality-Embracing Graph Convolutional Network and Target-Aware Attention for Multimedia Recommendation
 
 ## ABSTRACT

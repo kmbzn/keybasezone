@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Programming Languages — Final Exam — Answer Key
 
 ---

@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Firmware Analysis Report
 
 - 분석 대상: 국내 중소기업(SyncView) IP 카메라 펌웨어 (`74.2.64.31-libPPPP_API_20160721.bin`)

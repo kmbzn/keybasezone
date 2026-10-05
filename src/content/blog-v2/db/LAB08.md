@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # B+tree
 
 ## B+tree Operation : Deletion

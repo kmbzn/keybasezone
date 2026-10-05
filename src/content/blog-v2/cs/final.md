@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 2024 Computer Security Final Exam
 - 총 16문항, 100점 만점
 - 2024.12.11.

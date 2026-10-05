@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 11 - Curves
 
 ## Outline

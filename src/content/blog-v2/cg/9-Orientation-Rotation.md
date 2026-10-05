@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # 9 - Orientation & Rotation
 
 ## Outline

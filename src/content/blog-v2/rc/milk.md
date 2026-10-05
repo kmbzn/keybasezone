@@ -1,3 +1,7 @@
+---
+cover: false
+---
+
 # Multimodality Invariant Learning for Multimedia-Based New Item Recommendation
 
 **Haoyue Bai** — Hefei University of Technology, Hefei, China · baihaoyue621@gmail.com 

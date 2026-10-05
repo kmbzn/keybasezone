@@ -1,3 +1,7 @@
+---
+cover: "/images/article-covers/finance-parking-account-cma.jpg"
+---
+
 # 파킹통장 vs CMA 통장
 
 여유 자금을 잠깐 보관할 때 이자를 받을 수 있는 대표적인 두 가지 수단이 파킹통장과 CMA 통장이다. 둘 다 수시 입출금이 가능하면서 일반 보통예금보다 높은 금리를 제공하지만, 구조와 안전성 면에서 차이가 있다.
