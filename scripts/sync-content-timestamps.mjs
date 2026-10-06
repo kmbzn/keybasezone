@@ -4,6 +4,8 @@ import path from 'node:path';
 
 const contentRoot = 'src/content/blog-v2';
 const outputPath = path.join(process.cwd(), 'src/data/content-last-modified.json');
+const isCiBuild = ['true', '1'].includes((process.env.CI || '').toLowerCase())
+  || process.env.WORKERS_CI === '1';
 
 let snapshot = {};
 try {
@@ -42,7 +44,7 @@ const timestamps = new Map([...Object.entries(snapshot), ...historyTimestamps]);
 // Workers Builds may check out only the latest commit. Its SHA and commit
 // contents are still available, so stamp changed articles with GitHub's
 // committer time instead of the build machine's filesystem time.
-if (process.env.WORKERS_CI === '1' && process.env.WORKERS_CI_COMMIT_SHA) {
+if (process.env.WORKERS_CI_COMMIT_SHA) {
   try {
     const sha = process.env.WORKERS_CI_COMMIT_SHA;
     const currentCommitTimestamp = git(['show', '-s', '--format=%cI', sha]).trim();
@@ -58,7 +60,7 @@ if (process.env.WORKERS_CI === '1' && process.env.WORKERS_CI_COMMIT_SHA) {
 }
 
 // Before commit, preserve the actual edit time for changed and newly added notes.
-if (process.env.WORKERS_CI !== '1') {
+if (!isCiBuild) {
   try {
     const status = git(['status', '--porcelain', '-z', '--untracked-files=all', '--', contentRoot]);
     for (const entry of status.split('\0').filter(Boolean)) {
