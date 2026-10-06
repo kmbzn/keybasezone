@@ -214,11 +214,9 @@ a{color:inherit}
   .topic-icon svg{width:48px;height:48px}
 }
 @media(max-width:760px){
-  .site-header{width:100%;min-height:0;padding:12px 20px 0;row-gap:10px}
+  .site-header{width:100%;height:62px;min-height:0;padding:0 20px;row-gap:0;flex-wrap:nowrap}
   .brand img{width:128px}
-  .site-header nav{order:3;width:100%;margin:0 -20px;padding:0 20px 12px;gap:20px;overflow-x:auto;scrollbar-width:none;font-size:12px}
-  .site-header nav::-webkit-scrollbar{display:none}
-  .site-header nav a{flex:0 0 auto}
+  .header-github{display:inline-flex}
   .hero{min-height:max(660px,calc(100svh - 100px));padding:70px 22px 82px}
   .hero h1{font-size:clamp(42px,9vw,68px);line-height:1.02}
   .hero-description{font-size:14px}
