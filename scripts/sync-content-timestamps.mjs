@@ -20,40 +20,57 @@ function git(args) {
   });
 }
 
-let history = '';
+let hasCompleteHistory = false;
 try {
-  history = git(['log', '--format=COMMIT:%cI', '--name-only', '--', contentRoot]);
+  hasCompleteHistory = git(['rev-parse', '--is-shallow-repository']).trim() === 'false';
 } catch {
   // Keep the checked-in snapshot when Git history is unavailable.
 }
 
 const historyTimestamps = new Map();
-let commitTimestamp = '';
-for (const line of history.split(/\r?\n/)) {
-  if (line.startsWith('COMMIT:')) {
-    commitTimestamp = line.slice('COMMIT:'.length);
-  } else if (line.startsWith(`${contentRoot}/`) && line.endsWith('.md') && !historyTimestamps.has(line)) {
-    historyTimestamps.set(line, commitTimestamp);
+if (hasCompleteHistory) {
+  try {
+    const history = git(['log', '--format=COMMIT:%cI', '--name-only', '--', contentRoot]);
+    let commitTimestamp = '';
+    for (const line of history.split(/\r?\n/)) {
+      if (line.startsWith('COMMIT:')) {
+        commitTimestamp = line.slice('COMMIT:'.length);
+      } else if (line.startsWith(`${contentRoot}/`) && line.endsWith('.md') && !historyTimestamps.has(line)) {
+        historyTimestamps.set(line, commitTimestamp);
+      }
+    }
+  } catch {
+    // Preserve the checked-in snapshot if Git history cannot be read.
   }
 }
 
 const timestamps = new Map([...Object.entries(snapshot), ...historyTimestamps]);
 
-// Workers Builds may check out only the latest commit. Its SHA and commit
-// contents are still available, so stamp changed articles with GitHub's
-// committer time instead of the build machine's filesystem time.
+// Workers Builds checks out limited Git history. Ask GitHub for the current
+// commit's changed paths and committer time so only files changed in that
+// commit get refreshed; the checked-in snapshot covers all other files.
 if (process.env.WORKERS_CI_COMMIT_SHA) {
   try {
     const sha = process.env.WORKERS_CI_COMMIT_SHA;
-    const currentCommitTimestamp = git(['show', '-s', '--format=%cI', sha]).trim();
-    const changedFiles = git(['diff-tree', '--no-commit-id', '--name-only', '-r', '-m', sha]);
-    for (const filePath of changedFiles.split(/\r?\n/)) {
-      if (filePath.startsWith(`${contentRoot}/`) && filePath.endsWith('.md')) {
-        timestamps.set(filePath, currentCommitTimestamp);
+    const response = await fetch(`https://api.github.com/repos/kmbzn/keybasezone/commits/${sha}`, {
+      headers: {
+        Accept: 'application/vnd.github+json',
+        'User-Agent': 'keybasezone-timestamp-sync',
+      },
+    });
+    if (response.ok) {
+      const commit = await response.json();
+      const commitTimestamp = commit.commit?.committer?.date;
+      if (commitTimestamp) {
+        for (const file of commit.files || []) {
+          if (file.filename.startsWith(`${contentRoot}/`) && file.filename.endsWith('.md')) {
+            timestamps.set(file.filename, commitTimestamp);
+          }
+        }
       }
     }
   } catch {
-    // Retain checked-in/history timestamps if the current commit cannot be read.
+    // Retain the committed per-document dates if GitHub's API is unavailable.
   }
 }
 
