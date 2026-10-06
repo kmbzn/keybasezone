@@ -51,7 +51,7 @@ const topics = [
     <section class="hero" id="top">
       <div class="hero-copy">
         <p class="eyebrow">KeyBaseZone journal <span>·</span> Notes on what matters</p>
-        <h1>관심 있는 것들을 공부하고,<br /><em><span class="temper-highlight">사용해 보고,</span> 기록합니다.</em></h1>
+        <h1>관심 있는 것들을 <strong>공부</strong>하고,<br /><em><span class="temper-highlight"><strong>사용</strong></span>해 보고, <strong>기록</strong>합니다.</em></h1>
         <p class="hero-description">기술과 디자인, 일상의 경험과 인문학을 살핍니다. 각 분야의 본질을 찾아 배운 것을 차분히 쌓아가는 공간입니다.</p>
         <div class="hero-actions"><a class="button button-outline" href={`${base}contents/`}>콘텐츠 둘러보기 <span>↗</span></a></div>
       </div>
@@ -59,7 +59,7 @@ const topics = [
       <span class="hero-index">Independent knowledge journal <span>—</span> 2026</span>
     </section>
 
-    <section class="market-glance" aria-label="서울 날씨와 주요 시장 시세">
+    <section class="market-glance" aria-label="서울 날씨, 주요 시장 시세와 기준금리">
       <div class="market-glance-viewport">
         <div class="market-glance-track" data-market-track>
           <div class="market-glance-page" data-market-page>
@@ -77,13 +77,18 @@ const topics = [
             <div class="market-glance-item"><span>Samsung Electronics</span><strong data-market-value="KRX:005930">--</strong><small data-market-change="KRX:005930">--</small></div>
             <div class="market-glance-item"><span>SK Hynix</span><strong data-market-value="KRX:000660">--</strong><small data-market-change="KRX:000660">--</small></div>
           </div>
+          <div class="market-glance-page market-glance-rates" data-market-page aria-hidden="true">
+            <div class="market-glance-item"><span>USD/KRW</span><strong data-market-value="FX_IDC:USDKRW">--</strong></div>
+            <div class="market-glance-item"><span>한국 기준금리</span><strong data-market-value="ECONOMICS:KRINTR">--</strong></div>
+            <div class="market-glance-item"><span>미국 기준금리</span><strong data-market-value="ECONOMICS:USINTR">--</strong></div>
+          </div>
         </div>
       </div>
       <p class="market-glance-status" data-market-status role="status" aria-live="polite">실시간 정보 불러오는 중</p>
     </section>
 
     <section class="journal-section" id="latest">
-      <div class="editorial-heading"><div><p class="eyebrow">The latest notes</p><h2>최근 기록</h2></div><a href={`${base}contents/`}>전체 글 보기 <span>↗</span></a></div>
+      <div class="editorial-heading"><div><p class="eyebrow">The latest notes</p><h2>최근 <strong>기록</strong></h2></div><a href={`${base}contents/`}>전체 글 보기 <span>↗</span></a></div>
       <div class="journal-grid">
         {featuredStories.map((story, index) => (
           <a class:list={["journal-card", `journal-card-${index + 1}`]} href={story.entry.path}>
@@ -103,7 +108,7 @@ const topics = [
     </section>
 
     <section class="intro" id="about">
-      <div class="intro-visual"><p class="eyebrow">A little about me</p><img src={`${base}images/profile.jpg`} alt="KeyBaseZone 프로필" /></div>
+      <div class="intro-visual"><img src={`${base}images/profile.jpg`} alt="KeyBaseZone 프로필" /></div>
       <div class="intro-details">
         <div class="intro-profile">
           <p>서울에서 컴퓨터 과학을 공부합니다. 기술적 분석에서 출발해 디자인과 생활, 인문학까지, 서로 다른 분야를 오가며 배운 내용을 정리합니다.</p>
@@ -136,7 +141,7 @@ const topics = [
     </section>
 
     <section class="topics" id="topics">
-      <div class="section-heading"><div><p class="eyebrow">Fields of exploration</p><h2>탐구하는 분야</h2></div><p>전공에서 생활까지, 궁금한 것을 배우고 정리합니다.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">Fields of exploration</p><h2><strong>탐구</strong>하는 <strong>분야</strong></h2></div><p>전공에서 생활까지, 궁금한 것을 배우고 정리합니다.</p></div>
       <div class="topic-grid">{topics.map((topic) => (
         <a class:list={['topic', `topic-${topic.icon}`]} href={topic.href}>
           <span class="topic-number">{topic.n}</span>
@@ -151,13 +156,13 @@ const topics = [
 
     <section class="mindscape-preview">
       <div class="mindscape-art"><img src={`${base}images/android-chrome-512x512.png`} alt="KeyBaseZone 불꽃 아이콘" /></div>
-      <div class="mindscape-copy"><p class="eyebrow">The idea behind the name</p><h2>Key<strong>BaseZone</strong></h2><p>본질을 여는 열쇠, 생각을 쌓는 기반, 사유와 창작이 펼쳐지는 영역. 이름에 담긴 세 가지 개념과 이 공간의 방향을 소개합니다.</p><a class="text-link" href={`${base}mindscape/`}>Mindscape 살펴보기 <span>↗</span></a></div>
+      <div class="mindscape-copy"><p class="eyebrow">The idea behind the name</p><h2>Key<strong>Base</strong>Zone</h2><p>본질을 여는 열쇠, 생각을 쌓는 기반, 사유와 창작이 펼쳐지는 영역. 이름에 담긴 세 가지 개념과 이 공간의 방향을 소개합니다.</p><a class="text-link" href={`${base}mindscape/`}>Mindscape 살펴보기 <span>↗</span></a></div>
     </section>
 
     <section class="brand-philosophy" aria-labelledby="brand-philosophy-title">
       <div class="brand-philosophy-intro">
         <p class="eyebrow">KeyBaseZone brand values</p>
-        <h2 id="brand-philosophy-title">열정은 뜨겁게,<br /><span>행동은 절제 있게.</span></h2>
+        <h2 id="brand-philosophy-title">열정은 <strong>뜨겁게</strong>,<br /><span>행동은 <strong>절제</strong> 있게.</span></h2>
         <p>플레임 오렌지와 이를 받쳐주는 템퍼 틸은 열정과 절제를 뜻합니다. 뜨거운 동력과 이를 원하는 방향으로 이끄는 통제력이 함께 KeyBaseZone의 태도를 만듭니다.</p>
       </div>
       <div class="brand-color-list" aria-label="KeyBaseZone 브랜드 컬러">
@@ -170,7 +175,7 @@ const topics = [
       </div>
     </section>
 
-    <section class="contact"><p class="eyebrow">Keep in touch</p><h2>생각을 나누고 싶다면.</h2><p>질문과 피드백은 언제든 환영합니다.</p><a href="mailto:kmbzn24@gmail.com">kmbzn24@gmail.com <span>↗</span></a></section>
+    <section class="contact"><p class="eyebrow">Keep in touch</p><h2>생각을 나누고 <strong>싶다면.</strong></h2><p>질문과 피드백은 언제든 환영합니다.</p><a href="mailto:kmbzn24@gmail.com">kmbzn24@gmail.com <span>↗</span></a></section>
   </main>
   <Footer />
 </Layout>
@@ -214,7 +219,7 @@ const topics = [
     window.setInterval(() => {
       activePage = (activePage + 1) % marketPages.length;
       showMarketPage(activePage);
-    }, 15_000);
+    }, 10_000);
 
     const fetchQuotes = async (region: string, symbols: string[]) => {
       const response = await fetch(`https://scanner.tradingview.com/${region}/scan`, {
@@ -239,6 +244,8 @@ const topics = [
 
     const formatQuote = (symbol: string, value: number) => {
       if (symbol === 'BITSTAMP:BTCUSD') return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value);
+      if (symbol === 'FX_IDC:USDKRW') return new Intl.NumberFormat('ko-KR', { maximumFractionDigits: 2 }).format(value);
+      if (symbol === 'ECONOMICS:KRINTR' || symbol === 'ECONOMICS:USINTR') return `${value.toFixed(2)}%`;
       if (symbol === 'KRX:005930' || symbol === 'KRX:000660') return `₩${new Intl.NumberFormat('ko-KR', { maximumFractionDigits: 0 }).format(value)}`;
       return new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(value);
     };
@@ -247,12 +254,14 @@ const topics = [
 
     const updateMarketQuotes = async () => {
       try {
-        const [crypto, korea, america] = await Promise.all([
+        const [crypto, korea, america, forex, rates] = await Promise.all([
           fetchQuotes('crypto', ['BITSTAMP:BTCUSD']),
           fetchQuotes('korea', ['KRX:KOSPI', 'KRX:005930', 'KRX:000660']),
           fetchQuotes('america', ['SP:SPX', 'NASDAQ:IXIC']),
+          fetchQuotes('forex', ['FX_IDC:USDKRW']),
+          fetchQuotes('global', ['ECONOMICS:KRINTR', 'ECONOMICS:USINTR']),
         ]);
-        const quotes = new Map([...crypto, ...korea, ...america]);
+        const quotes = new Map([...crypto, ...korea, ...america, ...forex, ...rates]);
         marketTrack.querySelectorAll<HTMLElement>('[data-market-value]').forEach((element) => {
           const symbol = element.dataset.marketValue;
           const quote = symbol ? quotes.get(symbol) : undefined;
