@@ -5,7 +5,7 @@ published: "2026-09-22"
 cover: "/images/article-covers/ai-gpt-6-sol-luna.png"
 ---
 
-# GPT-6 Sol과 Luna, GPT-6 제품군 확장
+# GPT-6 Sol·Luna 출시, 더 넓어진 모델 선택지
 
 OpenAI는 2026년 9월 22일 GPT-6 제품군에 **Sol**과 **Luna**를 추가했습니다. 두 모델은 앞서 공개된 GPT-6 Astra의 기술을 더 빠르고 낮은 비용으로 제공하는 데 초점을 둡니다. OpenAI는 업무 처리, 사실성, 코딩, 컴퓨터 사용과 정렬 성능의 개선을 함께 소개했습니다.
 

@@ -5,7 +5,7 @@ published: "2026-09-22"
 cover: "/images/article-covers/ai-claude-opus-5-5.jpg"
 ---
 
-# Claude Opus 5.5, 성능과 비용 효율을 함께 겨냥
+# Claude Opus 5.5 출시, 긴 작업의 효율을 높이다
 
 Anthropic은 2026년 9월 22일 Claude 5.5 제품군의 첫 모델인 **Claude Opus 5.5**를 공개했습니다. 긴 코딩 작업과 전문 지식 업무, 에이전트 작업을 이어서 처리하는 능력을 강화했으며, Anthropic은 여러 업무에서 Fable 5.1에 준하는 성능을 더 낮은 비용으로 제공한다고 밝혔습니다.
 

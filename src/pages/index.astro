@@ -7,6 +7,7 @@ import path from 'node:path';
 import { sidebar } from '../data/sidebar';
 import { getContentLastModifiedDate, getContentLastModifiedTimestamp, getContentLastModifiedTimestamps, getContentPublicationTimestamp, getContentPublicationTimestamps } from '../lib/content-dates.mjs';
 import { getArticleCover } from '../lib/article-cover.mjs';
+import { getArticleTitle } from '../lib/article-title.mjs';
 const base = import.meta.env.BASE_URL;
 const articleSections = sidebar.filter((section) => section.label);
 const lastModifiedTimestamps = getContentLastModifiedTimestamps();
@@ -31,6 +32,7 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
     entry,
     image: cover.coverImage,
     deck: cover.deck,
+    title: getArticleTitle(slug, markdown, module?.frontmatter?.title),
     updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug) || publicationTimestamp.slice(0, 10),
     dateLabel: lastModifiedTimestamp ? '최종 수정' : '발행일',
     updatedAtTimestamp: lastModifiedTimestamp || publicationTimestamp,
@@ -91,7 +93,7 @@ const topics = [
               <span class="journal-image-arrow" aria-hidden="true">↗</span>
               <div class="journal-card-overlay">
                 <div class="journal-card-meta"><span>{story.dateLabel} · <time datetime={story.updatedAtTimestamp}>{story.updatedAt.replaceAll('-', '.')}</time></span></div>
-                <h3>{story.entry.title}</h3>
+                <h3>{story.title}</h3>
                 <p>{story.deck}</p>
               </div>
             </div>

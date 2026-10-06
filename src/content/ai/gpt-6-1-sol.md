@@ -5,7 +5,7 @@ published: "2026-09-29"
 cover: "/images/article-covers/ai-gpt-6-1-sol.jpg"
 ---
 
-# GPT-6.1 Sol, 복잡한 작업에 초점을 맞춘 업데이트
+# GPT-6.1 Sol 출시, Astra급 성능을 더 낮은 비용으로
 
 OpenAI는 2026년 9월 29일 GPT-6 Sol의 대규모 업그레이드인 **GPT-6.1 Sol**을 공개했습니다. 코딩 에이전트 작업과 컴퓨터 사용, 전문 업무에서 성능을 끌어올리고, GPT-6 Astra에 가까운 결과를 더 낮은 비용으로 제공하는 데 초점을 둡니다.
 
