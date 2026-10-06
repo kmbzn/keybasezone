@@ -9,14 +9,14 @@ import { getArticleCover } from '../lib/article-cover.mjs';
 import { getContentLastModifiedDate, getContentLastModifiedTimestamps, getContentPublicationDate, getContentPublicationDates } from '../lib/content-dates.mjs';
 
 export function getStaticPaths() {
-  const documents = import.meta.glob('../content/blog-v2/**/*.md', { eager: true });
+  const documents = import.meta.glob('../content/**/*.md', { eager: true });
   const lastModifiedTimestamps = getContentLastModifiedTimestamps();
   const publicationDates = getContentPublicationDates();
   return Object.entries(documents)
     .filter(([filePath]) => !filePath.endsWith('/README.md'))
     .map(([filePath, module]) => {
-      const slug = filePath.split('/content/blog-v2/')[1].replace(/\.md$/, '');
-      const markdown = readFileSync(path.join(process.cwd(), 'src/content/blog-v2', slug + '.md'), 'utf8');
+      const slug = filePath.split('/content/')[1].replace(/\.md$/, '');
+      const markdown = readFileSync(path.join(process.cwd(), 'src/content', slug + '.md'), 'utf8');
       const title = module.frontmatter?.title || markdown.match(/^#\s+(.+?)\s*#*\s*$/m)?.[1] || slug.split('/').at(-1)?.replaceAll('-', ' ') || 'KeyBaseZone';
       return { params: { slug }, props: { Content: module.default, title, publishedAt: module.frontmatter?.published || getContentPublicationDate(publicationDates, slug), updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug), ...getArticleCover(slug, markdown, module.frontmatter) } };
     });

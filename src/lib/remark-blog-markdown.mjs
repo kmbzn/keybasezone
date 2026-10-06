@@ -12,7 +12,7 @@ function textContent(node) {
 
 export function publicImageUrl(url, file) {
   if (/^(?:[a-z][a-z\d+.-]*:|\/|#)/i.test(url)) return url;
-  const marker = `${path.sep}src${path.sep}content${path.sep}blog-v2${path.sep}`;
+  const marker = `${path.sep}src${path.sep}content${path.sep}`;
   const sourcePath = file.path ?? file.history?.[0] ?? '';
   const markerIndex = sourcePath.lastIndexOf(marker);
   if (markerIndex < 0) return url;

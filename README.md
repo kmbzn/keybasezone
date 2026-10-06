@@ -1,6 +1,6 @@
 # KeyBaseZone
 
-`blog-v2/docs`의 Markdown 문서와 관련 정적 파일을 유지하며 Astro로 제공하는 웹사이트입니다.
+`src/content`의 Markdown 문서와 관련 정적 파일을 유지하며 Astro로 제공하는 웹사이트입니다.
 
 ## 로컬 실행
 

@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
-const contentRoot = 'src/content/blog-v2';
+const contentRoot = 'src/content';
 const outputPath = path.join(process.cwd(), 'src/data/content-last-modified.json');
 
 let snapshot = {};
@@ -30,14 +30,10 @@ try {
 const historyTimestamps = new Map();
 if (hasCompleteHistory) {
   try {
-    const history = git(['log', '--format=COMMIT:%cI', '--name-only', '--', contentRoot]);
-    let commitTimestamp = '';
-    for (const line of history.split(/\r?\n/)) {
-      if (line.startsWith('COMMIT:')) {
-        commitTimestamp = line.slice('COMMIT:'.length);
-      } else if (line.startsWith(`${contentRoot}/`) && line.endsWith('.md') && !historyTimestamps.has(line)) {
-        historyTimestamps.set(line, commitTimestamp);
-      }
+    const files = git(['ls-files', '-z', '--', contentRoot]).split('\0').filter((file) => file.endsWith('.md'));
+    for (const filePath of files) {
+      const timestamp = git(['log', '--follow', '--diff-filter=AMT', '-1', '--format=%cI', '--', filePath]).trim();
+      if (timestamp) historyTimestamps.set(filePath, timestamp);
     }
   } catch {
     // Preserve the checked-in snapshot if Git history cannot be read.
@@ -63,6 +59,7 @@ if (process.env.WORKERS_CI_COMMIT_SHA) {
       const commitTimestamp = commit.commit?.committer?.date;
       if (commitTimestamp) {
         for (const file of commit.files || []) {
+          if (file.status === 'renamed') continue;
           if (file.filename.startsWith(`${contentRoot}/`) && file.filename.endsWith('.md')) {
             timestamps.set(file.filename, commitTimestamp);
           }

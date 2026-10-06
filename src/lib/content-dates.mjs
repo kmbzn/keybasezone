@@ -1,8 +1,9 @@
 import { execFileSync } from 'node:child_process';
 import { existsSync, statSync } from 'node:fs';
+import path from 'node:path';
 import contentLastModifiedSnapshot from '../data/content-last-modified.json';
 
-const contentRoot = 'src/content/blog-v2';
+const contentRoot = 'src/content';
 
 // Read the checked-out Git history once so every article uses its own latest
 // commit timestamp, rather than the build time or the date of the whole site.
