@@ -146,7 +146,7 @@ a{color:inherit}
 .contact>a span{margin:0;color:var(--accent)}
 .site-footer{padding:42px max(40px,calc((100% - 1320px)/2)) 28px;border-color:var(--line);background:var(--paper);font-size:11px}
 .tech-footer{text-align:center}
-.tech-logos{position:relative;left:50%;width:100vw;justify-content:center;transform:translateX(-50%)}
+.tech-logos{width:100%;justify-content:center}
 
 /* Archive */
 .contents-page{width:100%;margin:0;padding:0 0 110px}
@@ -361,13 +361,14 @@ a{color:inherit}
 }
 
 /* Edge-to-edge profile portrait */
-.intro{grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:0;align-items:stretch;padding:0}
-.intro>div{min-width:0}
-.intro-visual{position:relative;min-width:0;min-height:0;align-self:stretch;align-items:flex-start;overflow:visible}
+.intro{grid-template-columns:minmax(0,560px) minmax(0,1fr);grid-template-rows:auto auto;gap:0;align-items:stretch;padding:0}
+.intro-visual{position:relative;grid-column:1;grid-row:1;min-width:0;min-height:0;align-self:stretch;align-items:flex-start;overflow:visible}
 .intro-visual .eyebrow{position:absolute;z-index:1;top:38px;left:clamp(24px,3vw,50px);margin:0;color:#fff;text-shadow:0 1px 10px #0008}
 .intro-visual img{position:absolute;inset:0;display:block;width:100%;max-width:560px;height:100%;max-height:none;min-height:0;aspect-ratio:auto;margin:0;object-fit:contain;object-position:left top;border-radius:0;box-shadow:none;animation:none}
-.intro>div:last-child{min-width:0;align-self:start;padding:48px clamp(24px,3vw,42px)}
-.github-contributions,.solvedac-stats{max-width:680px;margin-top:34px}
+.intro-profile{grid-column:2;grid-row:1;min-width:0;align-self:stretch;padding:48px clamp(24px,3vw,42px)}
+.intro-profile>p{margin-top:0}
+.profile-stats{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:28px max(40px,calc((100% - 1180px)/2)) 48px}
+.github-contributions,.solvedac-stats{min-width:0;max-width:680px;margin-top:0}
 .github-contributions-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
 .github-contributions-heading h2{max-width:none;margin:0;color:#777970;font-size:13px;font-weight:750;letter-spacing:.06em;white-space:nowrap}
 .github-contributions-heading>a{color:#777970;font-size:10px;text-decoration:none}
@@ -378,6 +379,9 @@ a{color:inherit}
 .solvedac-stats-image{position:relative;display:block;width:100%;min-width:460px}
 .solvedac-stats-image img{display:block;width:100%;height:auto}
 .solvedac-bio-mask{position:absolute;top:32%;left:17.86%;width:57.14%;height:20%;background:#ffffff;pointer-events:none}
+@media(min-width:681px) and (max-width:1050px){
+  .profile-stats{grid-template-columns:minmax(0,1fr);padding-right:40px;padding-left:40px}
+}
 @media(max-width:680px){
   .market-glance{width:100%;height:54px;padding:8px 20px 9px}
   .market-glance-viewport,.market-glance-page{height:36px}
@@ -387,15 +391,15 @@ a{color:inherit}
   .market-glance-item strong{font-size:11px}
   .market-glance-item small{font-size:9px}
   .market-glance-status{right:20px}
-  .intro{grid-template-columns:minmax(0,1fr);gap:0;padding:0}
+  .intro{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;gap:0;padding:0}
   .intro-visual{width:100%;height:auto;min-width:0;min-height:0;padding-top:0}
+  .intro-profile{grid-column:1;grid-row:2;width:100%;min-width:0;box-sizing:border-box;padding:42px 22px 20px}
   .intro-visual .eyebrow{top:24px;left:22px}
-  .intro-visual img{position:static;width:88%;height:auto;max-width:430px;max-height:none}
-  .intro>div:last-child{width:100%;min-width:0;box-sizing:border-box;padding:42px 22px 64px}
-  .intro>div>p{font-size:17px}
+  .intro-visual img{position:static;width:100%;height:auto;max-width:none;max-height:none}
+  .intro-profile>p{font-size:17px}
   .profile-specs{table-layout:fixed}
-  .github-contributions{margin-top:30px}
-  .solvedac-stats{margin-top:28px}
+  .profile-stats{grid-column:1;grid-row:3;grid-template-columns:minmax(0,1fr);gap:28px;padding:0 22px 64px}
+  .github-contributions,.solvedac-stats{margin-top:0}
   .github-contributions-chart,.solvedac-stats-card{width:calc(100% + 44px);margin-left:-22px;margin-right:-22px;padding:0;border:0;background:transparent;overflow:hidden}
   .github-contributions-chart img,.solvedac-stats-card img{width:100%;min-width:0}
   .solvedac-stats-image{min-width:0}
