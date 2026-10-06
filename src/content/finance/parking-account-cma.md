@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/finance-parking-account-cma.jpg"
+cover: "/images/article-covers/finance-parking-account-cma.png"
 ---
 
 # 파킹통장 vs CMA 통장
