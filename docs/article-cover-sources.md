@@ -4,7 +4,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 
 | Local file | Source work | Creator / source | License | Source page |
 |---|---|---|---|---|
-| `os-dunggeunmo.png` | Ubuntu 25.04 Desktop.png | Canonical Ltd. | GPL | [Commons](https://commons.wikimedia.org/wiki/File:Ubuntu_25.04_Desktop.png) |
+| `os-dunggeunmo.png` | Site owner supplied | Local image | — |
 | `os-ubuntu-thumbnails.jpg` | Detalle de monitor con el editor de video de Blender.jpg | Ehécatl Cabrera | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Detalle_de_monitor_con_el_editor_de_video_de_Blender.jpg) |
 | `os-no-animation.png` | Ubuntu 11.10 Unity 3D.png | Mywikilogin | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ubuntu_11.10_Unity_3D.png) |
 | `wellness-concerta.jpg` | Sias Library - Students Studying 2017.jpg | Gary Todd | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Sias_Library_-_Students_Studying_2017.jpg) |
