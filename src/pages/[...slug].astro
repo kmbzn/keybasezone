@@ -38,7 +38,11 @@ const { Content, title, category, coverHue, coverPattern, coverImage, deck, publ
       {deck && <p class="article-cover-deck">{deck}</p>}
       <p class="article-cover-updated">발행일 · {publishedAt.replaceAll('-', '.')} <span>·</span> 최종 수정 · {updatedAt.replaceAll('-', '.')}</p>
       <p class="article-cover-byline">A personal knowledge archive</p>
-      <a class="article-cover-back" href="/contents/">All stories <span>↗</span></a>
+      <div class="article-cover-actions">
+        <button class="article-cover-copy-url" type="button" data-copy-article-url>URL 복사</button>
+        <span class="article-cover-copy-status" data-copy-article-url-status role="status" aria-live="polite"></span>
+        <a class="article-cover-back" href="/contents/">All stories <span>↗</span></a>
+      </div>
     </div>
   </header>
   <section class="article-reading">
@@ -49,3 +53,19 @@ const { Content, title, category, coverHue, coverPattern, coverImage, deck, publ
   </section>
   <Footer />
 </Layout>
+
+<script>
+  const copyUrlButton = document.querySelector<HTMLButtonElement>('[data-copy-article-url]');
+  const copyUrlStatus = document.querySelector<HTMLElement>('[data-copy-article-url-status]');
+
+  copyUrlButton?.addEventListener('click', async () => {
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard API is unavailable');
+      await navigator.clipboard.writeText(window.location.href);
+      if (copyUrlStatus) copyUrlStatus.textContent = '주소를 복사했습니다.';
+    } catch (error) {
+      console.error('Failed to copy article URL:', error);
+      if (copyUrlStatus) copyUrlStatus.textContent = '주소 복사에 실패했습니다. 브라우저 권한을 확인해 주세요.';
+    }
+  });
+</script>

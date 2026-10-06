@@ -1,5 +1,6 @@
 import { existsSync } from 'node:fs';
 import path from 'node:path';
+import { articlePreviews } from '../data/article-previews.mjs';
 
 const categoryLabels = {
   a: 'STUDY NOTES', ai: 'ARTIFICIAL INTELLIGENCE', brands: 'BRANDS', cs: 'COMPUTER SCIENCE',
@@ -50,6 +51,6 @@ export function getArticleCover(slug, markdown, frontmatter = {}) {
     coverHue,
     coverPattern,
     coverImage: getCoverImage(frontmatter.cover),
-    deck: frontmatter.description || getDeck(markdown),
+    deck: articlePreviews[slug] || frontmatter.description || getDeck(markdown),
   };
 }

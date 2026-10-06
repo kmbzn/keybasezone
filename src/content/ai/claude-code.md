@@ -1,10 +1,10 @@
 ---
-title: "Claude Code: 터미널에서 함께 작업하는 AI 코딩 도구"
-description: "Claude Code는 프로젝트 맥락을 살펴보고 코드 수정과 테스트 실행을 돕는 에이전틱 코딩 도구입니다."
+title: "Claude Code, 넌 누구니?"
+description: "터미널에서 프로젝트를 읽고 코드를 고치는 Claude Code. 무엇을 할 수 있고, 어떻게 함께 일할까요?"
 cover: "/images/article-covers/ai-claude-code.png"
 ---
 
-# Claude Code: 터미널에서 함께 작업하는 AI 코딩 도구
+# Claude Code, 넌 누구니?
 
 **Claude Code**는 Anthropic의 AI 에이전틱 코딩 도구입니다. 터미널에서 실행해 현재 프로젝트의 파일과 구조를 살펴보고, 자연어로 요청한 코드 변경을 여러 파일에 걸쳐 수행하도록 도울 수 있습니다.
 

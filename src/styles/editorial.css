@@ -126,6 +126,7 @@ a{color:inherit}
 .brand-philosophy-intro>p:last-child{max-width:37rem;margin:25px 0 0;color:#676862;font-size:15px;line-height:1.9}
 .brand-color-list{display:grid;grid-template-rows:repeat(2,minmax(0,1fr));min-height:520px}
 .brand-color{position:relative;display:flex;min-height:0;align-items:flex-end;padding:22px 24px 8px;background:#fc5419;color:#fff}
+.brand-color-flame{z-index:1}
 .brand-color-temper{background:#0ba4a8}
 .brand-color-copy{display:flex;width:100%;flex-direction:column;align-items:flex-start;padding:32px 0 0}
 .brand-color-copy p{margin:0}
@@ -303,7 +304,12 @@ a{color:inherit}
 .article-cover-deck{max-width:42ch;margin:30px 0 0;color:#f0e9e8;font-size:clamp(16px,1.5vw,21px);font-weight:500;line-height:1.65;letter-spacing:-.035em}
 .article-cover-updated{margin:18px 0 0;color:#d3c7c8;font-size:12px;font-weight:550;letter-spacing:.03em}
 .article-cover-byline{margin:auto 0 0;padding-top:54px;color:#c1b2b5;font-size:12px;font-weight:650;letter-spacing:.07em}
-.article-cover-back{display:inline-flex;align-items:center;gap:14px;margin-top:18px;color:#fff;font-size:12px;font-weight:700;letter-spacing:.07em;text-decoration:none}
+.article-cover-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:18px}
+.article-cover-copy-url{padding:9px 12px;border:1px solid #ffffff80;background:transparent;color:#fff;font:inherit;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer}
+.article-cover-copy-url:hover{background:#ffffff1a}
+.article-cover-copy-url:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.article-cover-copy-status{color:#f0e9e8;font-size:11px}
+.article-cover-back{display:inline-flex;align-items:center;gap:14px;color:#fff;font-size:12px;font-weight:700;letter-spacing:.07em;text-decoration:none}
 .article-cover-back span{color:hsl(calc(var(--cover-hue) + 25) 85% 69%);font-size:17px;transition:transform .2s}
 .article-cover-back:hover span{transform:translate(3px,-3px)}
 .article-pattern-0 .article-cover-pattern{background:repeating-conic-gradient(from 15deg at 65% 42%,hsl(var(--cover-hue) 75% 75% / .25) 0deg 2deg,transparent 2deg 12deg),radial-gradient(circle at 65% 42%,transparent 0 20%,hsl(var(--cover-hue) 75% 75% / .32) 20.2% 20.6%,transparent 21% 36%,hsl(var(--cover-hue) 75% 75% / .24) 36.2% 36.6%,transparent 37%)}
@@ -349,6 +355,36 @@ a{color:inherit}
 @media(max-width:680px){
   .article-reading .markdown-content table{font-size:12px}
   .article-reading .markdown-content th,.article-reading .markdown-content td{padding:4px 6px;line-height:1.45}
+}
+@media(max-width:680px){
+  .site-header{padding-inline:10px}
+  .hero{padding-inline:11px}
+  .hero-index{right:11px}
+  .market-glance{padding-inline:10px}
+  .market-glance-status{right:10px}
+  .editorial-heading{padding-inline:10px}
+  .intro-details{padding-inline:11px}
+  .intro-visual .eyebrow{left:11px}
+  .topics{padding-inline:10px}
+  .topic{padding-inline:9px}
+  .topic:hover{padding-inline:9px}
+  .mindscape-copy{padding-inline:13px}
+  .brand-philosophy{padding-inline:11px}
+  .brand-color{padding-inline:10px}
+  .brand-color-hex{right:10px}
+  .brand-color-name-en{margin-left:-10px!important}
+  .contact{padding-inline:10px}
+  .site-footer{padding-inline:11px}
+  .contents-hero{padding-inline:11px}
+  .contents-grid{width:calc(100% - 20px)}
+  .content-category{padding-inline:10px}
+  .docs-layout{padding-inline:10px}
+  .sidebar-mobile{margin-inline:-10px;padding-inline:10px}
+  .article-cover-copy{padding-inline:12px}
+  .article-cover-visual-mark{left:11px}
+  .article-reading .docs-layout{padding-inline:10px}
+  .article-reading .sidebar-mobile{margin-inline:-10px;padding-inline:10px}
+  .markdown-content .custom-container{padding-inline:10px}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -420,8 +456,8 @@ a{color:inherit}
   .brand-philosophy h2 span{font-size:clamp(24px,7.3vw,34px)}
   .brand-philosophy-intro>p:last-child{font-size:14px}
   .brand-color-name-en{font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;font-size:clamp(40px,12vw,58px)}
-  .brand-color-name-en{margin-left:-20px!important}
-  .brand-color-list{margin-left:-22px;margin-right:-22px}
+  .brand-color-name-en{margin-left:-10px!important}
+  .brand-color-list{margin-left:-11px;margin-right:-11px}
 }
 
 .eyebrow{font-size:12px;letter-spacing:.08em}
