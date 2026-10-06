@@ -362,13 +362,14 @@ a{color:inherit}
 }
 
 /* Edge-to-edge profile portrait */
-.intro{grid-template-columns:minmax(0,560px) minmax(0,1fr);grid-template-rows:auto auto;gap:0;align-items:stretch;padding:0}
-.intro-visual{position:relative;grid-column:1;grid-row:1 / span 2;min-width:0;min-height:0;align-self:stretch;align-items:flex-start;justify-content:flex-start;gap:0;padding:0;overflow:hidden}
+.intro{grid-template-columns:minmax(0,560px) minmax(0,1fr);grid-template-rows:minmax(0,1fr);gap:0;align-items:stretch;padding:0}
+.intro-visual{position:relative;grid-column:1;grid-row:1;min-width:0;min-height:0;align-self:stretch;align-items:flex-start;justify-content:flex-start;gap:0;padding:0;overflow:hidden}
 .intro-visual .eyebrow{position:absolute;z-index:1;top:38px;left:clamp(24px,3vw,50px);margin:0;color:#fff;text-shadow:0 1px 10px #0008}
-.intro-visual img{position:static;display:block;flex:none;width:100%;max-width:560px;height:auto;max-height:none;min-height:0;aspect-ratio:auto;margin:0;object-fit:contain;object-position:left top;border-radius:0;box-shadow:none;animation:none}
-.intro-profile{grid-column:2;grid-row:1;min-width:0;align-self:stretch;padding:48px clamp(24px,3vw,42px)}
+.intro-visual img{position:absolute;inset:0;display:block;width:100%;max-width:560px;height:100%;max-height:none;min-height:0;aspect-ratio:auto;margin:0;object-fit:cover;object-position:38% center;border-radius:0;box-shadow:none;animation:none}
+.intro-details{grid-column:2;grid-row:1;display:flex;min-width:0;flex-direction:column;gap:24px;padding:48px clamp(24px,3vw,42px)}
+.intro-profile{min-width:0}
 .intro-profile>p{margin-top:0}
-.profile-stats{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:28px max(40px,calc((100% - 1180px)/2)) 48px}
+.profile-stats{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;min-width:0}
 .github-contributions,.solvedac-stats{min-width:0;max-width:680px;margin-top:0}
 .github-contributions-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
 .github-contributions-heading h2{max-width:none;margin:0;color:#777970;font-size:13px;font-weight:750;letter-spacing:.06em;white-space:nowrap}
@@ -381,7 +382,16 @@ a{color:inherit}
 .solvedac-stats-image img{display:block;width:100%;height:auto}
 .solvedac-bio-mask{position:absolute;top:32%;left:17.86%;width:57.14%;height:20%;background:#ffffff;pointer-events:none}
 @media(min-width:681px) and (max-width:1050px){
-  .profile-stats{grid-template-columns:minmax(0,1fr);padding-right:40px;padding-left:40px}
+  .intro{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+  .intro-details{gap:20px;padding:28px 24px}
+}
+@media(min-width:681px) and (max-width:900px){
+  .intro-details{gap:18px;padding:24px 18px}
+  .github-contributions-heading{gap:6px}
+  .github-contributions-heading h2{font-size:11px}
+  .github-contributions-heading>a{font-size:9px;white-space:nowrap}
+  .github-contributions-chart img,.solvedac-stats-card img{width:100%;min-width:0}
+  .solvedac-stats-image{min-width:0}
 }
 @media(max-width:680px){
   .market-glance{width:100%;height:54px;padding:8px 20px 9px}
@@ -392,17 +402,18 @@ a{color:inherit}
   .market-glance-item strong{font-size:11px}
   .market-glance-item small{font-size:9px}
   .market-glance-status{right:20px}
-  .intro{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-rows:auto auto;gap:0;padding:0}
-  .intro-visual{grid-column:1;grid-row:1/span 2;width:100%;height:100%;min-width:0;min-height:0;padding-top:0}
-  .intro-profile{grid-column:2;grid-row:1;width:100%;min-width:0;box-sizing:border-box;padding:20px 12px 12px}
+  .intro{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-rows:minmax(0,1fr);gap:0;padding:0}
+  .intro-visual{grid-column:1;grid-row:1;width:100%;height:100%;min-width:0;min-height:0;padding-top:0}
+  .intro-details{grid-column:2;grid-row:1;gap:20px;width:100%;min-width:0;box-sizing:border-box;padding:20px 12px}
+  .intro-profile{width:100%;min-width:0;padding:0}
   .intro-visual .eyebrow{top:20px;left:14px;font-size:9px}
-  .intro-visual img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:38% center}
+  .intro-visual img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:38% center}
   .intro-profile>p{font-size:13px;line-height:1.65}
   .profile-specs{margin-top:18px;font-size:11px;table-layout:fixed}
   .profile-specs th,.profile-specs td{padding:7px 0}
   .profile-specs th{width:74px;font-size:9px}
   .profile-specs td{font-size:10px;overflow-wrap:anywhere}
-  .profile-stats{grid-column:2;grid-row:2;grid-template-columns:minmax(0,1fr);gap:20px;padding:0 12px 24px}
+  .profile-stats{grid-template-columns:minmax(0,1fr);gap:20px}
   .github-contributions,.solvedac-stats{margin-top:0}
   .github-contributions-heading{align-items:flex-start;gap:4px;margin-bottom:8px}
   .github-contributions-heading h2{font-size:10px}
