@@ -162,10 +162,11 @@ a{color:inherit}
 .contents-jump a{padding:12px 18px;border:1px solid #ffffff70;background:#10151d38;color:#fff;font-size:15px;font-weight:650;letter-spacing:.04em;text-decoration:none;backdrop-filter:blur(8px);transition:background .2s,border-color .2s}
 .contents-jump a:hover{border-color:#fff;background:#fff;color:#181916}
 .contents-grid{display:grid;width:min(1320px,calc(100% - 72px));grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px auto 0}
-.content-category{position:relative;display:grid;min-width:0;grid-template-columns:auto minmax(0,1fr);align-items:center;column-gap:14px;padding:29px 30px 24px;border:1px solid var(--line);background:var(--card)}
+.content-category{position:relative;display:grid;min-width:0;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;align-content:start;align-items:start;column-gap:14px;padding:29px 30px 24px;border:1px solid var(--line);background:var(--card)}
 .content-category>span{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:var(--accent);font-size:clamp(20px,2.2vw,28px);font-weight:700;letter-spacing:.02em}
-.content-category h2{margin:0;font-size:30px;line-height:1;letter-spacing:-.04em}
-.content-category ul{grid-column:1/-1;margin:21px 0 0;padding:0;list-style:none}
+.content-category h2{grid-column:2;grid-row:1;margin:0;font-size:30px;font-weight:700;line-height:1.4;letter-spacing:-.04em}
+.content-category>span{grid-column:1;grid-row:1}
+.content-category ul{grid-column:1/-1;grid-row:2;align-self:start;margin:21px 0 0;padding:0;list-style:none}
 .content-category li{border-top:1px solid #e6e5de}
 .content-category a{min-height:45px;padding:11px 0;color:#454740;font-size:13px;transition:padding .18s ease,color .18s ease}
 .content-category a:hover{padding-left:7px;color:var(--accent)}
@@ -368,7 +369,7 @@ a{color:inherit}
 .intro>div:last-child{min-width:0;align-self:start;padding:48px clamp(24px,3vw,42px)}
 .github-contributions,.solvedac-stats{max-width:680px;margin-top:34px}
 .github-contributions-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
-.github-contributions-heading h2{margin:0;color:#777970;font-size:13px;font-weight:750;letter-spacing:.06em}
+.github-contributions-heading h2{max-width:none;margin:0;color:#777970;font-size:13px;font-weight:750;letter-spacing:.06em;white-space:nowrap}
 .github-contributions-heading>a{color:#777970;font-size:10px;text-decoration:none}
 .github-contributions-heading>a:hover{color:var(--accent)}
 .github-contributions-chart{display:block;overflow-x:auto;padding:12px;border:1px solid var(--line);background:#fff}
