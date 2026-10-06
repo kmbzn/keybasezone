@@ -1,5 +1,5 @@
 ---
-cover: "https://upload.wikimedia.org/wikipedia/commons/5/53/Aeron_Chair_by_Herman_Miller_%289446986497%29.jpg"
+cover: "/images/article-covers/brands-herman-miller.png"
 ---
 
 # Herman Miller
