@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/products-audio-interface.jpg"
+cover: "/images/article-covers/products-audio-interface.png"
 ---
 
 # 오디오 인터페이스 (Audio Interface)

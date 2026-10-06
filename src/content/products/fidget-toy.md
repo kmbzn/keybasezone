@@ -1,5 +1,5 @@
 ---
-cover: "/images/articles/fidget.png"
+cover: "/images/article-covers/products-fidget-toy.png"
 ---
 
 # 피젯 토이 (Fidget Toy)

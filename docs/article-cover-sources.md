@@ -29,10 +29,11 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `finance-parking-account-cma.jpg` | Money saving growth.jpg | nattanan | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Money_saving_growth.jpg) |
 | `finance-berkshire-hathaway.jpg` | Downtown Omaha, Nebraska.jpg | civilengtiger | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Downtown_Omaha%2C_Nebraska.jpg) |
 | `finance-bitcoin.jpg` | Pexels-david-mcbee-730564.jpg | David McBee | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Pexels-david-mcbee-730564.jpg) |
-| `products-audio-interface.jpg` | AVID Audio Interface (48964856277).jpg | David Podosek from Garden Grove, USA | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:AVID_Audio_Interface_(48964856277).jpg) |
+| `products-audio-interface.png` | Site owner supplied | Local image | — |
 | `products-kurutoga.jpg` | Mechanical Pencils 2019.jpg | J. C. Barros | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mechanical_Pencils_2019.jpg) |
 | `products-cx31993-dac.jpg` | Earphones BW 2011-12-10 15-49-08.JPG | Berthold Werner | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Earphones_BW_2011-12-10_15-49-08.JPG) |
-| `products-fidget-toy.jpg` | Fidget cube yellow and white.jpg | Tetizeraz | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Fidget_cube_yellow_and_white.jpg) |
+| `products-fidget-toy.png` | Site owner supplied | Local image | — |
+| `products-pinta.png` | Site owner supplied Pinta icon | Local image | — |
 | `brands-aestrua.png` | AESTURA Atobarrier 365 Cream product photo | Sephora Australia | Product image from product listing | [Product page](https://www.sephora.com.au/products/aestura-atobarrier365-cream) |
 | `brands-musinsa-standard.jpg` | Musinsa Standard Hongdae store interior | MUSINSA | Image from brand article | [MUSINSA article](https://www.musinsa.com/content/cms/6798) |
 | `products-cleansing-milk.jpg` | DermaSense Cleansing Milk product photo | DermaSense | Image from product listing | [Product page](https://dermasense.pk/products/cleansing-milk-removes-makeup) |

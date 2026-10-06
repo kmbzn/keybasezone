@@ -89,6 +89,7 @@ export const sidebar: SidebarSection[] = [
     label: "Products",
     entries: [
       { path: "/products/audio-interface", title: "오디오 인터페이스 (Audio Interface)" },
+      { path: "/products/pinta", title: "Pinta 이미지 편집기" },
       { path: "/products/kurutoga", title: "쿠루토가 (KURUTOGA)" },
       { path: "/products/cx31993-dac", title: "CX31993 DAC 동글" },
       { path: "/products/cleansing-milk", title: "클렌징 밀크 (Cleansing Milk)" },
