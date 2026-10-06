@@ -1,12 +1,10 @@
 ---
-cover: "/images/article-covers/brands-kz.jpg"
+cover: "/images/articles/kz.png"
 ---
 
 # KZ
 
 KZ는 중국 광둥성 선전(深圳)에 본사를 둔 음향 브랜드다. 저렴한 가격에 다수의 드라이버를 탑재한 인이어 모니터(IEM)를 주력으로 생산하며, 이른바 **치파이(Chi-Fi, Chinese Hi-Fi)** 시장을 대표하는 브랜드 중 하나다.
-
-![KZ 이어폰 제품 스케치](/images/articles/kz.png)
 
 ## 브랜드 개요
 

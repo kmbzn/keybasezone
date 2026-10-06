@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/brands-aestrua.png"
+cover: "https://cdn.bosa.co.kr/news/photo/202504/2246196_279735_3943.jpg"
 ---
 
 # 에스트라 (AESTURA)
