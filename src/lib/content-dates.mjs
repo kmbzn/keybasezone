@@ -5,31 +5,8 @@ import contentLastModifiedSnapshot from '../data/content-last-modified.json';
 
 const contentRoot = 'src/content';
 
-// Read the checked-out Git history once so every article uses its own latest
-// commit timestamp, rather than the build time or the date of the whole site.
 export function getContentLastModifiedTimestamps() {
-  let output = '';
-  try {
-    output = execFileSync('git', [
-      'log', '--format=COMMIT:%cI', '--name-only', '--', contentRoot,
-    ], { cwd: process.cwd(), encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
-  } catch {
-    // Keep local previews usable when the source is downloaded without .git.
-  }
-
-  const historyTimestamps = new Map();
-  let commitTimestamp = '';
-  for (const line of output.split(/\r?\n/)) {
-    if (line.startsWith('COMMIT:')) {
-      commitTimestamp = line.slice('COMMIT:'.length);
-    } else if (line.startsWith(`${contentRoot}/`) && line.endsWith('.md') && !historyTimestamps.has(line)) {
-      historyTimestamps.set(line, commitTimestamp);
-    }
-  }
-
-  // Git history is the authoritative source for files visible in the checkout;
-  // the snapshot fills gaps when deployment clones contain limited history.
-  return new Map([...Object.entries(contentLastModifiedSnapshot), ...historyTimestamps]);
+  return new Map(Object.entries(contentLastModifiedSnapshot));
 }
 
 export function getContentLastModifiedTimestamp(timestamps, slug) {
