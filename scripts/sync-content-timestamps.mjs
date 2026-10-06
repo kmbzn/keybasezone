@@ -1,11 +1,9 @@
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
 const contentRoot = 'src/content/blog-v2';
 const outputPath = path.join(process.cwd(), 'src/data/content-last-modified.json');
-const isCiBuild = ['true', '1'].includes((process.env.CI || '').toLowerCase())
-  || process.env.WORKERS_CI === '1';
 
 let snapshot = {};
 try {
@@ -56,21 +54,6 @@ if (process.env.WORKERS_CI_COMMIT_SHA) {
     }
   } catch {
     // Retain checked-in/history timestamps if the current commit cannot be read.
-  }
-}
-
-// Before commit, preserve the actual edit time for changed and newly added notes.
-if (!isCiBuild) {
-  try {
-    const status = git(['status', '--porcelain', '-z', '--untracked-files=all', '--', contentRoot]);
-    for (const entry of status.split('\0').filter(Boolean)) {
-      const filePath = entry.slice(3);
-      if (!filePath.startsWith(`${contentRoot}/`) || !filePath.endsWith('.md')) continue;
-      const absolutePath = path.join(process.cwd(), filePath);
-      if (existsSync(absolutePath)) timestamps.set(filePath, statSync(absolutePath).mtime.toISOString());
-    }
-  } catch {
-    // Keep the last known timestamp for any path that could not be inspected.
   }
 }
 

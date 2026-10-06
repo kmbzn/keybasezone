@@ -34,10 +34,9 @@ export function getContentLastModifiedTimestamps() {
     }
   }
 
-  // The prebuild step refreshes this snapshot from each file's latest Git
-  // commit, or its edit time while locally modified. Keep it authoritative;
-  // Git history fills gaps when building older checkouts without a snapshot.
-  return new Map([...historyTimestamps, ...Object.entries(snapshot)]);
+  // Git history is the authoritative source for files visible in the checkout;
+  // the snapshot fills gaps when deployment clones contain limited history.
+  return new Map([...Object.entries(snapshot), ...historyTimestamps]);
 }
 
 export function getContentLastModifiedTimestamp(timestamps, slug) {
