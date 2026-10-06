@@ -254,7 +254,7 @@ a{color:inherit}
 .article-cover-visual>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.78) contrast(.97)}
 .article-cover-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#11100fb3,transparent 42%),linear-gradient(90deg,#100e1024,transparent 70%);pointer-events:none}
 .article-cover-pattern{position:absolute;inset:0;opacity:.88;mix-blend-mode:screen;pointer-events:none}
-.article-cover-visual.has-image .article-cover-pattern{opacity:.17}
+.article-cover-visual.has-image .article-cover-pattern{display:none}
 .article-cover-visual-mark{position:absolute;z-index:2;left:clamp(22px,3vw,48px);bottom:27px;color:#fff;font-size:9px;font-weight:700;letter-spacing:.2em;text-shadow:0 1px 8px #0008}
 .article-cover-copy{display:flex;min-width:0;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(42px,6.4vw,112px);background:linear-gradient(145deg,hsl(var(--cover-hue) 42% 23%),hsl(calc(var(--cover-hue) + 24) 48% 17%));color:#fff}
 .article-cover-kicker{margin:0 0 26px;color:#fff;font-size:13px;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
