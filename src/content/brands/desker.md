@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/brands-desker.jpg"
+cover: "/images/article-covers/brands-desker.png"
 ---
 
 # 데스커 (DESKER)

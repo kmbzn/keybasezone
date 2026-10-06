@@ -19,7 +19,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `brands-frederique-constant.jpg` | Watchmaker.jpg | BfW | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Watchmaker.jpg) |
 | `brands-kz.jpg` | InEarMonitors.jpg | user:Julo | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:InEarMonitors.jpg) |
 | `brands-jinhao.jpg` | Fountain pen writing (literacy).jpg | Petar Milošević | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Fountain_pen_writing_(literacy).jpg) |
-| `brands-desker.jpg` | Modern workspace with a laptop, books, an apple, and a small potted plant on a bright desk.jpg | Shixart1985 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Modern_workspace_with_a_laptop%2C_books%2C_an_apple%2C_and_a_small_potted_plant_on_a_bright_desk.jpg) |
+| `brands-desker.png` | Site owner supplied | Local image | — |
 | `brands-nomos-tangente.png` | Tangente watch image | Site owner supplied | Local image | — |
 | `wellness-ht08.png` | QCY HT08 product image | Site owner supplied | Local image | — |
 | `products-thinkpad.png` | ThinkPad product image | Site owner supplied | Local image | — |

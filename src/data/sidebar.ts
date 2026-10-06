@@ -23,6 +23,7 @@ export const sidebar: SidebarSection[] = [
   {
     label: "AI",
     entries: [
+      { path: "/ai/aisi-caisi-renaming", title: "미국 AI 안전연구소, CAISI로 재편" },
       { path: "/ai/gpt-6-1-sol", title: "GPT-6.1 Sol 출시" },
       { path: "/ai/claude-opus-5-5", title: "Claude Opus 5.5 출시" },
       { path: "/ai/gpt-6-sol-luna", title: "GPT-6 Sol·Luna 출시" },
