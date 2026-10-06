@@ -2,7 +2,7 @@
 title: "트럼프, AI 대신 SI 쓰도록 행정명령"
 description: "트럼프 대통령이 2026년 9월 행정명령에 서명해 연방 행정부 문서에서 AI 대신 Super Intelligence(SI)를 쓰도록 했습니다."
 published: "2026-09-29"
-cover: false
+cover: "/images/article-covers/ai-si-executive-order.png"
 ---
 
 # 트럼프, AI 대신 SI 쓰도록 행정명령
