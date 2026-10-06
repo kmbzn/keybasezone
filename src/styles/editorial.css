@@ -32,6 +32,7 @@ a{color:inherit}
 .hero h1{max-width:1120px;font-size:clamp(58px,7.1vw,112px);font-weight:400;line-height:.99;letter-spacing:-.065em}
 .hero h1 strong{font-weight:750}
 .hero h1 .temper-highlight{color:#0ba4a8}
+.hero h1 .hero-highlight-white{color:#fff}
 .hero h1 .flame-highlight{color:#ff8d68}
 .hero-description{max-width:530px;margin:26px 0 28px;color:#f4f0e9;font-size:15px;line-height:1.9}
 .hero-actions{margin-left:0}
