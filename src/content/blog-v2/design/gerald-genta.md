@@ -25,6 +25,8 @@ cover: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Patek-Philippe-Nauti
 
 1970년, Audemars Piguet의 경영진은 쿼츠 쇼크로 흔들리는 시장에서 돌파구를 찾기 위해 젠타에게 연락했다. 그는 단 하룻밤 만에 디자인 스케치를 완성했다고 알려져 있다. 영감의 원천은 잠수함의 해치(porthole)였다. 팔각형의 베젤과 드러난 나사, 그리고 케이스와 브레이슬릿이 하나로 통합된 구조였다.
 
+![Audemars Piguet Royal Oak 디자인 스케치](/images/articles/ap-sketch.png)
+
 1972년 바젤 페어에서 공개되었을 때 반응은 냉담했다. 스테인리스 스틸 소재에, 당시 기준으로 충격적인 고가(약 3,300 스위스 프랑)는 "왜 철제 시계에 금시계 값을?"이라는 비판을 받았다. 하지만 Royal Oak은 정확히 그 논리를 뒤집었다. 스틸이라서 비싼 것이 아니라, **디자인과 무브먼트의 완성도**가 가격을 결정한다는 새로운 패러다임을 제시했다.
 
 오늘날 Royal Oak은 Audemars Piguet의 상징이자 중고 시장에서 정가를 크게 웃도는 시계 중 하나다.

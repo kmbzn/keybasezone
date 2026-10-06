@@ -26,6 +26,8 @@ Herman Miller는 1905년 미국 미시간주 제일랜드(Zeeland)에서 설립�
 
 ![Aeron Chair Brooklyn Museum](https://upload.wikimedia.org/wikipedia/commons/c/ce/Aeron_chair_Brooklyn_Museum.jpg)
 
+![허먼밀러 에어론 체어 디자인 스케치](/images/articles/hm-sketch.png)
+
 기존 오피스 체어는 폼(foam)과 패브릭으로 덮인 업홀스터리 구조였다. 에어론 체어는 이를 완전히 버리고 **8Z 펠리클**(8Z Pellicle)이라는 탄성 메시 소재를 채택했다. 이 소재는 신체 윤곽에 맞게 탄력적으로 반응하면서, 공기 순환을 허용해 열 축적을 최소화한다.
 
 메시 구조는 단순한 소재 교체가 아니라, **착석 압력 분산 방식 자체를 바꾼 것**이다. 업홀스터리 의자는 중앙 압력이 집중되는 반면, 메시 서스펜션은 체중을 좌면 전체에 균일하게 분산시킨다.
