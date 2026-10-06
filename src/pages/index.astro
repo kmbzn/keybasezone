@@ -11,6 +11,10 @@ const base = import.meta.env.BASE_URL;
 const articleSections = sidebar.filter((section) => section.label);
 const lastModifiedTimestamps = getContentLastModifiedTimestamps();
 const documents = import.meta.glob('../content/blog-v2/**/*.md', { eager: true });
+const getSortTimestamp = (timestamp) => {
+  const value = Date.parse(timestamp);
+  return Number.isFinite(value) ? value : 0;
+};
 const featuredStories = articleSections.flatMap((section) => section.entries.map((entry) => {
   const slug = entry.path.replace(/^\//, '');
   const markdownPath = path.join(process.cwd(), 'src/content/blog-v2', `${slug}.md`);
@@ -23,7 +27,7 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
     updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug),
     updatedAtTimestamp: getContentLastModifiedTimestamp(lastModifiedTimestamps, slug),
   };
-})).sort((a, b) => Date.parse(b.updatedAtTimestamp) - Date.parse(a.updatedAtTimestamp)).slice(0, 6);
+})).sort((a, b) => getSortTimestamp(b.updatedAtTimestamp) - getSortTimestamp(a.updatedAtTimestamp)).slice(0, 6);
 const topics = [
   { n: '01', icon: 'computer', title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
   { n: '02', icon: 'design', title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
@@ -55,7 +59,7 @@ const topics = [
               <span class="journal-category">{story.category}</span>
               <span class="journal-image-arrow" aria-hidden="true">↗</span>
             </div>
-            <div class="journal-card-meta"><span>최종 수정 · {story.updatedAt.replaceAll('-', '.')}</span><span>READ STORY</span></div>
+            <div class="journal-card-meta"><span>최종 수정 · <time datetime={story.updatedAtTimestamp}>{story.updatedAt.replaceAll('-', '.')}</time></span><span>READ STORY</span></div>
             <h3>{story.entry.title}</h3>
           </a>
         ))}

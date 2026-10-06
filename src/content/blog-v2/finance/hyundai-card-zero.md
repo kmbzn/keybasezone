@@ -6,6 +6,8 @@ cover: "/images/article-covers/finance-hyundai-card-zero.jpg"
 
 현대카드 ZERO 시리즈는 "복잡한 조건 없이 모든 가맹점에서 혜택"을 내세운 카드다. 포인트형과 할인형 두 가지 선택지가 있으며, 2024년 2월 Edition3가 출시되며 Edition2를 단종시켰다. 두 버전의 차이를 명확히 이해하고 어떤 유형이 본인에게 유리한지 판단하는 것이 중요하다.
 
+![현대카드 ZERO Edition2 카드 스케치](/images/articles/hyundai-card-zero.png)
+
 ## Edition2 (단종, 참고용)
 
 ### 포인트형
