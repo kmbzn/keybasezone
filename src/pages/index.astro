@@ -5,11 +5,11 @@ import Footer from '../components/Footer.astro';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { sidebar } from '../data/sidebar';
-import { getContentLastModifiedDate, getContentLastModifiedDates } from '../lib/content-dates.mjs';
+import { getContentLastModifiedDate, getContentLastModifiedTimestamp, getContentLastModifiedTimestamps } from '../lib/content-dates.mjs';
 import { getArticleCover } from '../lib/article-cover.mjs';
 const base = import.meta.env.BASE_URL;
 const articleSections = sidebar.filter((section) => section.label);
-const lastModifiedDates = getContentLastModifiedDates();
+const lastModifiedTimestamps = getContentLastModifiedTimestamps();
 const documents = import.meta.glob('../content/blog-v2/**/*.md', { eager: true });
 const featuredStories = articleSections.flatMap((section) => section.entries.map((entry) => {
   const slug = entry.path.replace(/^\//, '');
@@ -20,9 +20,10 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
     category: section.label,
     entry,
     image: getArticleCover(slug, markdown, module?.frontmatter).coverImage,
-    updatedAt: getContentLastModifiedDate(lastModifiedDates, slug),
+    updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug),
+    updatedAtTimestamp: getContentLastModifiedTimestamp(lastModifiedTimestamps, slug),
   };
-})).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 6);
+})).sort((a, b) => Date.parse(b.updatedAtTimestamp) - Date.parse(a.updatedAtTimestamp)).slice(0, 6);
 const topics = [
   { n: '01', icon: 'computer', title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
   { n: '02', icon: 'design', title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },

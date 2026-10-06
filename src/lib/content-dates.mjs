@@ -5,38 +5,42 @@ import path from 'node:path';
 const contentRoot = 'src/content/blog-v2';
 
 // Read the checked-out Git history once so every article uses its own latest
-// commit date, rather than the build time or the date of the whole site.
-export function getContentLastModifiedDates() {
+// commit timestamp, rather than the build time or the date of the whole site.
+export function getContentLastModifiedTimestamps() {
   let output = '';
   try {
     output = execFileSync('git', [
-      'log', '--format=COMMIT:%cs', '--name-only', '--', contentRoot,
+      'log', '--format=COMMIT:%cI', '--name-only', '--', contentRoot,
     ], { cwd: process.cwd(), encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
   } catch {
     // Keep local previews usable when the source is downloaded without .git.
   }
 
-  const dates = new Map();
-  let commitDate = '';
+  const timestamps = new Map();
+  let commitTimestamp = '';
   for (const line of output.split(/\r?\n/)) {
     if (line.startsWith('COMMIT:')) {
-      commitDate = line.slice('COMMIT:'.length);
-    } else if (line.startsWith(`${contentRoot}/`) && line.endsWith('.md') && !dates.has(line)) {
-      dates.set(line, commitDate);
+      commitTimestamp = line.slice('COMMIT:'.length);
+    } else if (line.startsWith(`${contentRoot}/`) && line.endsWith('.md') && !timestamps.has(line)) {
+      timestamps.set(line, commitTimestamp);
     }
   }
 
-  return dates;
+  return timestamps;
 }
 
-export function getContentLastModifiedDate(dates, slug) {
+export function getContentLastModifiedTimestamp(timestamps, slug) {
   const filePath = `${contentRoot}/${slug}.md`;
-  const date = dates.get(filePath);
-  if (date) return date;
+  const timestamp = timestamps.get(filePath);
+  if (timestamp) return timestamp;
 
-  // Newly created or untracked articles still get a useful date in local builds.
+  // Newly created or untracked articles still get a useful timestamp in local builds.
   const absolutePath = path.join(process.cwd(), filePath);
-  return existsSync(absolutePath) ? statSync(absolutePath).mtime.toISOString().slice(0, 10) : '';
+  return existsSync(absolutePath) ? statSync(absolutePath).mtime.toISOString() : '';
+}
+
+export function getContentLastModifiedDate(timestamps, slug) {
+  return getContentLastModifiedTimestamp(timestamps, slug).slice(0, 10);
 }
 
 // The oldest checked-in date is the best available publication date for older
