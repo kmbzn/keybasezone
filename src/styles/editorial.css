@@ -145,8 +145,7 @@ a{color:inherit}
 .brand-color-copy h3+p{max-width:39ch;color:#ffffffeb;font-size:14px;line-height:1.75}
 .contact{padding:112px 24px 120px;background:#f0eee8}
 .contact .eyebrow{color:var(--accent)}
-.contact h2{font-size:clamp(38px,5vw,64px);font-weight:400}
-.contact h2 strong{font-weight:750}
+.contact h2{font-size:clamp(38px,5vw,64px);font-weight:750}
 .contact>p:not(.eyebrow){font-size:14px}
 .contact>a{display:inline-flex;align-items:center;gap:22px;padding:16px 20px;border:1px solid var(--ink);font-size:14px;text-decoration:none;transition:background .2s,color .2s}
 .contact>a:hover{background:var(--ink);color:#fff}
