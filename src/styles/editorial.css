@@ -39,6 +39,16 @@ a{color:inherit}
 .hero-index span{color:#ff8d68;margin:0 5px}
 .hero-image::after{background:linear-gradient(90deg,#111411d9 0%,#11141188 43%,#11141118 100%),linear-gradient(0deg,#111411b5 0%,transparent 48%)}
 
+/* Live weather and market ticker */
+.market-glance{position:relative;width:min(1320px,calc(100% - 72px));height:58px;margin:0 auto;padding:9px 0 10px;border-bottom:1px solid var(--line);overflow:hidden}
+.market-glance-viewport{height:38px;overflow:hidden}
+.market-glance-track{transition:transform .5s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.market-glance-page{display:grid;height:38px;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:clamp(16px,4vw,56px)}
+.market-glance-item{display:flex;min-width:0;align-items:baseline;justify-content:center;gap:9px;white-space:nowrap}
+.market-glance-item span{overflow:hidden;color:#777970;font-size:9px;text-overflow:ellipsis}
+.market-glance-item strong{flex:0 0 auto;color:var(--ink);font-size:11px;font-weight:650;font-variant-numeric:tabular-nums}
+.market-glance-status{position:absolute;right:0;bottom:1px;margin:0;color:#898a82;font-size:8px}
+
 /* Editorial story cards */
 .journal-section{width:min(1320px,calc(100% - 80px));margin:0 auto;padding:108px 0 112px;border-bottom:1px solid var(--line)}
 .editorial-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:38px}
@@ -335,13 +345,29 @@ a{color:inherit}
 }
 
 /* Edge-to-edge profile portrait */
-.intro{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;align-items:stretch;padding:0}
-.intro-visual{position:relative;min-width:0;min-height:min(82svh,820px);overflow:hidden}
+.intro{grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:0;align-items:start;padding:0}
+.intro-visual{position:relative;min-width:0;min-height:0;align-self:start;align-items:flex-start;overflow:visible}
 .intro-visual .eyebrow{position:absolute;z-index:1;top:38px;left:clamp(24px,3vw,50px);margin:0;color:#fff;text-shadow:0 1px 10px #0008}
-.intro-visual img{display:block;width:100%;max-width:none;height:100%;min-height:inherit;aspect-ratio:auto;object-fit:cover;object-position:center 30%;border-radius:0;box-shadow:none;animation:none}
-.intro>div:last-child{align-self:center;padding:clamp(42px,6vw,96px)}
+.intro-visual img{display:block;width:100%;max-width:560px;height:auto;max-height:none;min-height:0;aspect-ratio:auto;align-self:flex-start;margin:0;object-fit:contain;object-position:left center;border-radius:0;box-shadow:none;animation:none}
+.intro>div:last-child{align-self:start;padding:48px clamp(40px,4vw,58px)}
+.github-contributions{max-width:570px;margin-top:34px}
+.github-contributions-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
+.github-contributions-heading h2{margin:0;color:#777970;font-size:10px;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+.github-contributions-heading>a{color:#777970;font-size:10px;text-decoration:none}
+.github-contributions-heading>a:hover{color:var(--accent)}
+.github-contributions-chart{display:block;overflow-x:auto;padding:12px;border:1px solid var(--line);background:#fff}
+.github-contributions-chart img{display:block;width:100%;min-width:520px;height:auto}
 @media(max-width:680px){
+  .market-glance{width:100%;height:54px;padding:8px 20px 9px}
+  .market-glance-viewport,.market-glance-page{height:36px}
+  .market-glance-page{gap:8px}
+  .market-glance-item{gap:4px}
+  .market-glance-item span{font-size:7px}
+  .market-glance-item strong{font-size:9px}
+  .market-glance-status{right:20px}
   .intro{grid-template-columns:1fr;gap:0;padding:0}
-  .intro-visual{height:min(76svh,650px);min-height:420px}
+  .intro-visual{height:auto;min-height:0;padding-top:76px}
+  .intro-visual img{width:88%;max-width:430px;max-height:none}
   .intro>div:last-child{padding:42px 22px 64px}
+  .github-contributions{margin-top:30px}
 }

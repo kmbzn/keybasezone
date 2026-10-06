@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/brands-nomos-glashuette.jpg"
+cover: "/images/article-covers/brands-nomos-tangente.png"
 ---
 
 # NOMOS Glashütte

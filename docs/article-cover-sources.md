@@ -20,9 +20,9 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `brands-kz.jpg` | InEarMonitors.jpg | user:Julo | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:InEarMonitors.jpg) |
 | `brands-jinhao.jpg` | Fountain pen writing (literacy).jpg | Petar Milošević | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Fountain_pen_writing_(literacy).jpg) |
 | `brands-desker.jpg` | Modern workspace with a laptop, books, an apple, and a small potted plant on a bright desk.jpg | Shixart1985 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Modern_workspace_with_a_laptop%2C_books%2C_an_apple%2C_and_a_small_potted_plant_on_a_bright_desk.jpg) |
-| `brands-nomos-glashuette.jpg` | Glashütte (Sachsen) 01.JPG | Norbert Kaiser | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Glash%C3%BCtte_(Sachsen)_01.JPG) |
+| `brands-nomos-tangente.png` | Tangente watch image | Site owner supplied | Local image | — |
 | `finance-hyundai-card-zero.jpg` | Working on laptop with credit card in hand at bright home office in the afternoon.jpg | Shixart1985 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Working_on_laptop_with_credit_card_in_hand_at_bright_home_office_in_the_afternoon.jpg) |
-| `finance-shinhan-card-cheum.jpg` | Credit card terminal in Laos.jpg | Basile Morin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Credit_card_terminal_in_Laos.jpg) |
+| `finance-shinhan-card-new-way.png` | New Way card image | Site owner supplied | Local image | — |
 | `finance-sp500-etf.jpg` | New York Stock Exchange August 2017 02.jpg | Arild Vågen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:New_York_Stock_Exchange_August_2017_02.jpg) |
 | `finance-parking-account-cma.jpg` | Money saving growth.jpg | nattanan | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Money_saving_growth.jpg) |
 | `finance-berkshire-hathaway.jpg` | Downtown Omaha, Nebraska.jpg | civilengtiger | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Downtown_Omaha%2C_Nebraska.jpg) |
