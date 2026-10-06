@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/products-kurutoga.jpg"
+cover: "/images/articles/kurutoga.png"
 ---
 
 # 쿠루토가 (KURUTOGA)
