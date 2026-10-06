@@ -25,6 +25,7 @@ export const sidebar: SidebarSection[] = [
     entries: [
       { path: "/ai/si-executive-order", title: "트럼프 행정부, AI 대신 SI 쓰도록 행정명령" },
       { path: "/ai/gpt-6-1-sol", title: "GPT-6.1 Sol 출시" },
+      { path: "/ai/claude-code", title: "Claude Code 소개" },
       { path: "/ai/claude-opus-5-5", title: "Claude Opus 5.5 출시" },
       { path: "/ai/gpt-6-sol-luna", title: "GPT-6 Sol·Luna 출시" },
     ],

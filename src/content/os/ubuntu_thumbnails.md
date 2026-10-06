@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/os-ubuntu-thumbnails.jpg"
+cover: "/images/article-covers/os-ubuntu-thumbnails.png"
 ---
 
 # 우분투 영상 썸네일 문제 해결

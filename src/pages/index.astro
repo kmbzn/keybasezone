@@ -31,10 +31,10 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
   };
 })).sort((a, b) => getSortTimestamp(b.updatedAtTimestamp) - getSortTimestamp(a.updatedAtTimestamp)).slice(0, 6);
 const topics = [
-  { n: '01', icon: 'computer', title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
-  { n: '02', icon: 'design', title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
-  { n: '03', icon: 'life', title: 'Technology & Life', text: '기기 활용과 수리, 금융과 소비, 건강과 운동처럼 일상에서 만나는 기술과 선택.', href: `${base}contents/#wellness` },
-  { n: '04', icon: 'humanities', title: 'Humanities', text: '역사와 언어, 음악과 사회. 익숙한 경계를 넘어 생각의 맥락을 찾아갑니다.', href: `${base}contents/#humanities` },
+  { n: '01', icon: 'computer', image: `${base}images/topics/computer-science.png`, title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
+  { n: '02', icon: 'design', image: `${base}images/topics/design.png`, title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
+  { n: '03', icon: 'life', image: `${base}images/topics/technology-life.png`, title: 'Technology & Life', text: '기기 활용과 수리, 금융과 소비, 건강과 운동처럼 일상에서 만나는 기술과 선택.', href: `${base}contents/#wellness` },
+  { n: '04', icon: 'humanities', image: `${base}images/topics/humanities.png`, title: 'Humanities', text: '역사와 언어, 음악과 사회. 익숙한 경계를 넘어 생각의 맥락을 찾아갑니다.', href: `${base}contents/#humanities` },
 ];
 ---
 <Layout title="KeyBaseZone">
@@ -133,28 +133,7 @@ const topics = [
         <a class:list={['topic', `topic-${topic.icon}`]} href={topic.href}>
           <span class="topic-number">{topic.n}</span>
           <span class="topic-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {topic.icon === 'computer' && <>
-                <path d="M12 20v2m0-20v2m5 16v2m0-22v2M2 12h2m-2 5h2M2 7h2m16 5h2m-2 5h2m-2-10h2M7 20v2M7 2v2" />
-                <rect x="4" y="4" width="16" height="16" rx="2" />
-                <rect x="8" y="8" width="8" height="8" rx="1" />
-              </>}
-              {topic.icon === 'design' && <>
-                <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" />
-                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" stroke="none" />
-                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" stroke="none" />
-                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" stroke="none" />
-                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" stroke="none" />
-              </>}
-              {topic.icon === 'life' && <>
-                <rect x="5" y="2" width="14" height="20" rx="2" />
-                <path d="M12 18h.01" />
-              </>}
-              {topic.icon === 'humanities' && <>
-                <path d="M12 5v16" />
-                <path d="M20 19a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2l-4 .002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4a5 5 0 0 1 4 2 5 5 0 0 1 4-2h4z" />
-              </>}
-            </svg>
+            <img src={topic.image} alt="" loading="lazy" />
           </span>
           <div class="topic-copy"><h3>{topic.title}</h3><p>{topic.text}</p></div>
           <span class="topic-mark" aria-hidden="true">↗</span>

@@ -5,7 +5,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 | Local file | Source work | Creator / source | License | Source page |
 |---|---|---|---|---|
 | `os-dunggeunmo.png` | Site owner supplied | Local image | — |
-| `os-ubuntu-thumbnails.jpg` | Detalle de monitor con el editor de video de Blender.jpg | Ehécatl Cabrera | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Detalle_de_monitor_con_el_editor_de_video_de_Blender.jpg) |
+| `os-ubuntu-thumbnails.png` | Site owner supplied `vid-ico.png` | Local image | — |
 | `os-no-animation.png` | Ubuntu 11.10 Unity 3D.png | Mywikilogin | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ubuntu_11.10_Unity_3D.png) |
 | `wellness-concerta.jpg` | Sias Library - Students Studying 2017.jpg | Gary Todd | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Sias_Library_-_Students_Studying_2017.jpg) |
 | `wellness-inderal.png` | Heart diagram-fa.PNG | ZooFari edited in Persian by Alborzagros | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Heart_diagram-fa.PNG) |
@@ -34,7 +34,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `products-cx31993-dac.jpg` | Earphones BW 2011-12-10 15-49-08.JPG | Berthold Werner | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Earphones_BW_2011-12-10_15-49-08.JPG) |
 | `products-fidget-toy.png` | Site owner supplied | Local image | — |
 | `products-pinta.png` | Site owner supplied Pinta icon | Local image | — |
-| `products-claude-code.png` | Site owner supplied `claudecode.png` | Local image | — |
+| `ai-claude-code.png` | Site owner supplied `claudecode.png` | Local image | — |
 | `brands-aestrua.png` | AESTURA Atobarrier 365 Cream product photo | Sephora Australia | Product image from product listing | [Product page](https://www.sephora.com.au/products/aestura-atobarrier365-cream) |
 | `brands-musinsa-standard.jpg` | Musinsa Standard Hongdae store interior | MUSINSA | Image from brand article | [MUSINSA article](https://www.musinsa.com/content/cms/6798) |
 | `products-cleansing-milk.jpg` | DermaSense Cleansing Milk product photo | DermaSense | Image from product listing | [Product page](https://dermasense.pk/products/cleansing-milk-removes-makeup) |

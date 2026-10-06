@@ -1,7 +1,7 @@
 ---
 title: "Claude Code: 터미널에서 함께 작업하는 AI 코딩 도구"
 description: "Claude Code는 프로젝트 맥락을 살펴보고 코드 수정과 테스트 실행을 돕는 에이전틱 코딩 도구입니다."
-cover: "/images/article-covers/products-claude-code.png"
+cover: "/images/article-covers/ai-claude-code.png"
 ---
 
 # Claude Code: 터미널에서 함께 작업하는 AI 코딩 도구
