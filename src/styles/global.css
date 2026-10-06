@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{font-family:Pretendard,"Noto Sans KR",sans-serif;color:#2c2c2c;background:#fff;font-synthesis:none;text-rendering:optimizeLegibility;--text:#2c2c2c;--muted:#777;--border:#e6e6e6;--soft:#f6f6f6;--link:#3eaf7c}
+:root{font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;color:#2c2c2c;background:#fff;font-synthesis:none;text-rendering:optimizeLegibility;--text:#2c2c2c;--muted:#777;--border:#e6e6e6;--soft:#f6f6f6;--link:#3eaf7c}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;word-break:keep-all;letter-spacing:-.025em}
