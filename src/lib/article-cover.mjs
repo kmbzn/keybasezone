@@ -22,6 +22,13 @@ function getCoverImage(cover) {
   return existsSync(path.join(process.cwd(), 'public', localPath.slice(1))) ? image : '';
 }
 
+function truncateAtSentence(text, maxLength) {
+  const endings = [...text.matchAll(/[.!?。！？](?:["'”’」』】）)]*)?(?=\s|$)/gu)];
+  const withinLimit = endings.filter((ending) => ending.index + ending[0].length <= maxLength);
+  const ending = withinLimit.at(-1) ?? endings[0];
+  return ending ? text.slice(0, ending.index + ending[0].length).trim() : text;
+}
+
 function getDeck(markdown) {
   const source = withoutCode(markdown.replace(/^---\s*\n[\s\S]*?\n---\s*\n/, ''))
     .replace(/<iframe\b[\s\S]*?<\/iframe\s*>/gi, '\n')
@@ -30,7 +37,8 @@ function getDeck(markdown) {
   const titleIndex = lines.findIndex((line) => /^#\s+/.test(line));
   const tick = String.fromCharCode(96);
   const candidate = lines.slice(titleIndex + 1).map((line) => line.trim()).find((line) => line && !/^(?:#{1,6}\s|!|<|>|\||:{3,}|[-*+]\s+|(?:src|width|height|style|allow|allowfullscreen|loading|referrerpolicy|frameborder)=)/i.test(line) && !line.startsWith(tick));
-  return candidate?.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_~]/g, '').slice(0, 170) ?? '';
+  const text = candidate?.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_~]/g, '') ?? '';
+  return truncateAtSentence(text, 170);
 }
 
 export function getArticleCover(slug, markdown, frontmatter = {}) {
