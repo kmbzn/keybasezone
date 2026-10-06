@@ -22,11 +22,11 @@ export function getContentLastModifiedDate(timestamps, slug) {
 // The oldest checked-in date is the best available publication date for older
 // imported notes. Articles with an explicit `published` frontmatter date take
 // precedence at the page level.
-export function getContentPublicationDates() {
+export function getContentPublicationTimestamps() {
   let output = '';
   try {
     output = execFileSync('git', [
-      'log', '--reverse', '--format=COMMIT:%cs', '--name-only', '--', contentRoot,
+      'log', '--reverse', '--format=COMMIT:%cI', '--name-only', '--', contentRoot,
     ], { cwd: process.cwd(), encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
   } catch {
     // Keep local previews usable when the source is downloaded without .git.
@@ -45,6 +45,10 @@ export function getContentPublicationDates() {
   return dates;
 }
 
+export function getContentPublicationDates() {
+  return new Map([...getContentPublicationTimestamps()].map(([filePath, timestamp]) => [filePath, timestamp.slice(0, 10)]));
+}
+
 export function getContentPublicationDate(dates, slug) {
   const filePath = `${contentRoot}/${slug}.md`;
   const date = dates.get(filePath);
@@ -52,4 +56,13 @@ export function getContentPublicationDate(dates, slug) {
 
   const absolutePath = path.join(process.cwd(), filePath);
   return existsSync(absolutePath) ? statSync(absolutePath).mtime.toISOString().slice(0, 10) : '';
+}
+
+export function getContentPublicationTimestamp(timestamps, slug) {
+  const filePath = `${contentRoot}/${slug}.md`;
+  const timestamp = timestamps.get(filePath);
+  if (timestamp) return timestamp;
+
+  const absolutePath = path.join(process.cwd(), filePath);
+  return existsSync(absolutePath) ? statSync(absolutePath).mtime.toISOString() : '';
 }

@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# Computer Graphics Project 3: Bvh Viewer
+# Computer Graphics Project 3 BVH Viewer
 
 제출 기한: 2025년 6월 6일 (23:59) 
 **(기한 초과 제출은 점수 없음)**

@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# Project 3: Virtual Memory & File system - wiki
+# Project 3 Virtual Memory and File System Wiki
 
 ## 1. Design
 

@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# Project 02: Implementing a simple kernel-level thread 
+# Project 02 Implementing a Simple Kernel-Level Thread
 Operating System 
 
 Due date 

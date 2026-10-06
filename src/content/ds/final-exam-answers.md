@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# Data Science — Final Exam: Answer Sheet & Solutions
+# Data Science Final Exam 답안과 풀이
 
 ---
 

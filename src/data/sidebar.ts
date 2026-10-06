@@ -38,7 +38,7 @@ export const sidebar: SidebarSection[] = [
       { path: "/wellness/nasal-irrigation", title: "자가비강세척 (Nasal Irrigation)" },
       { path: "/wellness/ht08", title: "QCY HT08 (MeloBuds Pro Plus)" },
       { path: "/wellness/melatonin", title: "멜라토닌 (Melatonin)" },
-      { path: "/wellness/adb-mono-screen", title: "MonoScreen: 흑백 화면으로 돌아오는 작은 자동화" },
+      { path: "/wellness/adb-mono-screen", title: "MonoScreen, 흑백 화면으로 돌아오는 작은 자동화" },
       { path: "/wellness/cervical-abrasion", title: "치경부 마모증" },
       { path: "/wellness/barbell-squat", title: "바벨 스쿼트 (Barbell Squat)" },
     ],
@@ -55,9 +55,9 @@ export const sidebar: SidebarSection[] = [
   {
     label: "Design",
     entries: [
-      { path: "/design/google-icon-redesign-2026", title: "구글의 아이콘 대개편: 6년 만의 실수 인정" },
-      { path: "/design/gerald-genta", title: "제럴드 젠타: 럭셔리 스포츠 워치의 창시자" },
-      { path: "/design/bauhaus", title: "바우하우스: 현대 디자인의 원점" },
+      { path: "/design/google-icon-redesign-2026", title: "구글 아이콘 대개편, 6년 만의 실수 인정" },
+      { path: "/design/gerald-genta", title: "제럴드 젠타와 럭셔리 스포츠 워치의 창시자" },
+      { path: "/design/bauhaus", title: "바우하우스와 현대 디자인의 원점" },
     ],
   },
   {

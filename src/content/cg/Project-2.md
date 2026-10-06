@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# Computer Graphics Project 2: Obj viewer
+# Computer Graphics Project 2 Obj Viewer
 
 **Handed out**: April 24, 2025 
 **Due**: 2025년 5월 14일 23:59 (기한 초과 제출은 **0점** 처리됨)

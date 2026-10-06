@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# Data Science — Final Exam
+# Data Science Final Exam
 
 **All answers must be written in English.** 
 Show all work for calculation problems.

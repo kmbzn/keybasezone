@@ -2,7 +2,7 @@
 cover: "https://upload.wikimedia.org/wikipedia/commons/9/98/Dessau_Bauhaus_neu.JPG"
 ---
 
-# 바우하우스: 현대 디자인의 원점
+# 바우하우스와 현대 디자인의 원점
 
 바우하우스(Bauhaus)는 1919년 독일 바이마르(Weimar)에서 발터 그로피우스(Walter Gropius)가 설립한 예술·공예·건축 학교다. 단 14년간 존재했지만, 현대 디자인·건축·타이포그래피·가구·사진 등 거의 모든 시각 문화 분야에 걸쳐 지금까지도 가장 강력하게 작동하는 영향력을 남겼다. "Bauhaus"는 독일어로 "건축의 집(Haus des Bauens)"을 의미한다.
 

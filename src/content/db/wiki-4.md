@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# Assignment 4: Implementation of Natural Join on $B^+$-Tree
+# Assignment 4 Implementation of Natural Join on $B^+$-Tree
 ### 2021024057 김병준
 
 ## 1. Design

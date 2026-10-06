@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# C++ `std::vector` 사용법 정리
+# C++ 표준 벡터 사용법 정리
 
 <p align="center">
  <img src="https://static.wikitide.net/greatcharacterswiki/8/8f/Screenshot_2022-09-13_203128.png" width="120" alt="vector" />

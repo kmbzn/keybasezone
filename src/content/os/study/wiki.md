@@ -2,7 +2,7 @@
 cover: false
 ---
 
-# Project 02: xv6 RISC-V Kernel-Level Threads Implementation - wiki
+# Project 02 xv6 RISC-V Kernel-Level Threads Implementation Wiki
 
 ## Design
 
