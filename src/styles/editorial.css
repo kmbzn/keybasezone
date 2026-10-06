@@ -22,7 +22,7 @@ a{color:inherit}
 .site-header nav{gap:clamp(15px,1.65vw,27px);margin-right:35px;color:#34352f;font-size:13px;font-weight:600;letter-spacing:.035em}
 .site-header nav a{text-decoration:none;transition:color .18s ease}
 .site-header nav a:hover{color:var(--accent)}
-.header-github{font-size:13px}
+.header-social a{font-size:13px}
 
 /* Lead story */
 .hero{width:100%;min-height:min(760px,calc(100svh - 86px));padding:70px max(36px,calc((100% - 1440px)/2)) 82px;align-items:flex-end}
@@ -130,7 +130,8 @@ a{color:inherit}
 .brand-color-temper{background:#0ba4a8}
 .brand-color-copy{display:flex;width:100%;flex-direction:column;align-items:flex-start;padding:32px 0 0}
 .brand-color-copy p{margin:0}
-.brand-color-name-en{margin:20px 0 -8px -24px!important;color:#fff;font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;font-size:clamp(48px,7.5vw,116px);font-weight:780;line-height:.86;letter-spacing:-.065em;white-space:nowrap}
+.brand-color-name-en{margin:20px 0 -14px -16px!important;color:#fff;font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;font-size:clamp(48px,7.5vw,116px);font-weight:400;line-height:.86;letter-spacing:-.065em;white-space:nowrap}
+.brand-color-name-en strong{font-weight:800}
 .brand-color-name-ko{margin:0 0 18px!important;color:#fff;font-size:12px;font-weight:650;letter-spacing:0}
 .brand-color-hex{position:absolute;top:22px;right:24px;color:#fff;font-size:clamp(18px,2.2vw,26px);font-weight:700}
 .brand-color-copy h3{margin:0 0 8px;color:#fff;font-size:22px;font-weight:700;letter-spacing:-.03em}
@@ -253,7 +254,7 @@ a{color:inherit}
   .brand-color-hex{top:22px;right:20px}
   .brand-color-copy h3{margin-top:18px;font-size:19px}
   .brand-color-name-en{font-size:clamp(40px,14vw,58px)}
-  .brand-color-name-en{margin-left:-20px!important}
+  .brand-color-name-en{margin-left:-12px!important}
   .brand-color-name-ko{font-size:12px}
   .contact{padding:75px 20px 82px}
   .site-footer{padding:32px 22px 24px}
@@ -372,7 +373,7 @@ a{color:inherit}
   .brand-philosophy{padding-inline:11px}
   .brand-color{padding-inline:10px}
   .brand-color-hex{right:10px}
-  .brand-color-name-en{margin-left:-10px!important}
+  .brand-color-name-en{margin-left:-2px!important}
   .contact{padding-inline:10px}
   .site-footer{padding-inline:11px}
   .contents-hero{padding-inline:11px}
@@ -456,7 +457,7 @@ a{color:inherit}
   .brand-philosophy h2 span{font-size:clamp(24px,7.3vw,34px)}
   .brand-philosophy-intro>p:last-child{font-size:14px}
   .brand-color-name-en{font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;font-size:clamp(40px,12vw,58px)}
-  .brand-color-name-en{margin-left:-10px!important}
+  .brand-color-name-en{margin-left:-2px!important}
   .brand-color-list{margin-left:-11px;margin-right:-11px}
 }
 
