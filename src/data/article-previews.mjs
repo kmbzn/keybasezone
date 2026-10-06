@@ -9,7 +9,7 @@ export const articlePreviews = {
   'os/no_animation': 'Ubuntu의 창 전환 애니메이션을 끄고 데스크톱을 더 간결하고 빠릿하게 사용하는 설정입니다.',
   'ai/si-executive-order': '트럼프 행정부가 행정 문서에서 AI 대신 Super Intelligence(SI)라는 용어를 쓰도록 한 행정명령을 살펴봅니다.',
   'ai/gpt-6-1-sol': 'OpenAI GPT-6.1 Sol의 코딩·컴퓨터 사용 개선점과 가격, 출시 당시 이용 범위를 정리합니다.',
-  'ai/claude-code': '터미널에서 프로젝트를 읽고 코드를 고치는 Claude Code. 무엇을 할 수 있고, 어떻게 함께 일할까요?',
+  'ai/claude-code': '코드를 복사해 채팅창에 붙여 넣던 방식에서, AI가 프로젝트 안으로 들어와 직접 탐색하고 수정하는 방식으로. Claude Code와 에이전트 AI의 변화를 살펴봅니다.',
   'ai/claude-opus-5-5': 'Claude Opus 5.5가 긴 코딩과 전문 업무를 어떻게 겨냥했는지 성능·가격·이용 범위로 살펴봅니다.',
   'ai/gpt-6-sol-luna': 'GPT-6 Sol과 Luna의 성격은 어떻게 다를까요? 두 모델의 특징과 API 가격, 제공 범위를 정리합니다.',
   'wellness/psyllium-husk': '차전자피의 식이섬유 특성부터 섭취 방법까지, 충분한 수분 섭취 등 알아둘 점을 정리합니다.',

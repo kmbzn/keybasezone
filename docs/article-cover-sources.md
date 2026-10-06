@@ -7,7 +7,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `os-dunggeunmo.png` | Site owner supplied | Local image | — |
 | `os-ubuntu-thumbnails.png` | Site owner supplied `vid-ico.png` | Local image | — |
 | `os-no-animation.png` | Site owner supplied `ubuntu-window.png` | Local image | — |
-| `wellness-melatonin.jpg` | Bedroom @ night (3119861751).jpg | Matt @ PEK from Taipei, Taiwan | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bedroom_%40_night_(3119861751).jpg) |
+| `wellness-melatonin.png` | Site owner supplied `bed.png` | Local image | — |
 | `wellness-cervical-abrasion.png` | Cervical abrasion image | Site owner supplied | Local image | — |
 | `wellness-barbell-squat.jpg` | Woman doing squat workout in gym with barbell.jpg | Nenad Stojkovic | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Woman_doing_squat_workout_in_gym_with_barbell.jpg) |
 | `humanities-baroque-music.jpg` | Baroque orchestra Coin Du Roi.jpg | Андрей Романенко | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Baroque_orchestra_Coin_Du_Roi.jpg) |
@@ -31,7 +31,8 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `products-cx31993-dac.jpg` | Earphones BW 2011-12-10 15-49-08.JPG | Berthold Werner | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Earphones_BW_2011-12-10_15-49-08.JPG) |
 | `products-fidget-toy.png` | Site owner supplied | Local image | — |
 | `products-pinta.png` | Site owner supplied Pinta icon | Local image | — |
-| `ai-claude-code.png` | Site owner supplied `claudecode.png` | Local image | — |
+| `ai-claude-code.png` | Site owner supplied `cc.png` | Local image | — |
+| `mindscape.png` | Site owner supplied | Local image | — |
 | `brands-aestrua.png` | AESTURA Atobarrier 365 Cream product photo | Sephora Australia | Product image from product listing | [Product page](https://www.sephora.com.au/products/aestura-atobarrier365-cream) |
 | `products-cleansing-milk.jpg` | DermaSense Cleansing Milk product photo | DermaSense | Image from product listing | [Product page](https://dermasense.pk/products/cleansing-milk-removes-makeup) |
 | `ai-gpt-6-sol-luna.png` | GPT-6 Sol and Luna art card | OpenAI | OpenAI article artwork | [OpenAI announcement](https://openai.com/index/introducing-gpt-6-sol-and-luna/) |
