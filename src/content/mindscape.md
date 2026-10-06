@@ -1,12 +1,8 @@
 ---
-cover: false
+cover: "/images/mindscape.png"
 ---
 
 # Mindscape 🔥
-
-<p align="center">
-  <img src="/images/mindscape.png" width="300" alt="Mindscape artwork" />
-</p>
 
 **KeyBaseZone**은 ‘본질(Key)’, ‘기반(Base)’, ‘영역(Zone)’이라는 세 가지 개념이 교차하는 지점에서 탄생한 지식 기반 blog이다. 이 이름은 단순한 영문 조합이 아닌, 사유 구조와 창작 철학, 그리고 정체성에 대한 해석을 담고 있으며, 창의적으로 재구성된 약어 **KBZ**를 통해 고유한 의미 체계를 구축한다.
 
