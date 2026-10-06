@@ -4,8 +4,6 @@ cover: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Patek-Philippe-Nauti
 
 # 제럴드 젠타: 럭셔리 스포츠 워치의 창시자
 
-![Patek Philippe Nautilus Ref. 3700 (1976)](https://upload.wikimedia.org/wikipedia/commons/6/6e/Patek-Philippe-Nautilus-3700-1A.jpg)
-
 > *Patek Philippe Nautilus, 1976* 
 
 제럴드 젠타(Gérald Charles Genta, 1931–2011)는 20세기 시계 디자인의 가장 결정적인 인물 중 한 명이다. Royal Oak, Nautilus, IWC Ingenieur 등 오늘날 시계 시장에서 가장 높은 가격을 형성하는 스포츠 워치 카테고리가 모두 그의 손에서 탄생했다. 그는 단순히 시계를 디자인한 것이 아니라, **럭셔리 스포츠 워치**라는 장르 자체를 발명했다.

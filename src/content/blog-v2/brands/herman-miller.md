@@ -18,8 +18,6 @@ Herman Miller는 1905년 미국 미시간주 제일랜드(Zeeland)에서 설립�
 
 ## 에어론 체어 (Aeron Chair)
 
-![Aeron Chair by Herman Miller](https://upload.wikimedia.org/wikipedia/commons/5/53/Aeron_Chair_by_Herman_Miller_%289446986497%29.jpg)
-
 에어론 체어는 1994년 빌 스텀프(Bill Stumpf)와 돈 채드윅(Don Chadwick)이 공동 설계해 Herman Miller에서 출시한 오피스 체어다. 출시 당시 기존 오피스 체어 디자인의 모든 관습을 깼으며, 이후 오피스 체어의 기준을 바꾼 제품으로 평가받는다.
 
 출시 이후 현재까지 800만 개 이상이 판매되었으며, MoMA 영구 소장품으로 등재되어 있다.

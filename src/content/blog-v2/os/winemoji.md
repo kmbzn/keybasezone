@@ -16,8 +16,6 @@ GitHub 링크: [https://github.com/kmbzn/project-winemoji](https://github.com/km
 
 **Winemoji** is a specialized font designed to resolve the issue of broken emoji fonts (tofu) when using Windows-based applications like KakaoTalk within the Wine environment on Linux systems. It was created with the goal of providing an optimal user experience for those who have previously encountered inconvenience due to this problem.
 
-![tofu](./tofu.webp)
-
 ## 설치 방법
 
 :::info{title="버전 정보"}

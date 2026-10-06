@@ -4,10 +4,6 @@ cover: "https://health.ucdavis.edu/media-resources/contenthub/post/internet/good
 
 # 엑스트라 버진 올리브유 (Extra Virgin Olive Oil)
 
-<p align="center">
- <img src="https://health.ucdavis.edu/media-resources/contenthub/post/internet/good-food/2024/04/images-body/olive-oil-health-benefits.jpg" width="100%"/>
-</p>
-
 ## 정의
 - **엑스트라 버진 올리브유**는 올리브 열매를 **화학 처리 없이 물리적으로 압착**하여 추출한 **최상 등급**의 올리브유입니다. 
 - 정제 과정을 거치지 않아서 **풍미, 영양소, 향미**가 그대로 보존됩니다. 

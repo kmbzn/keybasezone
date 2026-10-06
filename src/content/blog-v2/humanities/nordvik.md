@@ -82,7 +82,6 @@ description: "러시아 북극권의 버려진 항구 정착지 Nordvik. 극지�
 
 아래는 노르드빅에 남아 있는 구조물의 폐허를 촬영한 사진이다.
 
-![Ruins of Nordvik](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nordvik_Ruins_2.jpg/960px-Nordvik_Ruins_2.jpg)
 ![Ruins of Nordvik](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Nordvik_Ruins.jpg/960px-Nordvik_Ruins.jpg)
 *사진 출처: Wikimedia Commons*
 

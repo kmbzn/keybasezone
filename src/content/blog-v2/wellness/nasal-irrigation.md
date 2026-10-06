@@ -4,10 +4,6 @@ cover: "https://upload.wikimedia.org/wikipedia/commons/4/42/Nasal_irrigation.jpg
 
 # 자가비강세척 (Nasal Irrigation)
 
-<p align="center">
- <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Nasal_irrigation.jpg" width="256px"/>
-</p>
-
 ## 개요
 
 - **자가비강세척**은 생리식염수를 사용하여 코안(비강)의 이물질을 씻어내는 **물리적인 위생 관리법**입니다.

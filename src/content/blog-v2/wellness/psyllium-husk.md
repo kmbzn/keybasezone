@@ -4,10 +4,6 @@ cover: "https://drvegan.com/cdn/shop/files/Psyllium_Husk.jpg?v=1689267974&width=
 
 # 차전자피 (Psyllium Husk)
 
-<p align="center">
- <img src="https://drvegan.com/cdn/shop/files/Psyllium_Husk.jpg?v=1689267974&width=1200" width="240" alt="Main Logo" />
-</p>
-
 ## 차전자피란?
 - 차전자피는 **Plantago ovata** 식물의 씨앗 껍질(husk)에서 추출한 수용성 식이섬유입니다.
 - 수분을 머금으면 팽창하는 성질이 있어, 장 건강을 비롯한 다양한 신체 기능에 도움을 줍니다.

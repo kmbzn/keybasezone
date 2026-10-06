@@ -81,10 +81,6 @@ cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/North-Sentinel
 - 실제 인도 정부는 섬 주민의 고립 의지를 존중, 
  섬 주민을 자치적이고 사실상의 자주민족으로 간주
 
-## 위성 사진
-
-![NorthSentinelIsland](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/North-Sentinel-Island-Sentinel-2A.png/960px-North-Sentinel-Island-Sentinel-2A.png)
-
 ## Authorship and Translation Info
 
 - **Translated and compiled by**: [kmbzn](https://kmbzn.com/) 
