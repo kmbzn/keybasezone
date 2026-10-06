@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/products-cleansing-milk.jpg"
+cover: "/images/articles/cleansing.png"
 ---
 
 # 클렌징 밀크 (Cleansing Milk)
