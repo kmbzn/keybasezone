@@ -29,7 +29,7 @@ a{color:inherit}
 .sidebar-root a{font-weight:550}
 .sidebar-mobile{display:none}
 .markdown-content{min-width:0;font-size:16px;line-height:1.8;color:var(--text)}
-.markdown-content h1,.markdown-content h2,.markdown-content h3,.markdown-content h4,.markdown-content h5,.markdown-content h6{line-height:1.35;letter-spacing:-.045em;color:#202124;font-weight:650}
+.markdown-content h1,.markdown-content h2,.markdown-content h3,.markdown-content h4,.markdown-content h5,.markdown-content h6{line-height:1.35;letter-spacing:-.03em;color:#202124;font-weight:650}
 .markdown-content h1{font-size:2.15rem;margin:0 0 1.6rem;padding-bottom:.65rem;border-bottom:1px solid var(--border)}
 .markdown-content h2{font-size:1.65rem;margin:2.4rem 0 1rem;padding-bottom:.45rem;border-bottom:1px solid var(--border)}
 .markdown-content h3{font-size:1.3rem;margin:2rem 0 .75rem}
