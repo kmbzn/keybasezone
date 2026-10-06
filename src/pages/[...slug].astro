@@ -24,7 +24,7 @@ export function getStaticPaths() {
 
 const { Content, title, category, coverHue, coverPattern, coverImage, deck, publishedAt, updatedAt } = Astro.props;
 ---
-<Layout title={title + ' — KeyBaseZone'}>
+<Layout title={title + ' — KeyBaseZone'} description={deck || title} ogImage={coverImage || '/images/bg.png'}>
   <Header />
   <header class:list={['article-cover', 'article-pattern-' + coverPattern]} style={'--cover-hue:' + coverHue}>
     <div class:list={['article-cover-visual', coverImage ? 'has-image' : 'pattern-only']}>

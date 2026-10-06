@@ -1,6 +1,9 @@
 ---
 import '../styles/global.css';
 import '../styles/editorial.css';
-const { title = 'KeyBaseZone' } = Astro.props;
+const { title = 'KeyBaseZone', description = 'KeyBaseZone', ogImage = '/images/bg.png' } = Astro.props;
+const siteUrl = Astro.site ?? new URL('https://kmbzn.com');
+const absoluteOgImage = new URL(ogImage, siteUrl).href;
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
 ---
-<!doctype html><html lang="ko-KR"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content="KeyBaseZone" /><meta name="theme-color" content="#f4f2ec" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" /><link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><title>{title}</title></head><body><slot /></body></html>
+<!doctype html><html lang="ko-KR"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content={description} /><meta name="theme-color" content="#f4f2ec" /><meta property="og:type" content="website" /><meta property="og:site_name" content="KeyBaseZone" /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonicalUrl} /><meta property="og:image" content={absoluteOgImage} /><meta property="og:image:alt" content="KeyBaseZone" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={absoluteOgImage} /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" /><link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><title>{title}</title></head><body><slot /></body></html>
