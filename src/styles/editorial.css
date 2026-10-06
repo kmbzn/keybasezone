@@ -113,7 +113,7 @@ a{color:inherit}
 .contact>a:hover{background:var(--ink);color:#fff}
 .contact>a span{margin:0;color:var(--accent)}
 .site-footer{padding:42px max(40px,calc((100% - 1320px)/2)) 28px;border-color:var(--line);background:var(--paper);font-size:11px}
-.tech-footer{text-align:left}
+.tech-footer{text-align:center}
 .tech-logos{position:relative;left:50%;width:100vw;justify-content:center;transform:translateX(-50%)}
 
 /* Archive */
