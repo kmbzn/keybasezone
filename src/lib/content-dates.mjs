@@ -1,12 +1,20 @@
 import { execFileSync } from 'node:child_process';
-import { existsSync, statSync } from 'node:fs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 
 const contentRoot = 'src/content/blog-v2';
+const contentTimestampIndex = path.join(process.cwd(), 'src/data/content-last-modified.json');
 
 // Read the checked-out Git history once so every article uses its own latest
 // commit timestamp, rather than the build time or the date of the whole site.
 export function getContentLastModifiedTimestamps() {
+  let snapshot = {};
+  try {
+    snapshot = JSON.parse(readFileSync(contentTimestampIndex, 'utf8'));
+  } catch {
+    // A missing snapshot is okay when building an older checkout.
+  }
+
   let output = '';
   try {
     output = execFileSync('git', [
@@ -16,17 +24,19 @@ export function getContentLastModifiedTimestamps() {
     // Keep local previews usable when the source is downloaded without .git.
   }
 
-  const timestamps = new Map();
+  const historyTimestamps = new Map();
   let commitTimestamp = '';
   for (const line of output.split(/\r?\n/)) {
     if (line.startsWith('COMMIT:')) {
       commitTimestamp = line.slice('COMMIT:'.length);
-    } else if (line.startsWith(`${contentRoot}/`) && line.endsWith('.md') && !timestamps.has(line)) {
-      timestamps.set(line, commitTimestamp);
+    } else if (line.startsWith(`${contentRoot}/`) && line.endsWith('.md') && !historyTimestamps.has(line)) {
+      historyTimestamps.set(line, commitTimestamp);
     }
   }
 
-  return timestamps;
+  // Prefer timestamps found in the current checkout, then fill gaps from the
+  // checked-in snapshot for shallow deployment clones.
+  return new Map([...Object.entries(snapshot), ...historyTimestamps]);
 }
 
 export function getContentLastModifiedTimestamp(timestamps, slug) {
