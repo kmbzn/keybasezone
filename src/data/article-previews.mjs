@@ -40,6 +40,7 @@ export const articlePreviews = {
   'finance/berkshire-hathaway': '워런 버핏이 이끄는 버크셔 해서웨이의 사업 구조와 A·B 주식, 장기 투자 관점을 살펴봅니다.',
   'finance/bitcoin': '비트코인을 처음 살 때의 망설임에서 시작해, 소수점 거래와 보관 등 기본 개념을 차근히 돌아봅니다.',
   'products/audio-interface': '마이크와 악기를 녹음하고 스피커로 출력하는 오디오 인터페이스의 역할과 제품 선택 기준을 정리합니다.',
+  'wellness/adb-mono-screen': '도파민 디톡스를 위해 휴대폰을 흑백으로 써도 지도와 카메라 때문에 컬러를 켤 때가 있습니다. 다시 흑백으로 돌리는 걸 자꾸 잊던 제가 만든 Android 도구, MonoScreen 이야기입니다.',
   'products/pinta': '자르기와 레이어, 색상 조정까지 가볍게 처리하는 무료 오픈소스 이미지 편집기 Pinta를 소개합니다.',
   'products/kurutoga': '필기할수록 샤프심을 돌려 뾰족함을 유지하는 쿠루토가의 작동 원리와 제품군을 살펴봅니다.',
   'products/cx31993-dac': 'USB-C에 꽂아 쓰는 CX31993 DAC 동글의 구성과 음질, 구입 전에 확인할 점을 정리합니다.',

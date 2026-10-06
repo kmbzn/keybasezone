@@ -31,6 +31,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `products-cx31993-dac.jpg` | Earphones BW 2011-12-10 15-49-08.JPG | Berthold Werner | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Earphones_BW_2011-12-10_15-49-08.JPG) |
 | `products-fidget-toy.png` | Site owner supplied | Local image | — |
 | `products-pinta.png` | Site owner supplied Pinta icon | Local image | — |
+| `wellness-mono-screen.png` | Site owner supplied `monochrome.png` | Local image | — |
 | `ai-claude-code.png` | Site owner supplied `cc.png` | Local image | — |
 | `mindscape.png` | Site owner supplied | Local image | — |
 | `brands-aestrua.png` | AESTURA Atobarrier 365 Cream product photo | Sephora Australia | Product image from product listing | [Product page](https://www.sephora.com.au/products/aestura-atobarrier365-cream) |

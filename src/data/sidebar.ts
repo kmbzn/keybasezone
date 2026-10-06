@@ -38,6 +38,7 @@ export const sidebar: SidebarSection[] = [
       { path: "/wellness/nasal-irrigation", title: "자가비강세척 (Nasal Irrigation)" },
       { path: "/wellness/ht08", title: "QCY HT08 (MeloBuds Pro Plus)" },
       { path: "/wellness/melatonin", title: "멜라토닌 (Melatonin)" },
+      { path: "/wellness/adb-mono-screen", title: "MonoScreen: 흑백 화면으로 돌아오는 작은 자동화" },
       { path: "/wellness/cervical-abrasion", title: "치경부 마모증" },
       { path: "/wellness/barbell-squat", title: "바벨 스쿼트 (Barbell Squat)" },
     ],
