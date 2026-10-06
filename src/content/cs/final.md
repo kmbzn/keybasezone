@@ -19,13 +19,13 @@ cover: false
 - (1) Process is a program in execution. (O)
 - (2) Single-threaded process has only one program counter. (O)
 - (3) Multi-threaded process has one program counter per thread. (O)
-- (4) ~~A process has its own physical memory space.~~ (X)
+- (4) <del>A process has its own physical memory space.</del> (X)
 
 ## 3. **Select all** the correct explanation about malware analysis methods. [5점]
 - (1) The static analysis method analyzes executable files without execution. (O)
 - (2) The dynamic analysis method analyzes malware by executing the malware in a controlled enviornment. (O)
 - (3) The static analysis method cannot analyze malware that applied with the packing techniques. (O)
-- (4) ~~The dynamic analysis method cannot analyze malware with an encrypted code section.~~ (X)
+- (4) <del>The dynamic analysis method cannot analyze malware with an encrypted code section.</del> (X)
 - (5) The dynamic analysis method can analyze only a part of a code section. (O)
 
 ## 4. What are the execution results of the following code statements? [10점]

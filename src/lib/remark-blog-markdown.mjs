@@ -39,6 +39,14 @@ export default function remarkBlogMarkdown() {
       for (const node of parent.children ?? []) {
         if (node.type === 'image') {
           node.url = publicImageUrl(node.url, file);
+        } else if (node.type === 'delete') {
+          node.data ??= {};
+          node.data.hName = 'span';
+          node.children = [
+            { type: 'text', value: '~~' },
+            ...node.children,
+            { type: 'text', value: '~~' },
+          ];
         } else if (node.type === 'heading' && node.depth === 1 && !hasArticleTitle) {
           hasArticleTitle = true;
           node.data ??= {};
