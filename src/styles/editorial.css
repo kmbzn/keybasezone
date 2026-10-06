@@ -31,7 +31,6 @@ a{color:inherit}
 .hero-copy .eyebrow span{color:#ff704f;font-size:18px}
 .hero h1{max-width:1120px;font-size:clamp(58px,7.1vw,112px);font-weight:400;line-height:.99;letter-spacing:-.065em}
 .hero h1 strong{font-weight:750}
-.hero h1 em{color:#ff8d68}
 .hero-description{max-width:530px;margin:26px 0 28px;color:#f4f0e9;font-size:15px;line-height:1.9}
 .hero-actions{margin-left:0}
 .hero .button-outline{min-height:52px;padding:0 20px;gap:35px;border-color:#fff;background:#fff;color:#181916;font-size:13px;transition:background .2s,color .2s,transform .2s}
@@ -224,8 +223,9 @@ a{color:inherit}
   .brand img{width:128px}
   .header-github{display:inline-flex}
   .hero{min-height:calc(100svh - 116px);padding:54px 22px 64px}
-  .hero-actions{display:flex;justify-content:center}
-  .hero h1{font-size:clamp(42px,9vw,68px);line-height:1.02}
+  .hero-actions{display:flex;width:100%;justify-content:center}
+  .hero-actions>.button{margin-inline:auto}
+  .hero h1{font-size:clamp(46px,10vw,72px);line-height:1.02}
   .hero-description{font-size:14px}
   .hero-index{right:22px;bottom:20px;font-size:8px}
   .journal-section{width:100%;padding:70px 0 76px}
@@ -289,7 +289,7 @@ a{color:inherit}
   .markdown-content pre{padding:16px;font-size:12px}
 }
 @media(max-width:420px){
-  .hero h1{font-size:clamp(38px,10vw,48px)}
+  .hero h1{font-size:clamp(46px,12vw,56px)}
   .journal-grid{gap:10px}
   .journal-card-meta{display:block}
   .topic{min-height:205px;padding:14px}
