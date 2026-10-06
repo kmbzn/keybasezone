@@ -49,8 +49,8 @@ a{color:inherit}
 .journal-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:38px 22px}
 .journal-card{display:block;min-width:0;text-decoration:none;color:var(--ink)}
 .journal-card:first-child{grid-column:span 2}
-.journal-image{position:relative;aspect-ratio:1.33;background:#e4e1d8;overflow:hidden;isolation:isolate}
-.journal-card:first-child .journal-image{aspect-ratio:1.57}
+.journal-image{position:relative;aspect-ratio:1;background:#e4e1d8;overflow:hidden;isolation:isolate}
+.journal-card:first-child .journal-image{aspect-ratio:1}
 .journal-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
 .journal-card:hover .journal-image img{transform:scale(1.025)}
 .journal-pattern{position:absolute;inset:0;background:radial-gradient(circle at 78% 24%,#fff7 0 1px,transparent 2px),linear-gradient(130deg,#e8b7a3,#c7d8ce 52%,#d4c3e0);background-size:14px 14px,cover}
@@ -58,7 +58,7 @@ a{color:inherit}
 .journal-card:nth-child(4n) .journal-pattern{background:repeating-linear-gradient(135deg,#e3c7b6 0 18px,#eadbd0 18px 36px)}
 .journal-category{position:absolute;top:15px;left:15px;padding:8px 10px;background:#181916;color:#fff;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .journal-image-arrow{position:absolute;right:15px;bottom:15px;display:grid;width:38px;height:38px;place-items:center;background:#fff;color:var(--ink);font-size:18px;transition:background .2s,color .2s,transform .2s}
-.journal-card:hover .journal-image-arrow{background:var(--accent);color:#fff;transform:rotate(45deg)}
+.journal-card:hover .journal-image-arrow{background:#0ba4a8;color:#fff;transform:none}
 .journal-card-meta{display:flex;justify-content:space-between;gap:10px;margin:15px 0 9px;color:#777970;font-size:9px;font-weight:650;letter-spacing:.12em}
 .journal-card h3{margin:0;max-width:35ch;font-size:clamp(18px,1.7vw,23px);line-height:1.34;letter-spacing:-.05em;font-weight:650;transition:color .2s}
 .journal-card:first-child h3{max-width:28ch;font-size:clamp(25px,3vw,39px);line-height:1.18;letter-spacing:-.065em}
@@ -207,8 +207,7 @@ a{color:inherit}
   .editorial-heading h2{font-size:42px}
   .journal-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 13px}
   .journal-card:first-child{grid-column:span 2}
-  .journal-card:first-child .journal-image{aspect-ratio:1.35}
-  .journal-image{aspect-ratio:1.05}
+  .journal-card:first-child .journal-image,.journal-image{aspect-ratio:1}
   .journal-card-meta{font-size:8px;letter-spacing:.08em}
   .journal-card-meta span:last-child{display:none}
   .journal-card h3{font-size:17px}
