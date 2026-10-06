@@ -7,9 +7,6 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `os-dunggeunmo.png` | Site owner supplied | Local image | — |
 | `os-ubuntu-thumbnails.png` | Site owner supplied `vid-ico.png` | Local image | — |
 | `os-no-animation.png` | Ubuntu 11.10 Unity 3D.png | Mywikilogin | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ubuntu_11.10_Unity_3D.png) |
-| `wellness-concerta.jpg` | Sias Library - Students Studying 2017.jpg | Gary Todd | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Sias_Library_-_Students_Studying_2017.jpg) |
-| `wellness-inderal.png` | Heart diagram-fa.PNG | ZooFari edited in Persian by Alborzagros | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Heart_diagram-fa.PNG) |
-| `wellness-sertraline.jpg` | Garden path and flowers in Perth, Western Australia, 2026.jpg | Perth Landscape Guys | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Garden_path_and_flowers_in_Perth%2C_Western_Australia%2C_2026.jpg) |
 | `wellness-melatonin.jpg` | Bedroom @ night (3119861751).jpg | Matt @ PEK from Taipei, Taiwan | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bedroom_%40_night_(3119861751).jpg) |
 | `wellness-cervical-abrasion.png` | Cervical abrasion image | Site owner supplied | Local image | — |
 | `wellness-barbell-squat.jpg` | Woman doing squat workout in gym with barbell.jpg | Nenad Stojkovic | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Woman_doing_squat_workout_in_gym_with_barbell.jpg) |
@@ -36,7 +33,6 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `products-pinta.png` | Site owner supplied Pinta icon | Local image | — |
 | `ai-claude-code.png` | Site owner supplied `claudecode.png` | Local image | — |
 | `brands-aestrua.png` | AESTURA Atobarrier 365 Cream product photo | Sephora Australia | Product image from product listing | [Product page](https://www.sephora.com.au/products/aestura-atobarrier365-cream) |
-| `brands-musinsa-standard.jpg` | Musinsa Standard Hongdae store interior | MUSINSA | Image from brand article | [MUSINSA article](https://www.musinsa.com/content/cms/6798) |
 | `products-cleansing-milk.jpg` | DermaSense Cleansing Milk product photo | DermaSense | Image from product listing | [Product page](https://dermasense.pk/products/cleansing-milk-removes-makeup) |
 | `ai-gpt-6-sol-luna.png` | GPT-6 Sol and Luna art card | OpenAI | OpenAI article artwork | [OpenAI announcement](https://openai.com/index/introducing-gpt-6-sol-and-luna/) |
 | `ai-gpt-6-1-sol.jpg` | GPT-6.1 Sol launch presentation | Asia Today | Image from news article | [Asia Today article](https://en.asiatoday.co.kr/view.php?key=20260930001304543) |

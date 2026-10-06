@@ -37,9 +37,6 @@ export const sidebar: SidebarSection[] = [
       { path: "/wellness/extra-virgin-olive-oil", title: "엑스트라 버진 올리브유 (Extra Virgin Olive Oil)" },
       { path: "/wellness/nasal-irrigation", title: "자가비강세척 (Nasal Irrigation)" },
       { path: "/wellness/ht08", title: "QCY HT08 (MeloBuds Pro Plus)" },
-      { path: "/wellness/concerta", title: "콘서타 (Concerta)" },
-      { path: "/wellness/inderal", title: "인데놀 (Inderal)" },
-      { path: "/wellness/sertraline", title: "설트랄린 (Sertraline)" },
       { path: "/wellness/melatonin", title: "멜라토닌 (Melatonin)" },
       { path: "/wellness/cervical-abrasion", title: "치경부 마모증" },
       { path: "/wellness/barbell-squat", title: "바벨 스쿼트 (Barbell Squat)" },
@@ -72,7 +69,6 @@ export const sidebar: SidebarSection[] = [
       { path: "/brands/jinhao", title: "JINHAO (金豪)" },
       { path: "/brands/herman-miller", title: "Herman Miller" },
       { path: "/brands/desker", title: "데스커 (DESKER)" },
-      { path: "/brands/musinsa-standard", title: "무신사 스탠다드 (Musinsa Standard)" },
     ],
   },
   {
