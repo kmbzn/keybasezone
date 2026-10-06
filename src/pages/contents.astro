@@ -9,8 +9,13 @@ const sections = sidebar.filter((section) => section.label);
 <Layout title="Contents | KeyBaseZone">
   <Header />
   <main class="contents-page">
-    <section class="contents-hero" style={`--contents-background:url("${import.meta.env.BASE_URL}images/earth-dawn-from-space.png")`}>
-      <div class="contents-hero-copy"><h1>Contents</h1></div>
+    <section class="contents-hero" style={`--contents-background:url("${import.meta.env.BASE_URL}images/earth-orbit-global-network.png")`}>
+      <div class="contents-hero-copy">
+        <p class="eyebrow">THE KEYBASEZONE ARCHIVE <span>·</span> {String(sections.length).padStart(2, '0')} CATEGORIES</p>
+        <h1>Contents</h1>
+        <p class="contents-hero-description">전공의 기술부터 생활의 발견까지, 배우고 기록한 이야기들.</p>
+        <nav class="contents-jump" aria-label="카테고리 바로가기">{sections.map((section) => <a href={`#${section.label?.toLowerCase()}`}>{section.label}</a>)}</nav>
+      </div>
     </section>
     <section class="contents-grid" aria-label="콘텐츠 카테고리">
       {sections.map((section, index) => (
