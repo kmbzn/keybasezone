@@ -1,20 +1,12 @@
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync, statSync } from 'node:fs';
-import path from 'node:path';
+import { existsSync, statSync } from 'node:fs';
+import contentLastModifiedSnapshot from '../data/content-last-modified.json';
 
 const contentRoot = 'src/content/blog-v2';
-const contentTimestampIndex = path.join(process.cwd(), 'src/data/content-last-modified.json');
 
 // Read the checked-out Git history once so every article uses its own latest
 // commit timestamp, rather than the build time or the date of the whole site.
 export function getContentLastModifiedTimestamps() {
-  let snapshot = {};
-  try {
-    snapshot = JSON.parse(readFileSync(contentTimestampIndex, 'utf8'));
-  } catch {
-    // A missing snapshot is okay when building an older checkout.
-  }
-
   let output = '';
   try {
     output = execFileSync('git', [
@@ -36,17 +28,13 @@ export function getContentLastModifiedTimestamps() {
 
   // Git history is the authoritative source for files visible in the checkout;
   // the snapshot fills gaps when deployment clones contain limited history.
-  return new Map([...Object.entries(snapshot), ...historyTimestamps]);
+  return new Map([...Object.entries(contentLastModifiedSnapshot), ...historyTimestamps]);
 }
 
 export function getContentLastModifiedTimestamp(timestamps, slug) {
   const filePath = `${contentRoot}/${slug}.md`;
   const timestamp = timestamps.get(filePath);
-  if (timestamp) return timestamp;
-
-  // Newly created or untracked articles still get a useful timestamp in local builds.
-  const absolutePath = path.join(process.cwd(), filePath);
-  return existsSync(absolutePath) ? statSync(absolutePath).mtime.toISOString() : '';
+  return timestamp || '';
 }
 
 export function getContentLastModifiedDate(timestamps, slug) {

@@ -314,3 +314,15 @@ a{color:inherit}
   html{scroll-behavior:auto}
   .journal-image img,.journal-image-arrow,.topic,.journal-card h3,.contact>a{transition:none}
 }
+
+/* Edge-to-edge profile portrait */
+.intro{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;align-items:stretch;padding:0}
+.intro-visual{position:relative;min-width:0;min-height:min(82svh,820px);overflow:hidden}
+.intro-visual .eyebrow{position:absolute;z-index:1;top:38px;left:clamp(24px,3vw,50px);margin:0;color:#fff;text-shadow:0 1px 10px #0008}
+.intro-visual img{display:block;width:100%;max-width:none;height:100%;min-height:inherit;aspect-ratio:auto;object-fit:cover;object-position:center 30%;border-radius:0;box-shadow:none;animation:none}
+.intro>div:last-child{align-self:center;padding:clamp(42px,6vw,96px)}
+@media(max-width:680px){
+  .intro{grid-template-columns:1fr;gap:0;padding:0}
+  .intro-visual{height:min(76svh,650px);min-height:420px}
+  .intro>div:last-child{padding:42px 22px 64px}
+}
