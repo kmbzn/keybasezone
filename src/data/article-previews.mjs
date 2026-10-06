@@ -20,6 +20,7 @@ export const articlePreviews = {
   'wellness/cervical-abrasion': '치아와 잇몸 경계가 패이는 치경부 마모증의 원인과 증상, 관리할 때 알아둘 점을 정리합니다.',
   'wellness/barbell-squat': '하체와 코어를 함께 쓰는 바벨 스쿼트의 자세, 주요 근육과 안전하게 운동하는 기본을 알아봅니다.',
   'humanities/nordvik': '러시아 북극권의 버려진 항구 Nordvik. 극지의 지리와 소금 채굴, 폐허에 남은 역사를 따라갑니다.',
+  'humanities/nobel-prize-2026': '빛으로 신경세포를 제어한 광유전학과 남극 얼음 아래에서 우주 중성미자를 포착한 아이스큐브. 2026년 노벨 생리의학상과 물리학상의 의미를 살펴봅니다.',
   'humanities/north-sentinel-island': '벵골만의 노스센티널섬과 외부 접촉을 거부하며 살아가는 주민들의 역사·보호 원칙을 살펴봅니다.',
   'humanities/rongorongo': '이스터섬에 남은 롱고롱고 목판 문자는 어떤 기록 체계였을까요? 해독을 둘러싼 쟁점을 정리합니다.',
   'humanities/baroque-music': '바흐와 헨델의 시대, 1600~1750년 바로크 음악의 양식과 악곡이 남긴 변화를 살펴봅니다.',

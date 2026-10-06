@@ -51,6 +51,7 @@ const sections: SidebarSection[] = [
   {
     label: "Humanities",
     entries: [
+      { path: "/humanities/nobel-prize-2026" },
       { path: "/humanities/nordvik" },
       { path: "/humanities/north-sentinel-island" },
       { path: "/humanities/rongorongo" },
