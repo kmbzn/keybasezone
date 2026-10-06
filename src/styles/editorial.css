@@ -31,6 +31,8 @@ a{color:inherit}
 .hero-copy .eyebrow span{color:#ff704f;font-size:18px}
 .hero h1{max-width:1120px;font-size:clamp(58px,7.1vw,112px);font-weight:400;line-height:.99;letter-spacing:-.065em}
 .hero h1 strong{font-weight:750}
+.hero h1 .temper-highlight{color:#0ba4a8}
+.hero h1 .flame-highlight{color:#ff8d68}
 .hero-description{max-width:530px;margin:26px 0 28px;color:#f4f0e9;font-size:15px;line-height:1.9}
 .hero-actions{margin-left:0}
 .hero .button-outline{min-height:52px;padding:0 20px;gap:35px;border-color:#fff;background:#fff;color:#181916;font-size:13px;transition:background .2s,color .2s,transform .2s}
@@ -472,6 +474,5 @@ a{color:inherit}
 
 .eyebrow{font-size:12px;letter-spacing:.08em}
 .hero-copy .eyebrow{font-size:12px;letter-spacing:.1em}
-.hero h1 .temper-highlight{color:#0ba4a8}
 .brand-color-list{gap:0;background:transparent}
 .built-with{font-size:13px!important;letter-spacing:.04em}
