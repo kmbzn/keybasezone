@@ -30,15 +30,15 @@ const { Content, title, category, coverHue, coverPattern, coverImage, deck, publ
     <div class:list={['article-cover-visual', coverImage ? 'has-image' : 'pattern-only']}>
       {coverImage && <img src={coverImage} alt="" fetchpriority="high" />}
       <div class="article-cover-pattern" aria-hidden="true"></div>
-      <span class="article-cover-visual-mark">KEYBASEZONE JOURNAL</span>
+      <span class="article-cover-visual-mark">KeyBaseZone journal</span>
     </div>
     <div class="article-cover-copy">
-      <p class="article-cover-kicker">{category} <span>·</span> FIELD NOTES</p>
+      <p class="article-cover-kicker">{category} <span>·</span> Field notes</p>
       <h1>{title}</h1>
       {deck && <p class="article-cover-deck">{deck}</p>}
       <p class="article-cover-updated">발행일 · {publishedAt.replaceAll('-', '.')} <span>·</span> 최종 수정 · {updatedAt.replaceAll('-', '.')}</p>
-      <p class="article-cover-byline">A PERSONAL KNOWLEDGE ARCHIVE</p>
-      <a class="article-cover-back" href="/contents/">ALL STORIES <span>↗</span></a>
+      <p class="article-cover-byline">A personal knowledge archive</p>
+      <a class="article-cover-back" href="/contents/">All stories <span>↗</span></a>
     </div>
   </header>
   <section class="article-reading">
