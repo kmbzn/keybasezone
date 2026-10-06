@@ -1,5 +1,5 @@
 ---
-cover: "https://upload.wikimedia.org/wikipedia/commons/4/42/Nasal_irrigation.jpg"
+cover: "/images/article-covers/wellness-nasal-irrigation.png"
 ---
 
 # 자가비강세척 (Nasal Irrigation)
