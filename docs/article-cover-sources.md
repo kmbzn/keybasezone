@@ -6,7 +6,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 |---|---|---|---|---|
 | `os-dunggeunmo.png` | Site owner supplied | Local image | — |
 | `os-ubuntu-thumbnails.png` | Site owner supplied `vid-ico.png` | Local image | — |
-| `os-no-animation.png` | Ubuntu 11.10 Unity 3D.png | Mywikilogin | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ubuntu_11.10_Unity_3D.png) |
+| `os-no-animation.png` | Site owner supplied `ubuntu-window.png` | Local image | — |
 | `wellness-melatonin.jpg` | Bedroom @ night (3119861751).jpg | Matt @ PEK from Taipei, Taiwan | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bedroom_%40_night_(3119861751).jpg) |
 | `wellness-cervical-abrasion.png` | Cervical abrasion image | Site owner supplied | Local image | — |
 | `wellness-barbell-squat.jpg` | Woman doing squat workout in gym with barbell.jpg | Nenad Stojkovic | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Woman_doing_squat_workout_in_gym_with_barbell.jpg) |
