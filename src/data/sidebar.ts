@@ -28,6 +28,7 @@ const sections: SidebarSection[] = [
   {
     label: "AI",
     entries: [
+      { path: "/ai/ai-core" },
       { path: "/ai/si-executive-order" },
       { path: "/ai/gpt-6-1-sol" },
       { path: "/ai/claude-code" },
