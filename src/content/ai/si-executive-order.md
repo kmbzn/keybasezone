@@ -1,7 +1,7 @@
 ---
 title: "트럼프 행정부, AI 대신 SI 쓰도록 행정명령"
-description: "트럼프 행정부가 2026년 9월 행정명령에 따라 연방 행정부 문서에서 AI 대신 Super Intelligence(SI)를 쓰도록 했습니다."
 cover: "/images/article-covers/ai-si-executive-order.webp"
+description: '트럼프 행정부가 행정 문서에서 AI 대신 Super Intelligence(SI)라는 용어를 쓰도록 한 행정명령을 살펴봅니다.'
 ---
 
 # 트럼프 행정부, AI 대신 SI 쓰도록 행정명령

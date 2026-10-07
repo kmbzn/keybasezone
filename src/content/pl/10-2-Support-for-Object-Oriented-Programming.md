@@ -1,6 +1,7 @@
 ---
 sitemap: false
 cover: false
+description: '10.2. Support for Object Oriented Programming에 관한 내용을 정리합니다.'
 ---
 # 10.2. Support for Object Oriented Programming
 

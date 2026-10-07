@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '1. 각 $B^+$-tree의 가장 leftmost에 해당하는 leaf page부터 접근을 시작합니다.'
 ---
 
 # Assignment 4 Implementation of Natural Join on $B^+$-Tree

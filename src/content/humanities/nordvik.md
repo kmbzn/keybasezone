@@ -1,6 +1,6 @@
 ---
 cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nordvik_Ruins_2.jpg/960px-Nordvik_Ruins_2.jpg"
-description: "러시아 북극권의 버려진 항구 정착지 Nordvik. 극지의 지리와 소금 채굴, 폐허로 남은 역사를 살펴봅니다."
+description: '러시아 북극권의 버려진 항구 Nordvik. 극지의 지리와 소금 채굴, 폐허에 남은 역사를 따라갑니다.'
 ---
 
 # Nordvik, Russia

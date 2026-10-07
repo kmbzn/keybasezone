@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '→ “점들의 집합을 이동시키는 것”'
 ---
 
 # 3 - Transformations

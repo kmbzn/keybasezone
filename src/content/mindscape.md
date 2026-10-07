@@ -1,5 +1,6 @@
 ---
 cover: "/images/mindscape.webp"
+description: 'KeyBaseZone이라는 이름에 담긴 본질의 열쇠, 생각의 기반, 사유가 펼쳐지는 공간의 의미를 소개합니다.'
 ---
 
 # Mindscape 🔥

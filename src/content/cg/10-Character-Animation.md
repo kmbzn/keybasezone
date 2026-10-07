@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '대부분의 최신 애니메이션은 이 3D 방식으로 제작됨'
 ---
 
 # 10 - Character Animation

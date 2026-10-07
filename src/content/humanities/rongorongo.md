@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/humanities-rongorongo.jpg"
+description: '이스터섬에 남은 롱고롱고 목판 문자는 어떤 기록 체계였을까요? 해독을 둘러싼 쟁점을 정리합니다.'
 ---
 
 # 롱고롱고(Rongorongo)

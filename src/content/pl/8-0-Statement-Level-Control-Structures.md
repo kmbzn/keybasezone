@@ -1,6 +1,7 @@
 ---
 sitemap: false
 cover: false
+description: '순서 있음, 조건도 한 방향으로 강제됨'
 ---
 # 8.0. Statement Level Control Structures
 

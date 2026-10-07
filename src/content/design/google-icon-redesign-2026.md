@@ -1,5 +1,6 @@
 ---
 cover: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq4vEyIdFIDKnNv0qBck2KKKjXM7uzWyYHtGCuKaiv81yMfQbbIUsC05UaR9Xmjkcmd9dq3PKx6v9g3nZ0vlt4yGKhcCcyaFAvhqrWiXCaZsM7IhsXom_nUMqFSvbJJsG_QNhHtDxECFgKLqTrySYj_Oq4525A0VBcVEAD9YBT0FRUtjJsXU3LQE4ukpk/s2000/Introducing%20a%20fresh%20visual%20identity%20for%20Google%20Workspace%20app%20icons.png"
+description: 'Google Workspace 아이콘은 왜 다시 바뀌었을까요? 2026년 개편에서 드러난 색과 브랜드 시스템의 변화입니다.'
 ---
 
 # 구글 아이콘 대개편, "6년 만의 실수 인정"

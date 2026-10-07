@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'Vim 사용 매뉴얼에 관한 내용을 정리합니다.'
 ---
 
 # Vim 사용 매뉴얼

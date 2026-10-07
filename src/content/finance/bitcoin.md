@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/finance-bitcoin.jpg"
+description: '비트코인을 처음 살 때의 망설임에서 시작해, 소수점 거래와 보관 등 기본 개념을 차근히 돌아봅니다.'
 ---
 
 # 비트코인 (Bitcoin)

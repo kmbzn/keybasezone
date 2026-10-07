@@ -1,5 +1,6 @@
 ---
 cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/North-Sentinel-Island-Sentinel-2A.png/960px-North-Sentinel-Island-Sentinel-2A.png"
+description: '벵골만의 노스센티널섬과 외부 접촉을 거부하며 살아가는 주민들의 역사·보호 원칙을 살펴봅니다.'
 ---
 
 # North Sentinel Island

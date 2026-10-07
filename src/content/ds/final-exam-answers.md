@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '---'
 ---
 
 # Data Science Final Exam 답안과 풀이

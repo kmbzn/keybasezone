@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'Implementing a simple kernel-level thread'
 ---
 
 # Project 02 Test Code

@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'Handed out: April 24, 2025'
 ---
 
 # Computer Graphics Project 2 Obj Viewer

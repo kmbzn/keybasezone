@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'Jiwan Kim — KAIST, Daejeon, Republic of Korea · kim.jiwan@kaist.ac.kr'
 ---
 
 # Disentangling and Generating Modalities for Recommendation in Missing Modality Scenarios

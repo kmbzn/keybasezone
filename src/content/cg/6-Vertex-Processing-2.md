@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '$$'
 ---
 
 # 6 - Vertex Processing 2

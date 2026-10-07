@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/finance-berkshire-hathaway.jpg"
+description: '워런 버핏이 이끄는 버크셔 해서웨이의 사업 구조와 A·B 주식, 장기 투자 관점을 살펴봅니다.'
 ---
 
 # 버크셔 해서웨이 (Berkshire Hathaway)

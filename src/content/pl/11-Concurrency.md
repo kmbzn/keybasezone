@@ -1,6 +1,7 @@
 ---
 sitemap: false
 cover: false
+description: 'What do we study in this chapter?'
 ---
 # 11. Concurrency
 

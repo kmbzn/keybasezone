@@ -1,5 +1,6 @@
 ---
 cover: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Patek-Philippe-Nautilus-3700-1A.jpg"
+description: '오데마 피게 로열 오크와 파텍 필립 노틸러스를 디자인한 제럴드 젠타의 삶과 유산을 돌아봅니다.'
 ---
 
 # 제럴드 젠타, 럭셔리 스포츠 워치의 창시자

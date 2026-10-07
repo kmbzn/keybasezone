@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '본 project의 목표는 xv6 RISC-V 기반 운영체제에 kernel-level thread (커널 수준 thread) 기능을 추가하는 것이다.'
 ---
 
 # Project 02 xv6 RISC-V Kernel-Level Threads Implementation Wiki

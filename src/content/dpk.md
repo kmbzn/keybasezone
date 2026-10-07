@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '1) 애자일(Agile) 방법론'
 ---
 
 ## 1단원 - 요구사항 확인

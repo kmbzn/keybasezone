@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '(3D 장면의 기하 정보를 픽셀 단위의 2D 이미지로 변환하는 일련의 처리 과정)'
 ---
 
 # 5 - Vertex Processing 1

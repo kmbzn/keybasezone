@@ -1,5 +1,6 @@
 ---
 cover: "/images/articles/cleansing.webp"
+description: '우유처럼 부드러운 제형의 클렌징 밀크는 어떤 피부와 세안 습관에 어울리는지 알아봅니다.'
 ---
 
 # 클렌징 밀크 (Cleansing Milk)

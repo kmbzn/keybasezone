@@ -1,5 +1,6 @@
 ---
 cover: "https://drvegan.com/cdn/shop/files/Psyllium_Husk.jpg?v=1689267974&width=1200"
+description: '차전자피의 식이섬유 특성부터 섭취 방법까지, 충분한 수분 섭취 등 알아둘 점을 정리합니다.'
 ---
 
 # 차전자피 (Psyllium Husk)

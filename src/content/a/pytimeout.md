@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '필자는 최근 교내 알고리즘 대회에 참가하여 평상시 가장 익숙한 언어인 Python으로 문제를 풀었다.'
 ---
 
 # Python 시간 초과 방지를 위한 팁

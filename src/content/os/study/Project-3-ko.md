@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '제출 기한: 2025. 06. 10.'
 ---
 
 # 프로젝트 03

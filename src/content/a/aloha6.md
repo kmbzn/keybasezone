@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '위상 정렬(Topology Sort)이란, 방향 비순환 그래프(Directed Acyclic Graph, `DAG`)에서 정점들을 선형으로 정렬하는 알고리즘입니다.'
 ---
 
 # 중급반 6주차 - 위상 정렬

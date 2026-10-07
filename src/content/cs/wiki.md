@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '본 보고서에서는 국내 중소기업(SyncView)에서 판매된 IP 카메라 모델(`SVR-700A`)의 공식 업데이트 파일인'
 ---
 
 # Firmware Analysis Report

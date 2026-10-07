@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/wellness-cervical-abrasion.webp"
+description: '치아와 잇몸 경계가 패이는 치경부 마모증의 원인과 증상, 관리할 때 알아둘 점을 정리합니다.'
 ---
 
 # 치경부 마모증

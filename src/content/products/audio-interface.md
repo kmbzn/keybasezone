@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/products-audio-interface.webp"
+description: '마이크와 악기를 녹음하고 스피커로 출력하는 오디오 인터페이스의 역할과 제품 선택 기준을 정리합니다.'
 ---
 
 # 오디오 인터페이스 (Audio Interface)

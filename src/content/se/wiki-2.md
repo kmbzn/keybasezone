@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'Homework #1-2의 주요한 목표는 소프트웨어의 유연성, 확장성, 유지보수성을 높이는 세 가지 design pattern을 적용하는 것입니다.'
 ---
 
 # $\text{Homework \#1-2}$

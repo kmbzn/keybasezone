@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '(출처: Wikipedia)'
 ---
 
 # 2 - Rendering Basics

@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/humanities-baroque-music.jpg"
+description: '바흐와 헨델의 시대, 1600~1750년 바로크 음악의 양식과 악곡이 남긴 변화를 살펴봅니다.'
 ---
 
 # 바로크 음악 (Baroque Music)

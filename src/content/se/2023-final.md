@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '1. 주문형 인쇄 서비스의 UML Use Case Diagram을 작성하시오.'
 ---
 
 # 2023년 기말고사

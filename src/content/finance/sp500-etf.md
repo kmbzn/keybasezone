@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/finance-sp500-etf.jpg"
+description: '미국 대형주 500개에 분산 투자하는 S&P 500 ETF의 구조와 장기 투자 시 고려할 점을 알아봅니다.'
 ---
 
 # S&P 500 ETF 투자 가이드

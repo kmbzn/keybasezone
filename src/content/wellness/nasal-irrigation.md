@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/wellness-nasal-irrigation.webp"
+description: '생리식염수로 비강을 씻는 자가 세척법의 원리와 안전하게 시행하기 위한 기본 사항입니다.'
 ---
 
 # 자가비강세척 (Nasal Irrigation)

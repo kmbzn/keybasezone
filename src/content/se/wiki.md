@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '1.'
 ---
 
 # $\text{Homework \#1-1}$

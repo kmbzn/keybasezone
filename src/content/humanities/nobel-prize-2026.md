@@ -1,7 +1,7 @@
 ---
 title: "2026 노벨상, 빛으로 뇌를 켜고 남극의 얼음으로 우주를 보다"
-description: "빛으로 신경세포를 제어한 광유전학과 남극 얼음 아래에서 우주 중성미자를 포착한 아이스큐브. 2026년 노벨 생리의학상과 물리학상의 의미를 살펴봅니다."
 cover: "https://images.unsplash.com/photo-1665060221110-6dbe583fa329?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+description: '빛으로 신경세포를 제어한 광유전학과 남극 얼음 아래에서 우주 중성미자를 포착한 아이스큐브. 2026년 노벨 생리의학상과 물리학상의 의미를 살펴봅니다.'
 ---
 
 # 2026 노벨상, 빛으로 뇌를 켜고 남극의 얼음으로 우주를 보다

@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '$$'
 ---
 
 # 11 - Curves

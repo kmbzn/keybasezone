@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/brands-nomos-tangente.webp"
+description: '당근에서 데려온 루드빅 35mm를 계기로, 노모스의 디자인과 자체 무브먼트, 현재 가격을 살펴봅니다.'
 ---
 
 # NOMOS Glashütte

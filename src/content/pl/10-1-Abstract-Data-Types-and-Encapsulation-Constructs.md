@@ -1,6 +1,7 @@
 ---
 sitemap: false
 cover: false
+description: 'Control logic (if, case):'
 ---
 # 10.1. Abstract Data Types and Encapsulation Constructs
 

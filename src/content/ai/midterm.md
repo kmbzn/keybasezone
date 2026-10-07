@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '1. 수식: 이산 확률 변수 $X$에 대해 $H(X) = - \sum{i} P(xi) \logb P(xi)$ 이다.'
 ---
 
 ## 문제 및 답안 (간결 버전)

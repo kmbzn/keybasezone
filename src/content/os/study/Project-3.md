@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'Due date: 2025. 06. 10.'
 ---
 
 # Project 03

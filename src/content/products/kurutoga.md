@@ -1,5 +1,6 @@
 ---
 cover: "/images/articles/kurutoga.webp"
+description: '필기할수록 샤프심을 돌려 뾰족함을 유지하는 쿠루토가의 작동 원리와 제품군을 살펴봅니다.'
 ---
 
 # 쿠루토가 (KURUTOGA)

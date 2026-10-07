@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '$$\text{median} = L1 + \left(\frac{n/2 - \text{freq}l}{\text{freq}\text{median}}\right) \times \text{width}$$'
 ---
 
 # 데이터사이언스 - Final

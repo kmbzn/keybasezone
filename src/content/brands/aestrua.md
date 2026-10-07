@@ -1,5 +1,6 @@
 ---
 cover: "https://cdn.bosa.co.kr/news/photo/202504/2246196_279735_3943.jpg"
+description: '광고의 단정한 패키지에서 시작해, 아토베리어365 크림의 성분과 올리브영에서의 접근성까지 살펴봅니다.'
 ---
 
 # 에스트라 (AESTURA)

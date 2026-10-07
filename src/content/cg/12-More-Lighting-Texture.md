@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'https://learning.hanyang.ac.kr/courses/178704/discussiontopics/418144'
 ---
 
 # 12 - More Lighting, Texture

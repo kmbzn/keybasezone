@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '1. Modality 결측이 없는 상황을 가정한 모델이지만 실제 상황에서는 결측 상황이 있다.'
 ---
 
 # DGMRec

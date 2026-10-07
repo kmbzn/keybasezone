@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '이 wiki는 xv6-riscv 기반 운영체제에 가상 메모리와 파일 시스템 기능을 확장한 과정을 정리한다.'
 ---
 
 # Project 3 Virtual Memory and File System Wiki

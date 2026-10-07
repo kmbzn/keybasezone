@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/os-ubuntu-thumbnails.webp"
+description: 'Ubuntu 24.04에서 사라진 동영상 썸네일을 ffmpegthumbnailer와 AppArmor 설정으로 복구합니다.'
 ---
 
 # 우분투 영상 썸네일 문제 해결

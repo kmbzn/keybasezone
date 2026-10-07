@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '총 15 문항, 100점 만점'
 ---
 
 # 2024 Midterm Exam

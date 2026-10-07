@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'caller의 값을 복사해서 callee에 전달. callee에서 변경해도 원본에 영향 없음.'
 ---
 
 # Final Exam

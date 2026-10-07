@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/brands-frederique-constant.jpg"
+description: '스위스 시계 브랜드 프레드릭 콘스탄트가 말하는 접근 가능한 럭셔리와 인하우스 시계 제작을 소개합니다.'
 ---
 
 # Frédérique Constant

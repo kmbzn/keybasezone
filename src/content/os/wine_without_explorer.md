@@ -1,5 +1,6 @@
 ---
 cover: "/os/explorer.webp"
+description: 'Wine으로 카카오톡을 실행할 때 불필요한 explorer.exe 창이 뜨지 않도록 설정합니다.'
 ---
 
 # Wine 환경에서 카카오톡 실행 시 explorer.exe 뜨지 않게 하는 법

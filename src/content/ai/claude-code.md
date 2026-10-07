@@ -1,7 +1,7 @@
 ---
 title: "Claude Code, 넌 누구니?"
-description: "터미널에서 프로젝트를 읽고 코드를 고치는 Claude Code. 챗봇과 무엇이 다르고, 사람들은 왜 에이전트 AI에 열광할까요?"
 cover: "/images/article-covers/ai-claude-code.webp"
+description: '코드를 복사해 채팅창에 붙여 넣던 방식에서, AI가 프로젝트 안으로 들어와 직접 탐색하고 수정하는 방식으로. Claude Code와 에이전트 AI의 변화를 살펴봅니다.'
 ---
 
 # Claude Code, 넌 누구니?

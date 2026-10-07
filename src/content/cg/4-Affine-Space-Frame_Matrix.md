@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '원점에서 $\mathbf{p}$와 $\mathbf{q}$까지 가는 vector의 합으로 간주해야 함'
 ---
 
 # 4 - Affine Space / Frame / Matrix

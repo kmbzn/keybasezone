@@ -1,5 +1,6 @@
 ---
 cover: "/images/articles/kz.webp"
+description: '저가형 다이나믹 이어폰부터 평판형 PRX와 28BA 플래그십까지, KZ의 넓은 라인업을 살펴봅니다.'
 ---
 
 # KZ

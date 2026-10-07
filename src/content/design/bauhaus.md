@@ -1,5 +1,6 @@
 ---
 cover: "https://upload.wikimedia.org/wikipedia/commons/9/98/Dessau_Bauhaus_neu.JPG"
+description: '바우하우스는 짧은 역사에도 어떻게 현대 디자인을 바꾸었을까요? 학교의 원칙과 영향력을 살펴봅니다.'
 ---
 
 # 바우하우스, 현대 디자인의 원점

@@ -1,5 +1,6 @@
 ---
 cover: "/images/articles/squat.webp"
+description: '하체와 코어를 함께 쓰는 바벨 스쿼트의 자세, 주요 근육과 안전하게 운동하는 기본을 알아봅니다.'
 ---
 
 # 바벨 스쿼트 (Barbell Squat)

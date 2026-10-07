@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '→ 표면 색상을 결정함'
 ---
 
 # 8 - Lighting

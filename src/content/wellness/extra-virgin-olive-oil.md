@@ -1,5 +1,6 @@
 ---
 cover: "https://health.ucdavis.edu/media-resources/contenthub/post/internet/good-food/2024/04/images-body/olive-oil-health-benefits.jpg"
+description: '엑스트라 버진 올리브유의 등급과 성분, 보관·섭취할 때 확인할 점을 살펴봅니다.'
 ---
 
 # 엑스트라 버진 올리브유 (Extra Virgin Olive Oil)

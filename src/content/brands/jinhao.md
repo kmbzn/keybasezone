@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/brands-jinhao.jpg"
+description: '저렴한 입문기부터 다양한 금속·수지 만년필까지, 중국 필기구 브랜드 JINHAO의 매력을 살펴봅니다.'
 ---
 
 # JINHAO (金豪)

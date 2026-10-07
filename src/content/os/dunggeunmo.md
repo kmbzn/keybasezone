@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/os-dunggeunmo.webp"
+description: 'Ubuntu GRUB 메뉴에 둥근모꼴과 Fixedsys를 적용해 부팅 화면을 또렷하게 바꾸는 방법입니다.'
 ---
 
 # 우분투 GRUB 폰트 변경

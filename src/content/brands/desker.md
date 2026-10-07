@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/brands-desker.webp"
+description: '책상과 홈 오피스를 설계하는 데스커. 퍼시스그룹 브랜드의 제품과 작업 공간 접근법을 소개합니다.'
 ---
 
 # 데스커 (DESKER)

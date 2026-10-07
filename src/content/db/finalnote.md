@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '가장 확실하게 나오는 유형으로, B+ Tree의 구조 변화를 직접 그릴 수 있어야 함.'
 ---
 
 # Final Note

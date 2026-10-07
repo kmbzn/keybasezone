@@ -1,6 +1,7 @@
 ---
 sitemap: false
 cover: false
+description: '8. Subprogram에 관한 내용을 정리합니다.'
 ---
 # 8. Subprogram
 

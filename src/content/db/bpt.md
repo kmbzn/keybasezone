@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'bpt에 관한 내용을 정리합니다.'
 ---
 
 ```c

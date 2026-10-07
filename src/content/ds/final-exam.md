@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'All answers must be written in English.'
 ---
 
 # Data Science Final Exam

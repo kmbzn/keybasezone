@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '본 논문에서는 multimodal 특징과 user-item 상호작용을 함께 활용하는 graph convolutional network (GCN) 기반 multimedia 추천 시스템에 초점을 맞춥니다.'
 ---
 
 # MONET Modality-Embracing Graph Convolutional Network and Target-Aware Attention for Multimedia Recommendation

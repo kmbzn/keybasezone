@@ -1,5 +1,6 @@
 ---
 cover: "/os/direct-screenshot.webp"
+description: 'Ubuntu Wine 카카오톡에서 이미지와 스크린샷을 붙여넣을 수 있도록 클립보드 문제를 해결합니다.'
 ---
 
 # 우분투 Wine 카카오톡 사진 이미지 스크린샷 붙여넣기

@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'B+tree에 관한 내용을 정리합니다.'
 ---
 
 # B+tree

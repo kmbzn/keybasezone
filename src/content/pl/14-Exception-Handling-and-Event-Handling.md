@@ -1,6 +1,7 @@
 ---
 sitemap: false
 cover: false
+description: '단일 클릭, 왼쪽 버튼'
 ---
 # 14. Exception Handling and Event Handling
 

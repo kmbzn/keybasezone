@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/finance-parking-account-cma.webp"
+description: '잠시 맡길 여윳돈, 파킹통장과 CMA 중 무엇이 맞을까요? 금리뿐 아니라 구조와 예금자 보호를 비교합니다.'
 ---
 
 # 파킹통장 vs CMA 통장

@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/finance-hyundai-card-zero.jpg"
+description: '현대카드 ZERO Edition2와 Edition3의 혜택 구조를 비교해 내 소비에 맞는 선택 기준을 찾습니다.'
 ---
 
 # 현대카드 ZERO

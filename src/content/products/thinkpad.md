@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/products-thinkpad.webp"
+description: 'ThinkPad가 오랫동안 사랑받아 온 이유인 키보드와 내구성, Linux 호환성의 배경을 알아봅니다.'
 ---
 
 # ThinkPad

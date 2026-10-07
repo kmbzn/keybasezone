@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/finance-shinhan-card-new-way.webp"
+description: '구독과 디지털 소비에 맞춘 신한카드 처음의 혜택, 연회비와 사용 전 확인할 조건을 정리합니다.'
 ---
 
 # 신한카드 처음

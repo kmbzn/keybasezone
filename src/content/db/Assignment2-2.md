@@ -1,5 +1,6 @@
 ---
 cover: false
+description: 'Assignment 2-2. Web Application Development에 관한 내용을 정리합니다.'
 ---
 
 # Assignment 2-2. Web Application Development

@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '제출 기한: 2025년 6월 6일 (23:59)'
 ---
 
 # Computer Graphics Project 3 BVH Viewer

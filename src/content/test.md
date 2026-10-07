@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '일반 text'
 ---
 
 ## Heading Level 2 - 한국어 제목

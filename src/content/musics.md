@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/musics.jpg"
+description: '요즘 즐겨 듣는 곡들을 모았습니다. 순위가 아닌 번호와 함께, 취향이 머무는 음악을 기록합니다.'
 ---
 
 # Playlist 🎧

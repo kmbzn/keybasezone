@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '(and Position vs.'
 ---
 
 # 9 - Orientation & Rotation

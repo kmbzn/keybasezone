@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '각 노드의 frame을 world frame 기준으로 변환해야 함 → 각 정점의 global 위치 계산'
 ---
 
 # 7 - Hierarchical Modeling, Mesh 

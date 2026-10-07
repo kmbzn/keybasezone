@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/wellness-melatonin.webp"
+description: '수면 리듬과 관련된 멜라토닌의 역할, 제품 형태와 복용 전에 알아둘 주의사항을 살펴봅니다.'
 ---
 
 # 멜라토닌 (Melatonin)

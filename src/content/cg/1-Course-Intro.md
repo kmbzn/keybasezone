@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '정해진 시간에 시험을 볼 수 없는 학생은 수강하지 말 것'
 ---
 
 # 1 - Course Intro

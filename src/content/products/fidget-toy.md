@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/products-fidget-toy.webp"
+description: '피젯 토이의 종류와 집중 효과에 관한 연구를 함께 살펴보고, 용도에 맞는 선택 기준을 정리합니다.'
 ---
 
 # 피젯 토이 (Fidget Toy)

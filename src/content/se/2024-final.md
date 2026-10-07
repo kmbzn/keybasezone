@@ -1,5 +1,6 @@
 ---
 cover: false
+description: '1. 도서관 시스템의 Analysis Model Class diagram을 작성하시오.'
 ---
 
 # 2024년 기말고사

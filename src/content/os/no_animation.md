@@ -1,5 +1,6 @@
 ---
 cover: "/images/article-covers/os-no-animation.webp"
+description: 'Ubuntu의 창 전환 애니메이션을 끄고 데스크톱을 더 간결하고 빠릿하게 사용하는 설정입니다.'
 ---
 
 # Ubuntu 윈도우 애니메이션 끄기
