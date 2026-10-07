@@ -4,10 +4,18 @@ import path from 'node:path';
 
 const contentRoot = 'src/content';
 const outputPath = path.join(process.cwd(), 'src/data/content-last-modified.json');
+const publicationOutputPath = path.join(process.cwd(), 'src/data/content-first-published.json');
 
 let snapshot = {};
 try {
   snapshot = JSON.parse(readFileSync(outputPath, 'utf8'));
+} catch {
+  // A missing snapshot is okay when building an older checkout.
+}
+
+let publicationSnapshot = {};
+try {
+  publicationSnapshot = JSON.parse(readFileSync(publicationOutputPath, 'utf8'));
 } catch {
   // A missing snapshot is okay when building an older checkout.
 }
@@ -28,12 +36,15 @@ try {
 }
 
 const historyTimestamps = new Map();
+const historyPublicationDates = new Map();
 if (hasCompleteHistory) {
   try {
     const files = git(['ls-files', '-z', '--', contentRoot]).split('\0').filter((file) => file.endsWith('.md'));
     for (const filePath of files) {
       const timestamp = git(['log', '--follow', '--diff-filter=AMT', '-1', '--format=%cI', '--', filePath]).trim();
       if (timestamp) historyTimestamps.set(filePath, timestamp);
+      const publicationDate = git(['log', '--follow', '--diff-filter=A', '-1', '--format=%cI', '--', filePath]).trim();
+      if (publicationDate) historyPublicationDates.set(filePath, publicationDate);
     }
   } catch {
     // Preserve the checked-in snapshot if Git history cannot be read.
@@ -41,6 +52,7 @@ if (hasCompleteHistory) {
 }
 
 const timestamps = new Map([...Object.entries(snapshot), ...historyTimestamps]);
+const publicationDates = new Map([...Object.entries(publicationSnapshot), ...historyPublicationDates]);
 
 // Workers Builds checks out limited Git history. Ask GitHub for the current
 // commit's changed paths and committer time so only files changed in that
@@ -59,9 +71,16 @@ if (process.env.WORKERS_CI_COMMIT_SHA) {
       const commitTimestamp = commit.commit?.committer?.date;
       if (commitTimestamp) {
         for (const file of commit.files || []) {
-          if (file.status === 'renamed') continue;
           if (file.filename.startsWith(`${contentRoot}/`) && file.filename.endsWith('.md')) {
+            if (file.status === 'renamed') {
+              const previousDate = publicationDates.get(file.previous_filename);
+              if (previousDate) publicationDates.set(file.filename, previousDate);
+              continue;
+            }
             timestamps.set(file.filename, commitTimestamp);
+            if (file.status === 'added' && !publicationDates.has(file.filename)) {
+              publicationDates.set(file.filename, commitTimestamp);
+            }
           }
         }
       }
@@ -76,4 +95,10 @@ const content = `${JSON.stringify(nextSnapshot, null, 2)}\n`;
 mkdirSync(path.dirname(outputPath), { recursive: true });
 if (!existsSync(outputPath) || readFileSync(outputPath, 'utf8') !== content) {
   writeFileSync(outputPath, content);
+}
+
+const nextPublicationSnapshot = Object.fromEntries([...publicationDates.entries()].sort(([a], [b]) => a.localeCompare(b)));
+const publicationContent = `${JSON.stringify(nextPublicationSnapshot, null, 2)}\n`;
+if (!existsSync(publicationOutputPath) || readFileSync(publicationOutputPath, 'utf8') !== publicationContent) {
+  writeFileSync(publicationOutputPath, publicationContent);
 }

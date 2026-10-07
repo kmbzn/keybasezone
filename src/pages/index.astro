@@ -24,9 +24,8 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
   const module = documents[`../content/${slug}.md`];
   const cover = getArticleCover(slug, markdown, module?.frontmatter);
   const lastModifiedTimestamp = getContentLastModifiedTimestamp(lastModifiedTimestamps, slug);
-  const publicationTimestamp = module?.frontmatter?.published
-    ? `${module.frontmatter.published}T00:00:00`
-    : getContentPublicationTimestamp(publicationTimestamps, slug);
+  const publicationTimestamp = getContentPublicationTimestamp(publicationTimestamps, slug)
+    || (module?.frontmatter?.published ? `${module.frontmatter.published}T00:00:00` : '');
   return {
     category: section.label,
     entry,

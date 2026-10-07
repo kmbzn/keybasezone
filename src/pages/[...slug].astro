@@ -21,7 +21,7 @@ export async function getStaticPaths() {
       const title = getArticleTitle(slug, markdown, module.frontmatter?.title);
       const cover = getArticleCover(slug, markdown, module.frontmatter);
       const coverHue = await getDominantCoverHue(cover.coverImage, cover.coverHue);
-      return { params: { slug }, props: { Content: module.default, title, publishedAt: module.frontmatter?.published || getContentPublicationDate(publicationDates, slug), updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug), ...cover, coverHue } };
+      return { params: { slug }, props: { Content: module.default, title, publishedAt: getContentPublicationDate(publicationDates, slug) || module.frontmatter?.published || '', updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug), ...cover, coverHue } };
     }));
 }
 
@@ -36,14 +36,13 @@ const { Content, title, category, coverHue, coverPattern, coverImage, deck, publ
       <span class="article-cover-visual-mark">KeyBaseZone journal</span>
     </div>
     <div class="article-cover-copy">
-      <p class="article-cover-kicker">{category} <span>·</span> Field notes</p>
+      <p class="article-cover-kicker">{category}</p>
       <h1>{title}</h1>
       {deck && <p class="article-cover-deck">{deck}</p>}
       <p class="article-cover-updated">발행일 · {publishedAt.replaceAll('-', '.')} <span>·</span> 최종 수정 · {updatedAt.replaceAll('-', '.')}</p>
       <p class="article-cover-byline">A personal knowledge archive</p>
       <div class="article-cover-actions">
-        <button class="article-cover-copy-url" type="button" data-copy-article-url>URL 복사</button>
-        <span class="article-cover-copy-status" data-copy-article-url-status role="status" aria-live="polite"></span>
+        <button class="article-cover-copy-url" type="button" data-copy-article-url aria-live="polite">URL 복사</button>
         <a class="article-cover-back" href="/contents/">All stories <span>↗</span></a>
       </div>
     </div>
@@ -59,16 +58,15 @@ const { Content, title, category, coverHue, coverPattern, coverImage, deck, publ
 
 <script>
   const copyUrlButton = document.querySelector<HTMLButtonElement>('[data-copy-article-url]');
-  const copyUrlStatus = document.querySelector<HTMLElement>('[data-copy-article-url-status]');
 
   copyUrlButton?.addEventListener('click', async () => {
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard API is unavailable');
       await navigator.clipboard.writeText(window.location.href);
-      if (copyUrlStatus) copyUrlStatus.textContent = '주소를 복사했습니다.';
+      copyUrlButton.textContent = '복사됨';
     } catch (error) {
       console.error('Failed to copy article URL:', error);
-      if (copyUrlStatus) copyUrlStatus.textContent = '주소 복사에 실패했습니다. 브라우저 권한을 확인해 주세요.';
+      copyUrlButton.textContent = '복사 실패';
     }
   });
 </script>

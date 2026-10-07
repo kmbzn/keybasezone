@@ -148,12 +148,12 @@ a{color:inherit}
 .brand-color-hex{position:absolute;top:22px;right:24px;color:#fff;font-size:clamp(18px,2.2vw,26px);font-weight:700}
 .brand-color-copy h3{margin:0 0 8px;color:#fff;font-size:22px;font-weight:700;letter-spacing:-.03em}
 .brand-color-copy h3+p{max-width:39ch;color:#ffffffeb;font-size:14px;line-height:1.75}
-.contact{padding:112px 24px 120px;background:#f0eee8}
+.contact{padding:112px 24px 120px;background:#111;color:#f3f1e9}
 .contact .eyebrow{color:var(--accent)}
 .contact h2{font-size:clamp(38px,5vw,64px);font-weight:750}
-.contact>p:not(.eyebrow){font-size:14px}
-.contact>a{display:inline-flex;align-items:center;gap:22px;padding:16px 20px;border:1px solid var(--ink);font-size:14px;text-decoration:none;transition:background .2s,color .2s}
-.contact>a:hover{background:var(--ink);color:#fff}
+.contact>p:not(.eyebrow){color:#c8c7bf;font-size:14px}
+.contact>a{display:inline-flex;align-items:center;gap:22px;padding:16px 20px;border:1px solid #f3f1e9;color:#f3f1e9;font-size:14px;text-decoration:none;transition:background .2s,color .2s}
+.contact>a:hover{background:#f3f1e9;color:#111}
 .contact>a span{margin:0;color:var(--accent)}
 .site-footer{padding:42px max(40px,calc((100% - 1320px)/2)) 28px;border-color:var(--line);background:var(--paper);font-size:11px}
 .tech-footer{text-align:center}
@@ -311,18 +311,16 @@ a{color:inherit}
 .article-cover-pattern{position:absolute;inset:0;opacity:.88;mix-blend-mode:screen;pointer-events:none}
 .article-cover-visual.has-image .article-cover-pattern{display:none}
 .article-cover-visual-mark{position:absolute;z-index:2;left:clamp(22px,3vw,48px);bottom:27px;color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-shadow:0 1px 8px #0008}
-.article-cover-copy{display:flex;min-width:0;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(42px,6.4vw,112px);background:hsl(var(--cover-hue) 40% 25%);color:#fff}
+.article-cover-copy{display:flex;min-width:0;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(42px,6.4vw,112px);background:hsl(var(--cover-hue) 40% 20%);color:#fff}
 .article-cover-kicker{margin:0 0 26px;color:#fff;font-size:14px;font-weight:750;letter-spacing:.06em}
-.article-cover-kicker span{margin:0 7px;color:hsl(calc(var(--cover-hue) + 25) 85% 69%)}
 .article-cover-copy h1{position:relative;width:100%;margin:0;max-width:16ch;color:#fff;font-size:clamp(44px,5.25vw,98px);font-weight:780;line-height:1.08;letter-spacing:-.06em;text-decoration-line:underline;text-decoration-color:#fff;text-decoration-thickness:4px;text-underline-offset:.13em;text-decoration-skip-ink:none;word-break:keep-all;overflow-wrap:normal;text-wrap:balance}
 .article-cover-deck{max-width:42ch;margin:30px 0 0;color:#f0e9e8;font-size:clamp(16px,1.5vw,21px);font-weight:500;line-height:1.65;letter-spacing:-.035em}
 .article-cover-updated{margin:18px 0 0;color:#d3c7c8;font-size:12px;font-weight:550;letter-spacing:.03em}
 .article-cover-byline{margin:auto 0 0;padding-top:54px;color:#c1b2b5;font-size:12px;font-weight:650;letter-spacing:.07em}
 .article-cover-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:18px}
-.article-cover-copy-url{padding:9px 12px;border:1px solid #ffffff80;background:transparent;color:#fff;font:inherit;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer}
+.article-cover-copy-url{min-width:84px;padding:9px 12px;border:1px solid #ffffff80;background:transparent;color:#fff;font:inherit;font-size:12px;font-weight:700;letter-spacing:.04em;text-align:center;cursor:pointer}
 .article-cover-copy-url:hover{background:#ffffff1a}
 .article-cover-copy-url:focus-visible{outline:2px solid #fff;outline-offset:3px}
-.article-cover-copy-status{color:#f0e9e8;font-size:11px}
 .article-cover-back{display:inline-flex;align-items:center;gap:14px;color:#fff;font-size:12px;font-weight:700;letter-spacing:.07em;text-decoration:none}
 .article-cover-back span{color:hsl(calc(var(--cover-hue) + 25) 85% 69%);font-size:17px;transition:transform .2s}
 .article-cover-back:hover span{transform:translate(3px,-3px)}

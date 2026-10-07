@@ -1,7 +1,6 @@
 ---
 title: "Claude Opus 5.5 출시, 긴 작업의 효율을 높이다"
 description: "Anthropic이 공개한 Claude Opus 5.5의 성능 방향, 가격과 이용 범위를 간단히 정리합니다."
-published: "2026-09-22"
 cover: "/images/article-covers/ai-claude-opus-5-5.jpg"
 ---
 
