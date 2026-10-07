@@ -24,7 +24,7 @@ function getCoverImage(cover) {
   return existsSync(path.join(process.cwd(), 'public', localPath.slice(1))) ? image : '';
 }
 
-export async function getAverageCoverHue(coverImage, fallbackHue) {
+export async function getDominantCoverHue(coverImage, fallbackHue) {
   try {
     let imageSource;
     if (coverImage?.startsWith('/') && !coverImage.startsWith('//')) {
@@ -42,38 +42,64 @@ export async function getAverageCoverHue(coverImage, fallbackHue) {
     }
 
     const { data, info } = await sharp(imageSource)
-      .resize(32, 32, { fit: 'inside' })
+      .resize(64, 64, { fit: 'inside' })
       .ensureAlpha()
       .raw()
       .toBuffer({ resolveWithObject: true });
 
-    let red = 0;
-    let green = 0;
-    let blue = 0;
-    let totalWeight = 0;
+    const hueBinCount = 36;
+    const hueBinSize = 360 / hueBinCount;
+    const hueWeights = new Array(hueBinCount).fill(0);
+    const coloredPixels = [];
     for (let index = 0; index < data.length; index += info.channels) {
       const alpha = data[index + 3] / 255;
-      red += data[index] * alpha;
-      green += data[index + 1] * alpha;
-      blue += data[index + 2] * alpha;
-      totalWeight += alpha;
+      if (alpha < 0.1) continue;
+
+      const red = data[index] / 255;
+      const green = data[index + 1] / 255;
+      const blue = data[index + 2] / 255;
+      const max = Math.max(red, green, blue);
+      const min = Math.min(red, green, blue);
+      const delta = max - min;
+      if (delta < 0.08) continue;
+
+      let hue;
+      if (max === red) hue = 60 * (((green - blue) / delta) % 6);
+      else if (max === green) hue = 60 * ((blue - red) / delta + 2);
+      else hue = 60 * ((red - green) / delta + 4);
+      if (hue < 0) hue += 360;
+
+      const weight = alpha;
+      hueWeights[Math.floor(hue / hueBinSize) % hueBinCount] += weight;
+      coloredPixels.push({ hue, weight });
     }
-    if (!totalWeight) return fallbackHue;
+    if (!coloredPixels.length) return fallbackHue;
 
-    red /= totalWeight;
-    green /= totalWeight;
-    blue /= totalWeight;
-    const max = Math.max(red, green, blue);
-    const min = Math.min(red, green, blue);
-    const delta = max - min;
-    if (delta < 8) return fallbackHue;
+    let dominantBin = 0;
+    let dominantWeight = -1;
+    for (let bin = 0; bin < hueBinCount; bin += 1) {
+      let neighborhoodWeight = 0;
+      for (let offset = -2; offset <= 2; offset += 1) {
+        neighborhoodWeight += hueWeights[(bin + offset + hueBinCount) % hueBinCount];
+      }
+      if (neighborhoodWeight > dominantWeight) {
+        dominantBin = bin;
+        dominantWeight = neighborhoodWeight;
+      }
+    }
 
-    let hue;
-    if (max === red) hue = 60 * (((green - blue) / delta) % 6);
-    else if (max === green) hue = 60 * ((blue - red) / delta + 2);
-    else hue = 60 * ((red - green) / delta + 4);
-    if (hue < 0) hue += 360;
-    return Math.round(hue);
+    const dominantHue = (dominantBin + 0.5) * hueBinSize;
+    let sin = 0;
+    let cos = 0;
+    for (const { hue, weight } of coloredPixels) {
+      const distance = Math.abs(((hue - dominantHue + 540) % 360) - 180);
+      if (distance > 25) continue;
+      const radians = hue * Math.PI / 180;
+      sin += Math.sin(radians) * weight;
+      cos += Math.cos(radians) * weight;
+    }
+    if (sin === 0 && cos === 0) return Math.round(dominantHue) % 360;
+    return Math.round((Math.atan2(sin, cos) * 180 / Math.PI + 360) % 360);
   } catch {
     return fallbackHue;
   }
