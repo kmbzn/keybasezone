@@ -5,12 +5,11 @@ import Footer from '../components/Footer.astro';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { sidebar } from '../data/sidebar';
-import { getContentLastModifiedDate, getContentLastModifiedTimestamp, getContentLastModifiedTimestamps, getContentPublicationTimestamp, getContentPublicationTimestamps } from '../lib/content-dates.mjs';
+import { getContentPublicationTimestamp, getContentPublicationTimestamps } from '../lib/content-dates.mjs';
 import { getArticleCover } from '../lib/article-cover.mjs';
 import { getArticleTitle } from '../lib/article-title.mjs';
 const base = import.meta.env.BASE_URL;
 const articleSections = sidebar.filter((section) => section.label);
-const lastModifiedTimestamps = getContentLastModifiedTimestamps();
 const publicationTimestamps = getContentPublicationTimestamps();
 const documents = import.meta.glob('../content/**/*.md', { eager: true });
 const getSortTimestamp = (timestamp) => {
@@ -23,7 +22,6 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
   const markdown = readFileSync(markdownPath, 'utf8');
   const module = documents[`../content/${slug}.md`];
   const cover = getArticleCover(slug, markdown, module?.frontmatter);
-  const lastModifiedTimestamp = getContentLastModifiedTimestamp(lastModifiedTimestamps, slug);
   const publicationTimestamp = getContentPublicationTimestamp(publicationTimestamps, slug)
     || (module?.frontmatter?.published ? `${module.frontmatter.published}T00:00:00` : '');
   return {
@@ -32,11 +30,10 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
     image: cover.coverImage,
     deck: cover.deck,
     title: getArticleTitle(slug, markdown, module?.frontmatter?.title),
-    updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug) || publicationTimestamp.slice(0, 10),
-    dateLabel: lastModifiedTimestamp ? '최종 수정' : '발행일',
-    updatedAtTimestamp: lastModifiedTimestamp || publicationTimestamp,
+    publishedAt: publicationTimestamp.slice(0, 10),
+    publicationTimestamp,
   };
-})).sort((a, b) => getSortTimestamp(b.updatedAtTimestamp) - getSortTimestamp(a.updatedAtTimestamp)).slice(0, 6);
+})).sort((a, b) => getSortTimestamp(b.publicationTimestamp) - getSortTimestamp(a.publicationTimestamp)).slice(0, 6);
 const topics = [
   { n: '01', icon: 'computer', image: `${base}images/topics/computer-science.webp`, title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
   { n: '02', icon: 'design', image: `${base}images/topics/design.webp`, title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
@@ -61,10 +58,10 @@ const topics = [
     <section class="market-glance" aria-label="서울 날씨, 주요 시장 시세와 기준금리">
       <div class="market-glance-viewport">
         <div class="market-glance-track" data-market-track>
-          <div class="market-glance-page" data-market-page>
-            <div class="market-glance-item"><span>서울 기온</span><strong data-weather-temperature>--</strong></div>
+          <div class="market-glance-page market-glance-weather" data-market-page>
+            <div class="market-glance-item"><span>서울 기온</span><div class="market-glance-reading"><strong data-weather-temperature>--</strong><small data-weather-condition>--</small></div></div>
             <div class="market-glance-item"><span>습도</span><strong data-weather-humidity>--</strong></div>
-            <div class="market-glance-item"><span>PM2.5</span><strong data-weather-pm25>--</strong></div>
+            <div class="market-glance-item"><span>PM2.5</span><div class="market-glance-reading"><strong data-weather-pm25>--</strong><small data-air-quality-status>--</small></div></div>
           </div>
           <div class="market-glance-page" data-market-page aria-hidden="true">
             <div class="market-glance-item"><span>BTC</span><strong data-market-value="BITSTAMP:BTCUSD">--</strong><small data-market-change="BITSTAMP:BTCUSD">--</small></div>
@@ -96,7 +93,7 @@ const topics = [
               <span class="journal-category">{story.category}</span>
               <span class="journal-image-arrow" aria-hidden="true">↗</span>
               <div class="journal-card-overlay">
-                <div class="journal-card-meta"><span>{story.dateLabel} · <time datetime={story.updatedAtTimestamp}>{story.updatedAt.replaceAll('-', '.')}</time></span></div>
+                <div class="journal-card-meta"><span>발행일 · <time datetime={story.publicationTimestamp}>{story.publishedAt.replaceAll('-', '.')}</time></span></div>
                 <h3>{story.title}</h3>
                 <p>{story.deck}</p>
               </div>
@@ -155,7 +152,7 @@ const topics = [
 
     <section class="mindscape-preview">
       <div class="mindscape-art"><img src={`${base}images/android-chrome-512x512.png`} alt="KeyBaseZone 불꽃 아이콘" /></div>
-      <div class="mindscape-copy"><p class="eyebrow">The idea behind the name</p><h2>Key<strong>Base</strong>Zone</h2><p>본질을 여는 열쇠, 생각을 쌓는 기반, 사유와 창작이 펼쳐지는 영역. 이름에 담긴 세 가지 개념과 이 공간의 방향을 소개합니다.</p><a class="text-link" href={`${base}mindscape/`}>Mindscape 살펴보기 <span>↗</span></a></div>
+      <div class="mindscape-copy"><p class="eyebrow">The idea behind the name</p><h2>Key<strong>BaseZone</strong></h2><p>본질을 여는 열쇠, 생각을 쌓는 기반, 사유와 창작이 펼쳐지는 영역. 이름에 담긴 세 가지 개념과 이 공간의 방향을 소개합니다.</p><a class="text-link" href={`${base}mindscape/`}>Mindscape 살펴보기 <span>↗</span></a></div>
     </section>
 
     <section class="brand-philosophy" aria-labelledby="brand-philosophy-title">
@@ -183,6 +180,7 @@ const topics = [
   interface CurrentWeather {
     temperature_2m: number;
     relative_humidity_2m: number;
+    weather_code: number;
   }
 
   interface WeatherResponse {
@@ -288,7 +286,7 @@ const topics = [
     const updateWeather = async () => {
       try {
         const [weatherResponse, airQualityResponse] = await Promise.all([
-          fetch('https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current=temperature_2m,relative_humidity_2m&timezone=Asia%2FSeoul'),
+          fetch('https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current=temperature_2m,relative_humidity_2m,weather_code&timezone=Asia%2FSeoul'),
           fetch('https://air-quality-api.open-meteo.com/v1/air-quality?latitude=37.5665&longitude=126.9780&current=pm2_5&timezone=Asia%2FSeoul'),
         ]);
         if (!weatherResponse.ok || !airQualityResponse.ok) {
@@ -301,7 +299,7 @@ const topics = [
         ]);
         const current = weather.current;
         const particulateMatter = airQuality.current?.pm2_5;
-        if (!current || !Number.isFinite(current.temperature_2m) || !Number.isFinite(current.relative_humidity_2m) || !Number.isFinite(particulateMatter)) {
+        if (!current || !Number.isFinite(current.temperature_2m) || !Number.isFinite(current.relative_humidity_2m) || !Number.isFinite(current.weather_code) || !Number.isFinite(particulateMatter)) {
           throw new Error('Open-Meteo returned incomplete current conditions');
         }
 
@@ -310,8 +308,10 @@ const topics = [
           if (element) element.textContent = value;
         };
         setValue('[data-weather-temperature]', `${Math.round(current.temperature_2m)}°`);
+        setValue('[data-weather-condition]', getWeatherCondition(current.weather_code));
         setValue('[data-weather-humidity]', `${Math.round(current.relative_humidity_2m)}%`);
         setValue('[data-weather-pm25]', `${Math.round(particulateMatter)} µg/m³`);
+        setValue('[data-air-quality-status]', getAirQualityStatus(particulateMatter));
         if (marketStatus && ['실시간 정보 불러오는 중', '날씨 정보를 불러오지 못했습니다'].includes(marketStatus.textContent ?? '')) {
           marketStatus.textContent = '';
         }
@@ -319,6 +319,27 @@ const topics = [
         console.error('Unable to load Seoul weather and air quality:', error);
         if (marketStatus) marketStatus.textContent = '날씨 정보를 불러오지 못했습니다';
       }
+    };
+
+    const getWeatherCondition = (code: number) => {
+      if (code === 0) return '맑음';
+      if (code <= 2) return '구름 조금';
+      if (code === 3) return '흐림';
+      if (code <= 48) return '안개';
+      if (code <= 57) return '이슬비';
+      if (code <= 67) return '비';
+      if (code <= 77) return '눈';
+      if (code <= 82) return '소나기';
+      if (code <= 86) return '눈 소나기';
+      if (code <= 99) return '뇌우';
+      return '날씨';
+    };
+
+    const getAirQualityStatus = (pm25: number) => {
+      if (pm25 <= 15) return '좋음';
+      if (pm25 <= 35) return '보통';
+      if (pm25 <= 75) return '나쁨';
+      return '매우 나쁨';
     };
 
     void updateMarketQuotes();

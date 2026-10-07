@@ -55,6 +55,8 @@ a{color:inherit}
 .market-glance-item span{overflow:hidden;color:#777970;font-size:16.5px;text-overflow:ellipsis}
 .market-glance-item strong{flex:0 0 auto;color:var(--ink);font-size:21px;font-weight:650;font-variant-numeric:tabular-nums}
 .market-glance-item small{flex:0 0 auto;font-size:16.5px;font-weight:650;font-variant-numeric:tabular-nums}
+.market-glance-reading{display:inline-flex;align-items:baseline;gap:5px;white-space:nowrap}
+.market-glance-reading small{color:#898a82;font-size:10px;font-weight:550}
 .market-change-up{color:#c34732}
 .market-change-down{color:#3977a8}
 .market-change-flat{color:#777970}
@@ -445,6 +447,8 @@ a{color:inherit}
   .market-glance-item span{max-width:100%;font-size:11px;line-height:1.1}
   .market-glance-item strong{font-size:14px;line-height:1.1}
   .market-glance-item small{font-size:10px;line-height:1.1}
+  .market-glance-reading{gap:3px}
+  .market-glance-reading small{font-size:8px}
   .market-glance-status{right:20px}
   .intro{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;gap:0;padding:0}
   .intro-visual{grid-column:1;grid-row:1;width:100%;height:auto;min-width:0;min-height:0;padding-top:0}
