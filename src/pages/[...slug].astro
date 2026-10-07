@@ -5,22 +5,24 @@ import Sidebar from '../components/Sidebar.astro';
 import Footer from '../components/Footer.astro';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { getArticleCover } from '../lib/article-cover.mjs';
+import { getArticleCover, getAverageCoverHue } from '../lib/article-cover.mjs';
 import { getArticleTitle } from '../lib/article-title.mjs';
 import { getContentLastModifiedDate, getContentLastModifiedTimestamps, getContentPublicationDate, getContentPublicationDates } from '../lib/content-dates.mjs';
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   const documents = import.meta.glob('../content/**/*.md', { eager: true });
   const lastModifiedTimestamps = getContentLastModifiedTimestamps();
   const publicationDates = getContentPublicationDates();
-  return Object.entries(documents)
+  return Promise.all(Object.entries(documents)
     .filter(([filePath]) => !filePath.endsWith('/README.md'))
-    .map(([filePath, module]) => {
+    .map(async ([filePath, module]) => {
       const slug = filePath.split('/content/')[1].replace(/\.md$/, '');
       const markdown = readFileSync(path.join(process.cwd(), 'src/content', slug + '.md'), 'utf8');
       const title = getArticleTitle(slug, markdown, module.frontmatter?.title);
-      return { params: { slug }, props: { Content: module.default, title, publishedAt: module.frontmatter?.published || getContentPublicationDate(publicationDates, slug), updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug), ...getArticleCover(slug, markdown, module.frontmatter) } };
-    });
+      const cover = getArticleCover(slug, markdown, module.frontmatter);
+      const coverHue = await getAverageCoverHue(cover.coverImage, cover.coverHue);
+      return { params: { slug }, props: { Content: module.default, title, publishedAt: module.frontmatter?.published || getContentPublicationDate(publicationDates, slug), updatedAt: getContentLastModifiedDate(lastModifiedTimestamps, slug), ...cover, coverHue } };
+    }));
 }
 
 const { Content, title, category, coverHue, coverPattern, coverImage, deck, publishedAt, updatedAt } = Astro.props;

@@ -1,5 +1,6 @@
 import { existsSync } from 'node:fs';
 import path from 'node:path';
+import sharp from 'sharp';
 import { articlePreviews } from '../data/article-previews.mjs';
 
 const categoryLabels = {
@@ -21,6 +22,61 @@ function getCoverImage(cover) {
   if (!image.startsWith('/')) return '';
   const localPath = image.split(/[?#]/)[0];
   return existsSync(path.join(process.cwd(), 'public', localPath.slice(1))) ? image : '';
+}
+
+export async function getAverageCoverHue(coverImage, fallbackHue) {
+  try {
+    let imageSource;
+    if (coverImage?.startsWith('/') && !coverImage.startsWith('//')) {
+      const publicRoot = path.resolve(process.cwd(), 'public');
+      const localPath = coverImage.split(/[?#]/)[0].slice(1);
+      const imagePath = path.resolve(publicRoot, localPath);
+      if (!imagePath.startsWith(publicRoot + path.sep)) return fallbackHue;
+      imageSource = imagePath;
+    } else if (/^https?:\/\//i.test(coverImage ?? '')) {
+      const response = await fetch(coverImage, { signal: AbortSignal.timeout(4000) });
+      if (!response.ok) return fallbackHue;
+      imageSource = Buffer.from(await response.arrayBuffer());
+    } else {
+      return fallbackHue;
+    }
+
+    const { data, info } = await sharp(imageSource)
+      .resize(32, 32, { fit: 'inside' })
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+
+    let red = 0;
+    let green = 0;
+    let blue = 0;
+    let totalWeight = 0;
+    for (let index = 0; index < data.length; index += info.channels) {
+      const alpha = data[index + 3] / 255;
+      red += data[index] * alpha;
+      green += data[index + 1] * alpha;
+      blue += data[index + 2] * alpha;
+      totalWeight += alpha;
+    }
+    if (!totalWeight) return fallbackHue;
+
+    red /= totalWeight;
+    green /= totalWeight;
+    blue /= totalWeight;
+    const max = Math.max(red, green, blue);
+    const min = Math.min(red, green, blue);
+    const delta = max - min;
+    if (delta < 8) return fallbackHue;
+
+    let hue;
+    if (max === red) hue = 60 * (((green - blue) / delta) % 6);
+    else if (max === green) hue = 60 * ((blue - red) / delta + 2);
+    else hue = 60 * ((red - green) / delta + 4);
+    if (hue < 0) hue += 360;
+    return Math.round(hue);
+  } catch {
+    return fallbackHue;
+  }
 }
 
 function truncateAtSentence(text, maxLength) {
