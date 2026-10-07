@@ -9,7 +9,8 @@ const sections = sidebar.filter((section) => section.label);
 <Layout title="Contents | KeyBaseZone">
   <Header />
   <main class="contents-page">
-    <section class="contents-hero" style={`--contents-background:url("${import.meta.env.BASE_URL}images/earth-orbit-global-network.png")`}>
+    <section class="contents-hero">
+      <img class="contents-hero-image" src={`${import.meta.env.BASE_URL}images/earth-orbit-global-network.png`} alt="" aria-hidden="true" />
       <div class="contents-hero-copy">
         <p class="eyebrow">The KeyBaseZone archive <span>·</span> {String(sections.length).padStart(2, '0')} categories</p>
         <h1>Contents</h1>

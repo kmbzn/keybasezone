@@ -131,7 +131,7 @@ a{color:inherit}
 .mindscape-copy h2 strong{font-weight:750}
 .mindscape-copy>p:not(.eyebrow){font-size:14px}
 .mindscape-copy .text-link{font-size:13px}
-.brand-philosophy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;padding:0;background:#f8f7f2;border-top:1px solid var(--line)}
+.brand-philosophy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;padding:0;background:#f8f7f2;border-top:0}
 .brand-philosophy-intro{align-self:center;padding:clamp(78px,10vw,144px) max(24px,calc((100vw - 1180px)/2))}
 .brand-philosophy .eyebrow{color:var(--accent);margin-bottom:17px}
 .brand-philosophy h2{max-width:10ch;margin:0;color:#272923;font-size:clamp(40px,4.6vw,66px);font-weight:400;line-height:1.07;letter-spacing:-.055em}
@@ -163,10 +163,10 @@ a{color:inherit}
 
 /* Archive */
 .contents-page{width:100%;margin:0;padding:0 0 110px}
-.contents-hero{position:relative;display:flex;min-height:clamp(460px,54vw,660px);align-items:flex-end;margin-bottom:0;padding:70px max(36px,calc((100% - 1320px)/2));overflow:hidden;background-color:#070b13;background-image:linear-gradient(90deg,#070b13c4 0%,#070b1370 55%,#070b1324 100%),var(--contents-background);background-position:center,center 52%;background-size:cover;background-repeat:no-repeat;color:#fff}
-.contents-hero{border-bottom:0}
-@media(min-width:761px){.contents-hero{margin-bottom:-1px}}
-.contents-hero-copy{position:relative;z-index:1}
+.contents-hero{position:relative;display:flex;min-height:clamp(460px,54vw,660px);align-items:flex-end;margin-bottom:0;padding:70px max(36px,calc((100% - 1320px)/2));overflow:hidden;background-color:#070b13;border-bottom:0;color:#fff}
+.contents-hero-image{position:absolute;inset:0;z-index:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 52%}
+.contents-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#070b13c4 0%,#070b1370 55%,#070b1324 100%);pointer-events:none}
+.contents-hero-copy{position:relative;z-index:2}
 .contents-hero .eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 14px;color:#f2ddd0;font-size:10px;letter-spacing:.17em}
 .contents-hero .eyebrow span{color:#ff9878;font-size:16px}
 .contents-hero h1{margin:0;font-size:clamp(76px,11vw,148px);line-height:.9;letter-spacing:-.035em;font-weight:750}
