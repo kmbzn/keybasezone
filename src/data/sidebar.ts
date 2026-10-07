@@ -74,7 +74,6 @@ const sections: SidebarSection[] = [
       { path: "/brands/kz" },
       { path: "/brands/aestrua" },
       { path: "/brands/jinhao" },
-      { path: "/brands/herman-miller" },
       { path: "/brands/desker" },
     ],
   },
@@ -99,6 +98,7 @@ const sections: SidebarSection[] = [
       { path: "/products/cleansing-milk" },
       { path: "/products/fidget-toy" },
       { path: "/products/thinkpad" },
+      { path: "/products/aeron-chair" },
     ],
   },
   {
