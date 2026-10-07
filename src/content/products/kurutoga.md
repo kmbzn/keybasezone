@@ -1,5 +1,5 @@
 ---
-cover: "/images/articles/kurutoga.png"
+cover: "/images/articles/kurutoga.webp"
 ---
 
 # 쿠루토가 (KURUTOGA)

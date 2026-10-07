@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/wellness-cervical-abrasion.png"
+cover: "/images/article-covers/wellness-cervical-abrasion.webp"
 ---
 
 # 치경부 마모증

@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/os-dunggeunmo.png"
+cover: "/images/article-covers/os-dunggeunmo.webp"
 ---
 
 # 우분투 GRUB 폰트 변경

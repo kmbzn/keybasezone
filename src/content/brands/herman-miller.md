@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/brands-herman-miller.png"
+cover: "/images/article-covers/brands-herman-miller.webp"
 ---
 
 # Herman Miller

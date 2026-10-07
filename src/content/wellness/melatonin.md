@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/wellness-melatonin.png"
+cover: "/images/article-covers/wellness-melatonin.webp"
 ---
 
 # 멜라토닌 (Melatonin)

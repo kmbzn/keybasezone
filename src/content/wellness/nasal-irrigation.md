@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/wellness-nasal-irrigation.png"
+cover: "/images/article-covers/wellness-nasal-irrigation.webp"
 ---
 
 # 자가비강세척 (Nasal Irrigation)

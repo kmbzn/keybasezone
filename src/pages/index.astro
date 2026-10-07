@@ -39,10 +39,10 @@ const featuredStories = articleSections.flatMap((section) => section.entries.map
   };
 })).sort((a, b) => getSortTimestamp(b.updatedAtTimestamp) - getSortTimestamp(a.updatedAtTimestamp)).slice(0, 6);
 const topics = [
-  { n: '01', icon: 'computer', image: `${base}images/topics/computer-science.png`, title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
-  { n: '02', icon: 'design', image: `${base}images/topics/design.png`, title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
-  { n: '03', icon: 'life', image: `${base}images/topics/technology-life.png`, title: 'Technology & Life', text: '기기 활용과 수리, 금융과 소비, 건강과 운동처럼 일상에서 만나는 기술과 선택.', href: `${base}contents/#wellness` },
-  { n: '04', icon: 'humanities', image: `${base}images/topics/humanities.png`, title: 'Humanities', text: '역사와 언어, 음악과 사회. 익숙한 경계를 넘어 생각의 맥락을 찾아갑니다.', href: `${base}contents/#humanities` },
+  { n: '01', icon: 'computer', image: `${base}images/topics/computer-science.webp`, title: 'Computer Science', text: '운영체제, 데이터베이스, 자료 구조와 네트워크. 원리를 이해하고 직접 다뤄 본 배움.', href: `${base}contents/#ubuntu` },
+  { n: '02', icon: 'design', image: `${base}images/topics/design.webp`, title: 'Design', text: '시각 아이덴티티와 타이포그래피부터 제품, 인터페이스까지. 형태와 사용 경험을 살펴봅니다.', href: `${base}contents/#design` },
+  { n: '03', icon: 'life', image: `${base}images/topics/technology-life.webp`, title: 'Technology & Life', text: '기기 활용과 수리, 금융과 소비, 건강과 운동처럼 일상에서 만나는 기술과 선택.', href: `${base}contents/#wellness` },
+  { n: '04', icon: 'humanities', image: `${base}images/topics/humanities.webp`, title: 'Humanities', text: '역사와 언어, 음악과 사회. 익숙한 경계를 넘어 생각의 맥락을 찾아갑니다.', href: `${base}contents/#humanities` },
 ];
 ---
 <Layout title="KeyBaseZone">

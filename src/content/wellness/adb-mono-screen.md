@@ -1,7 +1,7 @@
 ---
 title: "컬러 화면은 잠깐만, 흑백을 잊지 않게 해주는 MonoScreen"
 description: "도파민 디톡스를 위해 휴대폰을 흑백으로 써도 지도와 카메라 때문에 컬러를 켤 때가 있습니다. 다시 흑백으로 돌리는 걸 자꾸 잊던 제가 만든 Android 도구, MonoScreen 이야기입니다."
-cover: "/images/article-covers/wellness-mono-screen.png"
+cover: "/images/article-covers/wellness-mono-screen.webp"
 ---
 
 # 컬러 화면은 잠깐만, 흑백을 잊지 않게 해주는 MonoScreen

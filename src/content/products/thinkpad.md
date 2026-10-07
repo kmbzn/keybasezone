@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/products-thinkpad.png"
+cover: "/images/article-covers/products-thinkpad.webp"
 ---
 
 # ThinkPad

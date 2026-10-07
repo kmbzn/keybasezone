@@ -1,5 +1,5 @@
 ---
-cover: "/os/tofu.png"
+cover: "/os/tofu.webp"
 ---
 
 # Wine 카카오톡 이모지 깨짐 문제 해결
@@ -14,7 +14,7 @@ GitHub 링크: [https://github.com/kmbzn/project-winemoji](https://github.com/km
 
 🍷😂 **Winemoji**는 리눅스의 Wine 환경에서 카카오톡과 같은 윈도우 기반 앱을 사용할 때 이모지 폰트가 깨지는(tofu) 문제를 해결하기 위해 제작된 특수 목적 폰트입니다. 기존에 이러한 문제로 불편함을 겪고 있던 분들에게 최적의 사용 환경을 제공하는 것을 목표로 시작되었습니다.
 
-![Wine에서 이모지 글리프가 네모(tofu)로 표시되는 예시](/os/tofu.webp)
+![Wine에서 이모지 글리프가 네모(tofu)로 표시되는 예시](/os/tofu-inline.webp)
 
 **Winemoji** is a specialized font designed to resolve the issue of broken emoji fonts (tofu) when using Windows-based applications like KakaoTalk within the Wine environment on Linux systems. It was created with the goal of providing an optimal user experience for those who have previously encountered inconvenience due to this problem.
 

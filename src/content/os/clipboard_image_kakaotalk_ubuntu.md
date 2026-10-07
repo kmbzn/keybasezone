@@ -1,5 +1,5 @@
 ---
-cover: "/os/paste.webp"
+cover: "/os/direct-screenshot.webp"
 ---
 
 # 우분투 Wine 카카오톡 사진 이미지 스크린샷 붙여넣기
@@ -67,6 +67,10 @@ sh -c 'd=~/Pictures/Screenshots; f="$d/screenshot_$(date +%Y%m%d_%H%M%S).png"; m
 ## 6. 작동 확인
 
 이제 설정한 단축키를 눌러 영역을 선택해 보세요. 지정한 경로에 파일이 생성됨과 동시에, 카카오톡 채팅창에서 `Ctrl + V`를 누르면 방금 찍은 스크린샷이 이미지 형태로 바로 붙여넣을 수 있게 됩니다.
+
+카카오톡에서 이미지가 첨부되면 아래처럼 전송 대기 화면에 표시됩니다.
+
+![카카오톡에서 클립보드 이미지가 첨부된 화면](/os/paste.webp)
 
 현재 클립보드 상태를 확인하고 싶다면 터미널에 `wl-paste -l`을 입력했을 때 `image/png`가 목록에 보이면 **성공**입니다.
 

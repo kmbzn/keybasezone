@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/finance-shinhan-card-new-way.png"
+cover: "/images/article-covers/finance-shinhan-card-new-way.webp"
 ---
 
 # 신한카드 처음

@@ -1,5 +1,5 @@
 ---
-cover: "/images/article-covers/os-no-animation.png"
+cover: "/images/article-covers/os-no-animation.webp"
 ---
 
 # Ubuntu 윈도우 애니메이션 끄기

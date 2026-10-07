@@ -1,5 +1,5 @@
 ---
-cover: "/images/articles/kz.png"
+cover: "/images/articles/kz.webp"
 ---
 
 # KZ

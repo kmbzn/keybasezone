@@ -1,5 +1,5 @@
 ---
-cover: "/os/explorer.png"
+cover: "/os/explorer.webp"
 ---
 
 # Wine 환경에서 카카오톡 실행 시 explorer.exe 뜨지 않게 하는 법

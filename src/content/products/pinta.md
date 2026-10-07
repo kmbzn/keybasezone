@@ -1,7 +1,7 @@
 ---
 title: "Pinta 이미지 편집기, 간단한 작업을 위한 오픈소스 도구"
 description: "Pinta는 자르기·회전부터 레이어와 색상 조정까지, 일상적인 이미지 편집을 쉽게 시작할 수 있는 무료 오픈소스 프로그램입니다."
-cover: "/images/article-covers/products-pinta.png"
+cover: "/images/article-covers/products-pinta.webp"
 ---
 
 # Pinta 이미지 편집기, 간단한 작업을 위한 오픈소스 도구

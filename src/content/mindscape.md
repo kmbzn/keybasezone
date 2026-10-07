@@ -1,5 +1,5 @@
 ---
-cover: "/images/mindscape.png"
+cover: "/images/mindscape.webp"
 ---
 
 # Mindscape 🔥

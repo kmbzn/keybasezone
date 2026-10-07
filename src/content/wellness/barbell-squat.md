@@ -1,5 +1,5 @@
 ---
-cover: "/images/articles/squat.png"
+cover: "/images/articles/squat.webp"
 ---
 
 # 바벨 스쿼트 (Barbell Squat)
