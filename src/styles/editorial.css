@@ -22,7 +22,7 @@ a{color:inherit}
 .site-header nav{gap:clamp(15px,1.65vw,27px);margin-right:35px;color:#34352f;font-size:13px;font-weight:600;letter-spacing:.035em}
 .site-header nav a{text-decoration:none;transition:color .18s ease}
 .site-header nav a:hover{color:var(--accent)}
-.header-social a{font-size:13px}
+.header-social a{font-size:14px}
 
 /* Lead story */
 .hero{width:100%;min-height:min(760px,calc(100svh - 86px));padding:70px max(36px,calc((100% - 1440px)/2)) 82px;align-items:flex-end}
@@ -144,7 +144,7 @@ a{color:inherit}
 .brand-color-temper{background:#0ba4a8}
 .brand-color-copy{display:flex;width:100%;flex-direction:column;align-items:flex-start;padding:32px 0 0}
 .brand-color-copy p{margin:0}
-.brand-color-name-en{margin:20px 0 -15px -16px!important;color:#fff;font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;font-size:clamp(48px,7.5vw,116px);font-weight:400;line-height:.86;letter-spacing:-.065em;white-space:nowrap}
+.brand-color-name-en{margin:20px 0 -.13em -16px!important;color:#fff;font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;font-size:clamp(48px,7.5vw,116px);font-weight:400;line-height:.86;letter-spacing:-.065em;white-space:nowrap}
 .brand-color-name-en strong{font-weight:800}
 .brand-color-name-ko{margin:0 0 18px!important;color:#fff;font-size:12px;font-weight:650;letter-spacing:0}
 .brand-color-hex{position:absolute;top:22px;right:24px;color:#fff;font-size:clamp(18px,2.2vw,26px);font-weight:700}
@@ -261,7 +261,7 @@ a{color:inherit}
   .mindscape-art{min-height:240px;padding:28px}
   .mindscape-art img{width:min(58%,240px)}
   .mindscape-copy{padding:44px 26px 52px}
-  .brand-philosophy{grid-template-columns:1fr;gap:38px;padding:0 22px 72px}
+  .brand-philosophy{grid-template-columns:1fr;gap:38px;padding:0 22px;border-top:0}
   .brand-philosophy-intro{padding:0}
   .brand-philosophy h2{max-width:11ch;font-size:clamp(38px,10vw,54px)}
   .brand-color-list{min-height:520px}
