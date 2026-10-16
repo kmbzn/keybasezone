@@ -42,3 +42,5 @@ Cover images are stored locally so article pages do not depend on third-party im
 The Rongorongo tablet body image at `public/images/articles/rongorongo-tablet.png` was replaced with the site owner-supplied `rongorongo.png`.
 
 | `ai-gemini-4-argon.png` | Gemini 4 Argon launch artwork | Google | Google announcement artwork | [Google announcement](https://blog.google/intl/ko-kr/products/gemini-4-argon-kr/) |
+
+Gemini 4 Argon 본문 이미지는 [Google 공식 발표](https://blog.google/intl/ko-kr/products/gemini-4-argon-kr/)의 DeepSWE 차트(`public/images/articles/ai-gemini-4-argon-deepswe.gif`)와 CWE-bench 차트(`public/images/articles/ai-gemini-4-argon-cwe.webp`)를 사용합니다.
