@@ -44,3 +44,5 @@ The Rongorongo tablet body image at `public/images/articles/rongorongo-tablet.pn
 | `ai-gemini-4-argon.png` | Gemini 4 Argon launch artwork | Google | Google announcement artwork | [Google announcement](https://blog.google/intl/ko-kr/products/gemini-4-argon-kr/) |
 
 Gemini 4 Argon 본문 이미지는 [Google 공식 발표](https://blog.google/intl/ko-kr/products/gemini-4-argon-kr/)의 DeepSWE 차트(`public/images/articles/ai-gemini-4-argon-deepswe.gif`)와 CWE-bench 차트(`public/images/articles/ai-gemini-4-argon-cwe.webp`)를 사용합니다.
+
+Tesla Roadster 외관 커버 및 본문 사진(`public/images/article-covers/products-tesla-roadster.jpg`, 원본 `Roadster_92.jpg`)과 비행 시연 사진(`public/images/articles/tesla-roadster-flight.jpg`, 원본 `tesla-roadster-2-fly.jpg`)은 Tesla 제공, [TechCrunch 보도](https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/) 출처입니다.

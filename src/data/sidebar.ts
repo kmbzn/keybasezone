@@ -93,6 +93,7 @@ const sections: SidebarSection[] = [
   {
     label: "Products",
     entries: [
+      { path: "/products/tesla-roadster" },
       { path: "/products/audio-interface" },
       { path: "/products/pinta" },
       { path: "/products/kurutoga" },
