@@ -40,3 +40,5 @@ Cover images are stored locally so article pages do not depend on third-party im
 | `ai-gpt-6-1-sol.jpg` | GPT-6.1 Sol launch presentation | Asia Today | Image from news article | [Asia Today article](https://en.asiatoday.co.kr/view.php?key=20260930001304543) |
 | `ai-claude-opus-5-5.jpg` | Claude Opus 5.5 launch artwork | Anthropic | Anthropic announcement artwork | [Anthropic announcement](https://www.anthropic.com/claude-opus-5-5) |
 The Rongorongo tablet body image at `public/images/articles/rongorongo-tablet.png` was replaced with the site owner-supplied `rongorongo.png`.
+
+| `ai-gemini-4-argon.png` | Gemini 4 Argon launch artwork | Google | Google announcement artwork | [Google announcement](https://blog.google/intl/ko-kr/products/gemini-4-argon-kr/) |
