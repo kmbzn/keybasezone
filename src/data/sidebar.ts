@@ -104,11 +104,6 @@ const sections: SidebarSection[] = [
       { path: "/products/aeron-chair" },
     ],
   },
-  {
-    entries: [
-      { path: "/tmp" },
-    ],
-  },
 ];
 
 export const sidebar = sections;
