@@ -4,6 +4,7 @@ Cover images are stored locally so article pages do not depend on third-party im
 
 | Local file | Source work | Creator / source | License | Source page |
 |---|---|---|---|---|
+| `ai-php2shell-cover.png` | Site owner supplied `Downloads/php.png` | Site owner supplied | — | — |
 | `ai-php2shell.png` | PHP official logo (unmodified) | PHP Group / Colin Viebrock | CC BY-SA 4.0 | [PHP](https://www.php.net/download-logos.php) / [License](https://creativecommons.org/licenses/by-sa/4.0/) |
 | `os-dunggeunmo.png` | Site owner supplied | Local image | — |
 | `os-ubuntu-thumbnails.png` | Site owner supplied `vid-ico.png` | Local image | — |

@@ -1,7 +1,7 @@
 ---
 title: "PHP2Shell, AI가 찾아낸 치명적인 PHP 취약점"
 description: "AI를 활용해 발견한 PHP2Shell 취약점 두 건과 실제 공격 동향, 긴급 보안 업데이트를 정리합니다."
-cover: "/images/article-covers/ai-php2shell.png"
+cover: "/images/article-covers/ai-php2shell-cover.png"
 published: "2026-10-22"
 ---
 
@@ -13,7 +13,7 @@ published: "2026-10-22"
 
 [![PHP 공식 로고](/images/article-covers/ai-php2shell.png)](https://www.php.net/archive/2026.php#2026-10-21-5)
 
-*본문·커버 이미지: PHP Group / Colin Viebrock, [PHP 공식 로고](https://www.php.net/download-logos.php), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). 원본 파일을 수정 없이 사용했습니다.*
+*본문 이미지: PHP Group / Colin Viebrock, [PHP 공식 로고](https://www.php.net/download-logos.php), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). 원본 파일을 수정 없이 사용했습니다.*
 
 ## AI가 발견과 검증을 도운 취약점
 
