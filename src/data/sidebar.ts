@@ -28,6 +28,7 @@ const sections: SidebarSection[] = [
   {
     label: "AI",
     entries: [
+      { path: "/ai/php2shell" },
       { path: "/ai/gemini-4-argon" },
       { path: "/ai/ai-core" },
       { path: "/ai/si-executive-order" },
